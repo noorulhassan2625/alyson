@@ -7,7 +7,7 @@ const { Content, Footer } = Layout;
 
 const MainLayout = () => {
   return (
-    <Layout>
+    <Layout style={{ background: 'transparent' }}>
       <Navbar />
       <Content style={{ padding: "20px" }}>
         <AppRoutes />
