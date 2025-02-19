@@ -4,7 +4,9 @@ body {
   text-align: center;
   margin: 0;
 }
-
+.hero{
+  background-color: #F7C04C !important;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
