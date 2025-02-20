@@ -21,6 +21,8 @@ const Navbar = () => {
         <Menu.Item className="nav-item" key="pricing">Pricing</Menu.Item>
         <Menu.Item className="nav-item" key="about">About</Menu.Item>
         <Menu.Item className="nav-item" key="connect">Connect</Menu.Item>
+        <Menu.Item className="nav-item btn-nav" key="connect"> <DarkButton buttonText="Let’s Talk" /></Menu.Item>
+       
       </Menu>
 
       {/* Mobile Menu Icon */}
@@ -51,9 +53,10 @@ const Navbar = () => {
             <p>Support</p>
           </Panel>
         </Collapse>
+        <DarkButton buttonText="Let’s Talk" />
       </Drawer>
 
-      <DarkButton buttonText="Let’s Talk" />
+      {/* <DarkButton buttonText="Let’s Talk" /> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import DarkButton from "./DarkButton";
 
 const StatsBox = () => {
   return (
@@ -9,7 +9,7 @@ const StatsBox = () => {
         The AI Engine Behind 5 Million Homeowner Journeys –  
         Making decisions smarter, experiences smoother, and driving revenue.
       </p>
-      <Button type="primary" className="cta-btn">Get Started Today</Button>
+      <DarkButton buttonText="Get Started Today" />
     </div>
   );
 };

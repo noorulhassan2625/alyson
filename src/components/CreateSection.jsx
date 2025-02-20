@@ -7,10 +7,10 @@ const CreateSection = () => {
   return (
     <div className="create-section">
       <div className="create-content">
-        <div className="create-icon">
-          <EditOutlined />
-        </div>
-        <Title level={3}>Create</Title>
+        <div className={'acquire-title'}>
+      <img src="/media/images/Acquire icon.svg" alt="Alyson Logo" width="10%" />
+      <Title level={2}>Create</Title>
+      </div>
         <Paragraph>
           Alyson generative AI creates ads, landing pages, and websites proven
           to generate more revenue, then matches each user with the best page

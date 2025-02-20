@@ -7,7 +7,7 @@ import { Button } from 'antd'
 
 function CreateCards () {
   return (
-    <div>
+    <div className={'create-cards'}>
       <GenerativeAISection />
       <RevenueBox />
       <CompaignGradingBox />

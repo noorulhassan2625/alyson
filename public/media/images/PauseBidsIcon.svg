@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="247.45" height="250.069" viewBox="0 0 247.45 250.069">
+  <defs>
+    <filter id="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24" x="0" y="0" width="122.75" height="125.369" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="ad_24dp_000000_FILL1_wght300_GRAD0_opsz24" x="124.7" y="127.319" width="122.75" height="122.75" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12397" data-name="Group 12397" transform="translate(9 9)">
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24)">
+      <path id="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24-2" data-name="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24" d="M127.683-810.16v-42.512h8.511v42.512Zm31.207,0v-42.512H167.4v42.512ZM110.77-790.321v-8.5H215.52v8.5ZM190.1-810.16v-42.512h8.511v42.512ZM110.77-864.008v-8.066l52.375-25.616,52.375,25.616v8.066Z" transform="translate(-101.77 906.69)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#ad_24dp_000000_FILL1_wght300_GRAD0_opsz24)">
+      <path id="ad_24dp_000000_FILL1_wght300_GRAD0_opsz24-2" data-name="ad_24dp_000000_FILL1_wght300_GRAD0_opsz24" d="M151.139-715.25a10.752,10.752,0,0,1-7.9-3.235,10.752,10.752,0,0,1-3.235-7.9v-82.472a10.752,10.752,0,0,1,3.235-7.9,10.752,10.752,0,0,1,7.9-3.235h82.472a10.752,10.752,0,0,1,7.9,3.235,10.752,10.752,0,0,1,3.235,7.9v82.472a10.752,10.752,0,0,1-3.235,7.9,10.752,10.752,0,0,1-7.9,3.235Zm0-9.243h82.472a1.809,1.809,0,0,0,1.3-.593,1.809,1.809,0,0,0,.593-1.3V-791.8H149.243v65.409a1.809,1.809,0,0,0,.593,1.3A1.809,1.809,0,0,0,151.139-724.493Z" transform="translate(-6.3 956.32)"/>
+    </g>
+  </g>
+</svg>
