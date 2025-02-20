@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from "antd";
-import { RocketOutlined, TeamOutlined, AimOutlined } from "@ant-design/icons";
+import { GlobalOutlined, LayoutOutlined, UserOutlined, MailOutlined, AimOutlined, FacebookOutlined, InstagramOutlined, RetweetOutlined, DatabaseOutlined, BranchesOutlined, ShoppingOutlined, MonitorOutlined, FontColorsOutlined } from "@ant-design/icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -8,30 +8,41 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 const features = [
   {
-    icon: <RocketOutlined style={{ fontSize: 24, color: "#ff9800" }} />,
-    title: "Real-Time Ad Optimization",
-    description: "Adjust bids & placements based on AI-driven insights.",
+    icon: <GlobalOutlined style={{ fontSize: 24, color: '#ff9800' }} />,
+    title: 'AI-Powered Website Creation',
+    description: 'Instantly generate & optimize landing pages for conversions.',
+    linkIcons: [<LayoutOutlined />, <GlobalOutlined />]
   },
   {
-    icon: <TeamOutlined style={{ fontSize: 24, color: "#2196F3" }} />,
-    title: "Data-Driven Audience Building",
-    description: "Build hyper-targeted audiences with rich customer insights.",
+    icon: <UserOutlined style={{ fontSize: 24, color: '#2196F3' }} />,
+    title: 'Identity & Lead Matching',
+    description: 'De-anonymize website visitors & verify user identities.',
+    linkIcons: [<MailOutlined />, <GlobalOutlined />]
   },
   {
-    icon: <AimOutlined style={{ fontSize: 24, color: "#673ab7" }} />,
-    title: "Smart Customer Acquisition",
-    description: "Target the right leads with AI-driven precision.",
+    icon: <AimOutlined style={{ fontSize: 24, color: '#673ab7' }} />,
+    title: 'Smart Customer Acquisition',
+    description: 'Target the right leads with AI-driven precision.',
+    linkIcons: [<FacebookOutlined />, <InstagramOutlined />, <RetweetOutlined />]
   },
   {
-    icon: <RocketOutlined style={{ fontSize: 24, color: "#f44336" }} />,
-    title: "Automated Bidding",
-    description: "Optimize bids in real-time using AI algorithms.",
+    icon: <DatabaseOutlined style={{ fontSize: 24, color: '#f44336' }} />,
+    title: 'Data-Driven Audience Building',
+    description: 'Build hyper-targeted audiences with rich customer insights',
+    linkIcons: [<DatabaseOutlined />, <BranchesOutlined />]
   },
   {
-    icon: <TeamOutlined style={{ fontSize: 24, color: "#4caf50" }} />,
-    title: "Predictive Analytics",
-    description: "Use historical data to predict campaign success.",
+    icon: <ShoppingOutlined style={{ fontSize: 24, color: '#4caf50' }} />,
+    title: 'Frictionless AI Checkout',
+    description: 'Use historical data to predict campaign success.',
+    linkIcons: [<span>Privacy Shield</span>]
   },
+  {
+    icon: <MonitorOutlined style={{ fontSize: 24, color: '#4caf50' }} />,
+    title: 'Real-Time Ad Optimization',
+    description: 'Adjust bids & placements based on AI-driven insights.',
+    linkIcons: [<FontColorsOutlined />, <GlobalOutlined />]
+  }
 ];
 
 const FeatureCards = () => {
@@ -41,28 +52,35 @@ const FeatureCards = () => {
         effect="coverflow"
         centeredSlides
         slidesPerView={3}
-        spaceBetween={80}
-        loop={true} // Enable infinite loop
+        spaceBetween={0}
+        loop={true}
         autoplay={{
-          delay: 2000, // Auto-slide every 2 seconds
-          disableOnInteraction: false, // Continue autoplay even after user interaction
+          delay: 20000,
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
-          rotate: 0, // Rotate cards for a 3D effect
+          rotate: 0,
           stretch: 0,
-          depth: 100, // Depth of the 3D effect
+          depth: 100,
           modifier: 1.5,
-          slideShadows: true, // Add shadows for a more realistic effect
+          slideShadows: true,
         }}
-        modules={[EffectCoverflow, Autoplay]} // Add Autoplay module
+        modules={[EffectCoverflow, Autoplay]}
         className="feature-slider"
       >
         {features.map((feature, index) => (
           <SwiperSlide key={index} className="feature-card">
             <Card className="card-content">
-              <div className="icon">{feature.icon}</div>
-              <h3>{feature.title}</h3>
+              <div className="title-header">
+                <div className="icon">{feature.icon}</div>
+                <h3>{feature.title}</h3>
+              </div>
               <p>{feature.description}</p>
+              <div className="links">
+                {feature.linkIcons.map((icon, idx) => (
+                  <span key={idx} className="icon">{icon}</span>
+                ))}
+              </div>
             </Card>
           </SwiperSlide>
         ))}

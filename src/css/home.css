@@ -15,6 +15,7 @@ body {
   background: transparent;
 }
 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -22,16 +23,41 @@ body {
   font-weight: bold;
 }
 
+/* Desktop Menu */
 .menu {
   flex-grow: 1;
   padding: 0px 30px;
   background: transparent;
   border: none;
 }
-.menu .nav-item{
+.menu .nav-item {
   color: #000000;
   font-size: 16px;
 }
+
+/* Mobile Menu Icon */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile Drawer */
+.mobile-menu {
+  border: none;
+  background: transparent;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
 .cta-btn {
   background: black;
   color: white;
@@ -122,7 +148,7 @@ p {
   width: 100%;
   height: 400px;
   margin: 25px auto;
-  padding-top: 150px;
+  padding: 0px 50px;
   overflow-x: hidden;
 }
 
@@ -140,7 +166,7 @@ p {
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); */
   transition: all 1s ease;
 }
 
@@ -222,8 +248,53 @@ p {
     font-size: 10px;
   }
 }
+.swiper-3d{
+  perspective: none;
+}
 
-
+.title-header{
+  display: flex;
+}
+.title-header h3{
+  font-size: 16px; 
+  font-weight: 500;
+}
+.title-header .icon svg{
+  color: white !important;
+}
+.title-header .icon{
+ padding: 8px 10px;
+ margin-top: 5px;
+ margin-right: 5px;
+ background-color: #1A7222;
+ border-radius: 10px;
+ color: white !important;
+}
+.swiper-slide .ant-card-body{
+  text-align: left;
+}
+.swiper-slide .ant-card{
+background: rgba( 255, 255, 255, 0.85 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 0px;
+}
+.swiper-slide .ant-card .links{
+  display: none !important;
+  transition: .8s;
+}
+.swiper-slide-active.feature-card .ant-card .ant-card-body .links{
+  display: block !important;
+  transition: .8s;
+}
+.swiper-slide{
+  transform: scale(.8) !important;
+}
+.swiper-slide-active.feature-card{
+  transform: scale(1) !important;
+}
 
 
 .card-content {
