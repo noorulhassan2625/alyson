@@ -35,7 +35,7 @@ const CheckoutSection = () => {
         <div className='checkout-header'>
           {/* <ShoppingCartOutlined className='checkout-icon' />
           <Title level={2}>Checkout</Title> */}
-          <div className={'acquire-title'}>
+          <div className={'section-title-header'}>
             <img src='/media/images/checkout.svg' alt='Alyson Logo' width='10%' />
             <Title level={2}>Checkout</Title>
           </div>

@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Button } from "antd";
 import { IdcardOutlined } from "@ant-design/icons";
+import DarkButton from "./DarkButton";
 
 const { Title, Paragraph } = Typography;
 
@@ -31,9 +32,13 @@ const IdentitySection = () => {
     <div className="identity-container">
       <div className="identity-content">
         {/* Header Section */}
-        <div className="identity-header">
-          <IdcardOutlined className="identity-icon" />
+        <div className={'section-title-header'}>
+          <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Identity</Title>
+        </div>
+        <div className="identity-header">
+          {/* <IdcardOutlined className="identity-icon" />
+          <Title level={2}>Identity</Title> */}
           <Paragraph>
             Build tailored profiles and leverage Alyson’s 172M identity graph members to ensure accurate data for personalized communications and targeted campaigns.
           </Paragraph>
@@ -57,7 +62,8 @@ const IdentitySection = () => {
 
         {/* Call to Action Button */}
         <div className="identity-button">
-          <Button type="primary" size="large">Unlock Accurate Targeting!</Button>
+          {/* <Button type="primary" size="large">Unlock Accurate Targeting!</Button> */}
+           <DarkButton buttonText="Unlock Accurate Targeting!" />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const CreateSection = () => {
   return (
     <div className='create-section'>
       <div className='create-content'>
-        <div className={'acquire-title'}>
+        <div className={'section-title-header'}>
           <img src='/media/images/Create.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Create</Title>
         </div>

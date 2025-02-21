@@ -5,7 +5,7 @@ const { Title, Paragraph } = Typography;
 const Acquire = () => {
   return (
     <div className="acquire-section">
-      <div className={'acquire-title'}>
+      <div className={'section-title-header'}>
       <img src="/media/images/Acquire icon.svg" alt="Alyson Logo" width="10%" />
       <Title level={2}>Acquire</Title>
       </div>

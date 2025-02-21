@@ -37,7 +37,7 @@ const AgentSection = () => {
       <div className='agent-content'>
         {/* Header Section */}
         <div className='agent-header'>
-          <div className={'acquire-title'}>
+          <div className={'section-title-header'}>
             <img src='/media/images/Agent.svg' alt='Alyson Logo' width='10%' />
             <Title level={2}>Agent</Title>
           </div>

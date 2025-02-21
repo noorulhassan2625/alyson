@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Button } from "antd";
 import { DatabaseOutlined } from "@ant-design/icons";
+import DarkButton from "./DarkButton";
 
 const { Title, Paragraph } = Typography;
 
@@ -31,9 +32,11 @@ const AudiencesSection = () => {
     <div className="audiences-container">
       <div className="audiences-content">
         {/* Header Section */}
-        <div className="audiences-header">
-          <DatabaseOutlined className="audiences-icon" />
+        <div className={'section-title-header'}>
+          <img src='/media/images/Audiences.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Audiences</Title>
+        </div>
+        <div className="audiences-header">
           <Paragraph>
             De-anonymize your traffic and clean, enhance, and unify your CRM data with insights from 170M+ homeowner profiles.
           </Paragraph>
@@ -53,9 +56,10 @@ const AudiencesSection = () => {
 
         {/* CTA Button */}
         <div className="audiences-btn-container">
-          <Button type="primary" size="large" className="audiences-btn">
+          {/* <Button type="primary" size="large" className="audiences-btn">
             Know Your Audience—Start Today!
-          </Button>
+          </Button> */}
+           <DarkButton buttonText="Know Your Audience—Start Today!" />
         </div>
       </div>
     </div>

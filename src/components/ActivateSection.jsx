@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Button } from "antd";
 import { BulbOutlined } from "@ant-design/icons";
+import DarkButton from "./DarkButton";
 
 const { Title, Paragraph } = Typography;
 
@@ -31,9 +32,13 @@ const ActivateSection = () => {
     <div className="activate-container">
       <div className="activate-content">
         {/* Header Section */}
-        <div className="activate-header">
-          <BulbOutlined className="activate-icon" />
+        <div className={'section-title-header'}>
+          <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Activate</Title>
+        </div>
+        <div className="activate-header">
+          {/* <BulbOutlined className="activate-icon" />
+          <Title level={2}>Activate</Title> */}
           <Paragraph>
             Re-engage old leads with personalized emails, texts, and ads. Identify engagement opportunities to turn inactive leads into fresh leads and new customers.
           </Paragraph>
@@ -57,7 +62,8 @@ const ActivateSection = () => {
 
         {/* Call to Action Button */}
         <div className="activate-button">
-          <Button type="primary" size="large">Get Started Now</Button>
+          {/* <Button type="primary" size="large">Get Started Now</Button> */}
+           <DarkButton buttonText="Reconnect & Convert Fast!" />
         </div>
       </div>
     </div>
