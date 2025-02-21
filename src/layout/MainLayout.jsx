@@ -12,7 +12,6 @@ const MainLayout = () => {
       <Content style={{ padding: "20px" }}>
         <AppRoutes />
       </Content>
-      <Footer style={{ textAlign: "center" }}>My React App ©2025</Footer>
     </Layout>
   );
 };

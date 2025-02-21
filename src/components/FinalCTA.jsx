@@ -1,4 +1,5 @@
 import { Typography, Button } from "antd";
+import DarkButton from "./DarkButton";
 
 const { Title } = Typography;
 
@@ -8,8 +9,8 @@ const FinalCTA = () => {
       <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
       </Title>
-      <Button className="cta-button">Let's Talk</Button>
-      
+      {/* <Button className="cta-button">Let's Talk</Button> */}
+       <DarkButton buttonText="Let’s Talk" />
       <div className="footer-links">
         <span>About</span>
         <span>Privacy Policy</span>

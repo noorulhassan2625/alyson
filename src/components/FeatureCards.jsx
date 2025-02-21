@@ -73,7 +73,7 @@ const FeatureCards = () => {
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 20000,
+          delay: 1000,
           disableOnInteraction: false
         }}
         coverflowEffect={{
@@ -105,7 +105,7 @@ const FeatureCards = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className='mobile-view'>
+      {/* <div className='mobile-view'>
       <Card className='card-content'>
         <div className='title-header'>
           <div className='icon'>
@@ -123,7 +123,7 @@ const FeatureCards = () => {
           </span>
         </div>
       </Card>
-      </div>
+      </div> */}
     </div>
   )
 }

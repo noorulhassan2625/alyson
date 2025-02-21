@@ -48,8 +48,8 @@ const LinksSection = () => {
               </Col>
             ))}
           </Row>
-          <Button type="link" onClick={toggleShowAll} style={{ display: 'block', margin: '10px auto' }}>
-            {showAll ? 'Show Less' : 'Show More'}
+          <Button className={'expand-link-btn'} type="link" onClick={toggleShowAll}>
+            {showAll ? 'less' : 'more'}
           </Button>
         </Col>
       </Row>

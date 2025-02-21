@@ -913,9 +913,9 @@ p {
   color: black;
   margin-top: 10px;
 }
-.mobile-view {
+/* .mobile-view {
   display: none;
-}
+} */
 /* ======== Responsiveness ======== */
 
 /* ===== Mobile responsive ===== */
@@ -978,12 +978,34 @@ p {
   .swiper-slide .ant-card-body {
     width: 100% !important;
   }
-  .mobile-view {
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .mobile-view {
     display: block !important;
-  }
-  .feature-slider {
+  } */
+  /* .feature-slider {
     display: none !important;
-  }
+  } */
+
+
+
+
+
+
+
+
+
+
   .audience-card {
     padding: 70px 20px;
     background-color: #fff4df !important;
@@ -1048,4 +1070,16 @@ p {
   .footer-container .ant-row .links-active{
     max-height: 75rem !important;
   }
+  .final-cta-container{
+    padding: 2px 20px 20px 20px;
+  }
+  .expand-link-btn{
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+  }
+  /* .swiper-wrapper{
+    transform: none !important;
+  } */
 }
