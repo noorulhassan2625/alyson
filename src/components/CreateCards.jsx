@@ -3,7 +3,7 @@ import GenerativeAISection from './GenerativeAISection'
 import RevenueBox from './RevenueBox'
 import CompaignGradingBox from './CompaignGrading'
 import FeedBackBox from './FeedbackBox'
-import { Button } from 'antd'
+import DarkButton from './DarkButton'
 
 function CreateCards () {
   return (
@@ -12,7 +12,8 @@ function CreateCards () {
       <RevenueBox />
       <CompaignGradingBox />
       <FeedBackBox />
-      <Button type="primary" className="cta-btn">Try Alyson Create for Free</Button>
+      {/* <Button type="primary" className="cta-btn">Try Alyson Create for Free</Button> */}
+       <DarkButton buttonText="Try Alyson Create for Free" />
     </div>
   )
 }
