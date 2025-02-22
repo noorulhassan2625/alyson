@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card } from 'antd'
 import {
   GlobalOutlined,
@@ -64,16 +64,29 @@ const features = [
 ]
 
 const FeatureCards = () => {
+  const [slidesPerView, setSlidesPerView] = useState(3)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesPerView(window.innerWidth <= 768 ? 1 : 3)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div className='feature-section'>
       <Swiper
         effect='coverflow'
         centeredSlides
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 10000,
           disableOnInteraction: false
         }}
         coverflowEffect={{
@@ -91,9 +104,12 @@ const FeatureCards = () => {
             <Card className='card-content'>
               <div className='title-header'>
                 <div className='icon'>{feature.icon}</div>
-                <h3>{feature.title}</h3>
+                <div>
+                  <h3>{feature.title}</h3>
+
+                  <p>{feature.description}</p>
+                </div>
               </div>
-              <p>{feature.description}</p>
               <div className='links'>
                 {feature.linkIcons.map((icon, idx) => (
                   <span key={idx} className='icon'>
@@ -105,25 +121,6 @@ const FeatureCards = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className='mobile-view'>
-      <Card className='card-content'>
-        <div className='title-header'>
-          <div className='icon'>
-            <GlobalOutlined style={{ fontSize: 24, color: '#ff9800' }} />
-          </div>
-          <h3>AI-Powered Website Creation</h3>
-        </div>
-        <p>Instantly generate & optimize landing pages for conversions.</p>
-        <div className='links'>
-          <span className='icon'>
-            <LayoutOutlined />
-          </span>
-          <span className='icon'>
-            <GlobalOutlined />
-          </span>
-        </div>
-      </Card>
-      </div> */}
     </div>
   )
 }
