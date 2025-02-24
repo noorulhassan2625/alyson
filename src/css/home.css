@@ -18,7 +18,9 @@ span,
 .ant-typography {
   font-family: 'Lato', serif !important;
 }
-
+.identity-card{
+  height: 100% !important;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -124,6 +126,12 @@ span,
 .hero-image {
   margin-top: 20px;
 }
+.audiences-header{
+  font-size: 16px;
+}
+.section-title-header img{
+  width: 40px !important;
+}
 .acquire-section {
   text-align: center;
   padding: 40px 20px;
@@ -131,15 +139,17 @@ span,
 }
 .section-title-header {
   display: flex;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 0px 5px 20px;
+  justify-self: center;
 }
+
 .section-title-header h2 {
   margin: 0px 0px 0px 10px !important;
   padding: 0px 0px 0px 0px !important;
 }
 .acquire-section .ant-typography {
   padding: 0px 20px;
-  text-align: left;
+  text-align: center;
 }
 .icon-box {
   display: inline-flex;
@@ -159,7 +169,12 @@ p {
   margin: 0 auto;
   font-size: 16px;
 }
-
+.section-title-header{
+  text-align: center !important;
+}
+.section-title-header image{
+  width: 300px !important;
+  }
 .acquire-section {
   background: linear-gradient(
     180deg,
@@ -175,11 +190,22 @@ p {
     rgba(255, 252, 240, 0.377) 100%
   ) !important;
 }
+.aquire-btn {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.AquireCards .ant-card {
+  height: 100%;
+}
 
 .cards-section {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(to bottom, #fde6a8, #fddc93);
+}
+
+.section-title-header image{
+width: 100px;
 }
 
 .feature-section {
@@ -451,7 +477,7 @@ p {
 }
 .create-cards {
   background: #fffaf0 !important;
-  padding: 0px 50px 50px 50px;
+  padding: 0px 50px 2px 50px;
 }
 .create-cards button {
   margin-top: 40px;
@@ -501,12 +527,13 @@ p {
 .checkout-content {
   /* background: rgba(255, 204, 77, 0.2);  */
   background-color: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   max-width: 1000px;
   width: 100%;
   text-align: center;
 }
+.activate-container{}
 
 .checkout-header {
   margin-bottom: 30px;
@@ -539,10 +566,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background: white;
 }
 
 .agent-content {
@@ -587,22 +615,23 @@ p {
   background: #333;
 }
 .agent-header {
-  text-align: left;
+  text-align: center;
 }
 
 .audiences-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 7px 20px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 .audiences-content {
   background: rgba(255, 255, 255, 0.8);
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   max-width: 1100px;
   width: 100%;
@@ -614,7 +643,7 @@ p {
 }
 
 .audiences-header .ant-typography {
-  text-align: left;
+  text-align: center;
 }
 
 .audiences-icon {
@@ -653,7 +682,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 30px 20px;
   background: white; /* Temporary White Background */
 }
 
@@ -725,6 +754,22 @@ p {
   max-width: 1100px;
   width: 100%;
 }
+
+
+.section-divider{
+  margin-bottom: 30px;
+}
+.section-divider .ant-divider {
+  border-color: #ffbb2a !important;
+  min-width: 50% !important;
+  margin: 0 auto !important;
+  width: 50%;
+}
+.create-cards .section-divider{
+  margin-top: 30px;
+}
+
+
 
 .identity-header {
   text-align: center;
@@ -1015,6 +1060,7 @@ p {
   .agent-container,
   .audiences-content {
     padding-bottom: 0px;
+    padding-top: 30px;
   }
   .audiences-btn-container .ant-btn {
     margin-top: 30px;
@@ -1135,6 +1181,8 @@ p {
     width: 100% !important;
     /* background-color: #ffffffe0 !important; */
   }
+
+
   .create-cards .generative-ai-container .generative-ai-content {
     padding-bottom: 0px;
   }
@@ -1176,31 +1224,46 @@ p {
     text-align: left;
     padding: 0px;
     font-size: 20px;
-    color: #07074B;
+    color: #07074b;
   }
   .mobile-nav {
     background-color: #ffffffe0 !important;
   }
-  .mobile-nav .ant-collapse-expand-icon{
+  .mobile-nav .ant-collapse-expand-icon {
     background-color: white;
     border-radius: 50%;
     padding: 16px 10px;
   }
-  .mobile-nav
-  .ant-drawer-body
-  .collapse-menu
-  .ant-collapse-header{
+  .mobile-nav .ant-drawer-body .collapse-menu .ant-collapse-header {
     padding: 0px;
     margin: 5px 0px;
   }
-  .mobile-nav .ant-collapse-content-box, .mobile-nav .ant-collapse-content{
+  .mobile-nav .ant-collapse-content-box,
+  .mobile-nav .ant-collapse-content {
     background: transparent !important;
   }
-  .mobile-nav .ant-collapse-content-box .item-title{
+  .mobile-nav .ant-collapse-content-box .item-title {
     font-weight: 700;
     color: #000000 !important;
   }
-  .mobile-nav .ant-collapse-content-box .product-item{
+  .mobile-nav .ant-collapse-content-box .product-item {
     margin-bottom: 10px;
+  }
+  .section-title-header {
+    justify-self: left;
+    padding-bottom: 5px;
+  }
+  .acquire-section .ant-typography {
+    padding: 0px 20px;
+    text-align: left;
+  }
+  .cards-section {
+    padding-top: 20px;
+  }
+  .agent-header {
+    text-align: left;
+  }
+  .audiences-header .ant-typography {
+    text-align: left;
   }
 }
