@@ -1,4 +1,4 @@
-import { Typography } from 'antd'
+import { Divider, Typography } from 'antd'
 import { EditOutlined } from '@ant-design/icons'
 
 const { Title, Paragraph } = Typography
@@ -6,6 +6,9 @@ const { Title, Paragraph } = Typography
 const CreateSection = () => {
   return (
     <div className='create-section'>
+      <div className='section-divider'>
+       <Divider style={{ color: '#FFBB2A' }} />
+      </div>
       <div className='create-content'>
         <div className={'section-title-header'}>
           <img src='/media/images/Create.svg' alt='Alyson Logo' width='10%' />

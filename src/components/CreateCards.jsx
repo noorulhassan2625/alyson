@@ -4,16 +4,21 @@ import RevenueBox from './RevenueBox'
 import CompaignGradingBox from './CompaignGrading'
 import FeedBackBox from './FeedbackBox'
 import DarkButton from './DarkButton'
+import { Divider } from 'antd'
 
 function CreateCards () {
   return (
     <div className={'create-cards'}>
+   
       <GenerativeAISection />
       <RevenueBox />
       <CompaignGradingBox />
       <FeedBackBox />
       {/* <Button type="primary" className="cta-btn">Try Alyson Create for Free</Button> */}
        <DarkButton buttonText="Try Alyson Create for Free" />
+       <div className='section-divider'>
+       <Divider style={{ color: '#FFBB2A' }} />
+      </div>
     </div>
   )
 }

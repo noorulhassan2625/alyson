@@ -1,4 +1,4 @@
-import { Row, Col, Typography, Button } from 'antd'
+import { Row, Col, Typography, Button, Divider } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
 import DarkButton from './DarkButton'
 
@@ -35,6 +35,9 @@ const AgentSection = () => {
   return (
     <div className='agent-container'>
       <div className='agent-content'>
+      <div className='section-divider'>
+       <Divider style={{ color: '#FFBB2A' }} />
+      </div>
         {/* Header Section */}
         <div className='agent-header'>
           <div className={'section-title-header'}>
