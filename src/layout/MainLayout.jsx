@@ -12,6 +12,7 @@ const MainLayout = () => {
       <Content style={{ padding: "20px" }}>
         <AppRoutes />
       </Content>
+      <Footer style={{ textAlign: "center" }}>Alyson.ai ©2025</Footer>
     </Layout>
   );
 };

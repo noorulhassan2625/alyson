@@ -5,7 +5,9 @@ import "./global.css";
 function App() {
   return (
     <Router>
-      <MainLayout />
+      <div style={{ fontFamily: "'Roboto', sans-serif" }}>
+        <MainLayout />
+      </div>
     </Router>
   );
 }

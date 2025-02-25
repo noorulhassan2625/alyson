@@ -1,20 +1,21 @@
 import { Row, Col, Typography } from "antd";
-import { MailOutlined, MessageOutlined, LayoutOutlined } from "@ant-design/icons";
 import InfoCard from "./InfoCards";
-
+import MailIcon from "./SVGComponents/MailIcon";
+import LayoutIcon from "./SVGComponents/LayoutIcon";
+import MessageIcon from "./SVGComponents/MessageIcon";
 
 const { Title, Paragraph } = Typography;
 
 const GenerativeAISection = () => {
   const cardsData = [
     {
-      icon: <MailOutlined />,
+      icon: <MailIcon />,
     },
     {
-      icon: <LayoutOutlined />,
+      icon: <LayoutIcon />,
     },
     {
-      icon: <MessageOutlined />,
+      icon: <MessageIcon />,
     }
   ];
 

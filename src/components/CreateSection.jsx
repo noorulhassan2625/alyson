@@ -1,13 +1,11 @@
 import { Divider, Typography } from 'antd'
-import { EditOutlined } from '@ant-design/icons'
-
 const { Title, Paragraph } = Typography
 
 const CreateSection = () => {
   return (
     <div className='create-section'>
       <div className='section-divider'>
-       <Divider style={{ color: '#FFBB2A' }} />
+        <Divider style={{ color: '#FFBB2A' }} />
       </div>
       <div className='create-content'>
         <div className={'section-title-header'}>

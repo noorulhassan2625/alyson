@@ -15,7 +15,6 @@ const CTASection = () => {
 
         {/* Buttons */}
         <div className="cta-buttons">
-          <Button className="cta-button white-btn">Contact Sales</Button>
           <Button className="cta-button black-btn">Request a Demo</Button>
         </div>
       </div>

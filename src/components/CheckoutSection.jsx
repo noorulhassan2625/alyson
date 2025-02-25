@@ -1,5 +1,4 @@
-import { Row, Col, Typography, Button, Divider } from 'antd'
-import { ShoppingCartOutlined } from '@ant-design/icons'
+import { Row, Col, Typography } from 'antd'
 import DarkButton from './DarkButton'
 
 const { Title, Paragraph } = Typography
@@ -30,12 +29,9 @@ const CheckoutSection = () => {
 
   return (
     <div className='checkout-container'>
-   
       <div className='checkout-content'>
         {/* Header Section */}
         <div className='checkout-header'>
-          {/* <ShoppingCartOutlined className='checkout-icon' />
-          <Title level={2}>Checkout</Title> */}
           <div className={'section-title-header'}>
             <img src='/media/images/checkout.svg' alt='Alyson Logo' width='10%' />
             <Title level={2}>Checkout</Title>
