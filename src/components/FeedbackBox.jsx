@@ -1,23 +1,21 @@
 import { Row, Col, Typography } from 'antd'
-import {
-  SoundOutlined,
-  RetweetOutlined,
-  UserSwitchOutlined
-} from '@ant-design/icons'
 import InfoCard from './InfoCards'
+import UserCallingIcon from './SVGComponents/UserCallingIcon'
+import LoopIcon from './SVGComponents/LoopIcon'
+import SpeakerIcon from './SVGComponents/SpeakerIcon'
 
 const { Title, Paragraph } = Typography
 
 const FeedBackBox = () => {
   const cardsData = [
     {
-      icon: <UserSwitchOutlined />
+      icon: <UserCallingIcon />
     },
     {
-      icon: <RetweetOutlined />
+      icon: <LoopIcon />
     },
     {
-      icon: <SoundOutlined />
+      icon: <SpeakerIcon />
     }
   ]
 
@@ -25,7 +23,7 @@ const FeedBackBox = () => {
     <div className='generative-ai-container'>
       <div className='generative-ai-content'>
         <Row gutter={24} align='middle'>
-        
+
           <Col xs={24} md={12}>
             <div className='info-cards-container'>
               {cardsData.map((card, index) => (

@@ -1,23 +1,21 @@
 import { Row, Col, Typography } from 'antd'
-import {
-  BarChartOutlined,
-  RiseOutlined,
-  DollarOutlined
-} from '@ant-design/icons'
 import InfoCard from './InfoCards'
+import BarsIcon from './SVGComponents/BarsIcon'
+import ChartUpIcon from './SVGComponents/ChartUpIcon'
+import DollarIcon from './SVGComponents/DollarIcon'
 
 const { Title, Paragraph } = Typography
 
 const RevenueBox = () => {
   const cardsData = [
     {
-      icon: <BarChartOutlined /> 
+      icon: <BarsIcon />
     },
     {
-      icon: <RiseOutlined />
+      icon: <ChartUpIcon />
     },
     {
-      icon: <DollarOutlined />
+      icon: <DollarIcon />
     }
   ]
 

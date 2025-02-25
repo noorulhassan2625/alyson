@@ -1,6 +1,4 @@
-import { Row, Col, Typography, Button, Divider } from "antd";
-import { IdcardOutlined } from "@ant-design/icons";
-import DarkButton from "./DarkButton";
+import { Row, Col, Typography, Button, Divider } from "antd"; import DarkButton from "./DarkButton";
 
 const { Title, Paragraph } = Typography;
 
@@ -33,8 +31,8 @@ const IdentitySection = () => {
       <div className="identity-content">
         {/* Header Section */}
         <div className='section-divider'>
-       <Divider style={{ color: '#FFBB2A' }} />
-      </div>
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
         <div className={'section-title-header'}>
           <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Identity</Title>
@@ -65,8 +63,7 @@ const IdentitySection = () => {
 
         {/* Call to Action Button */}
         <div className="identity-button">
-          {/* <Button type="primary" size="large">Unlock Accurate Targeting!</Button> */}
-           <DarkButton buttonText="Unlock Accurate Targeting!" />
+          <DarkButton buttonText="Unlock Accurate Targeting!" />
         </div>
       </div>
     </div>

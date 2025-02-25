@@ -30,7 +30,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <Menu mode='horizontal' className='menu'>
-        <Menu.SubMenu className='nav-item' key='product' title='Product'>
+        {/* <Menu.SubMenu className='nav-item' key='product' title='Product'>
           <Menu.Item key='acquire' icon={<AppstoreOutlined />}>
             Acquire
           </Menu.Item>
@@ -55,7 +55,7 @@ const Navbar = () => {
         </Menu.SubMenu>
         <Menu.Item className='nav-item' key='pricing'>
           Pricing
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item className='nav-item' key='about'>
           About
         </Menu.Item>
@@ -69,7 +69,7 @@ const Navbar = () => {
       </Menu>
 
       {/* Mobile Menu Icon */}
-      <MenuOutlined className='menu-icon' onClick={() => setVisible(true)} />
+      {/* <MenuOutlined className='menu-icon' onClick={() => setVisible(false)} /> */}
 
       {/* Mobile Drawer */}
       <Drawer

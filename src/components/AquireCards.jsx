@@ -9,7 +9,7 @@ const cardData = [
         <img
           src='/media/images/AI-Driven_icon.svg'
           alt={'iconImage'}
-          width={'50%'}
+          width={'70%'}
         />
       </>
     ),
@@ -24,7 +24,7 @@ const cardData = [
         <img
           src='/media/images/propertycompaign_icon.svg'
           alt={'iconImage'}
-          width={'50%'}
+          width={'70%'}
         />
       </>
     ),
@@ -39,7 +39,7 @@ const cardData = [
         <img
           src='/media/images/PauseBidsIcon.svg'
           alt={'iconImage'}
-          width={'50%'}
+          width={'70%'}
         />
       </>
     ),
@@ -54,7 +54,7 @@ const cardData = [
         <img
           src='/media/images/betterFeedbackIcon.svg'
           alt={'iconImage'}
-          width={'50%'}
+          width={'70%'}
         />
       </>
     ),
@@ -64,9 +64,9 @@ const cardData = [
   }
 ]
 
-const AquireCards = () => {
+const AcquireCards = () => {
   return (
-    <div className='cards-section AquireCards'>
+    <div className='cards-section AcquireCards'>
       <Row gutter={[24, 24]} justify='center'>
         {cardData.map((card, index) => (
           <Col xs={24} sm={12} md={6} key={index}>
@@ -87,4 +87,4 @@ const AquireCards = () => {
   )
 }
 
-export default AquireCards
+export default AcquireCards

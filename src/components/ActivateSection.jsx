@@ -1,5 +1,4 @@
 import { Row, Col, Typography, Button, Divider } from "antd";
-import { BulbOutlined } from "@ant-design/icons";
 import DarkButton from "./DarkButton";
 
 const { Title, Paragraph } = Typography;
@@ -33,8 +32,8 @@ const ActivateSection = () => {
       <div className="activate-content">
         {/* Header Section */}
         <div className='section-divider'>
-       <Divider style={{ color: '#FFBB2A' }} />
-      </div>
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
         <div className={'section-title-header'}>
           <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
           <Title level={2}>Activate</Title>
@@ -65,8 +64,7 @@ const ActivateSection = () => {
 
         {/* Call to Action Button */}
         <div className="activate-button">
-          {/* <Button type="primary" size="large">Get Started Now</Button> */}
-           <DarkButton buttonText="Reconnect & Convert Fast!" />
+          <DarkButton buttonText="Reconnect & Convert Fast!" />
         </div>
       </div>
     </div>

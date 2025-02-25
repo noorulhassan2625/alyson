@@ -1,5 +1,4 @@
 import { Row, Col, Typography, Button, Divider } from 'antd'
-import { UserOutlined } from '@ant-design/icons'
 import DarkButton from './DarkButton'
 
 const { Title, Paragraph } = Typography
@@ -10,34 +9,70 @@ const AgentSection = () => {
       title: 'AI-Powered Scheduling',
       description:
         'Let Alyson Assistant handle calls, emails, and texts to help your home services business book more appointments.',
-      icon: '🤖'
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/ai_powered.svg'
+            alt={'iconImage'}
+            width={'40px'}
+          />
+        </>
+      )
     },
     {
       title: 'Data Science Models',
       description:
         'Alyson models predict the likelihood of all users taking important actions, from opening an email to answering a call to converting to revenue.',
-      icon: '📊'
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/data_science_model.svg'
+            alt={'iconImage'}
+            width={'40px'}
+          />
+        </>
+      )
     },
     {
       title: '1% of the Cost of a Human',
       description:
         'Alyson can make phone calls at as low as 1% of the cost of a human, allowing your sales team to focus on high-value activities.',
-      icon: '📞'
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/one_of_the_cost.svg'
+            alt={'iconImage'}
+            width={'40px'}
+          />
+        </>
+      )
     },
     {
       title: 'Stop Losing Deals',
       description:
         'Stop losing deals to your competition because you’re too busy to manage the follow-up.',
-      icon: '📉'
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/stop_losing_deals.svg'
+            alt={'iconImage'}
+            width={'40px'}
+          />
+        </>
+      )
     }
   ]
 
   return (
     <div className='agent-container'>
       <div className='agent-content'>
-      <div className='section-divider'>
-       <Divider style={{ color: '#FFBB2A' }} />
-      </div>
+        <div className='section-divider'>
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
         {/* Header Section */}
         <div className='agent-header'>
           <div className={'section-title-header'}>
@@ -67,11 +102,8 @@ const AgentSection = () => {
 
         {/* CTA Button */}
         <div className='agent-btn-container'>
-          {/* <Button type='primary' size='large' className='agent-btn'>
-            Try Alyson Agent for Free
-          </Button> */}
         </div>
-          <DarkButton buttonText="Try Alyson Agent for Free" />
+        <DarkButton buttonText="Try Alyson Agent for Free" />
       </div>
     </div>
   )

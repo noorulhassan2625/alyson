@@ -3,9 +3,11 @@ body {
   text-align: center;
   margin: 0;
 }
-.hero{
+
+.hero {
   background-color: #F7C04C !important;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,6 +51,7 @@ body {
 .hero-image {
   margin-top: 20px;
 }
+
 .feature-section {
   padding: 50px 20px;
   text-align: center;

@@ -22,21 +22,21 @@ import { EffectCoverflow, Autoplay } from 'swiper/modules'
 
 const features = [
   {
-    icon: <GlobalOutlined style={{ fontSize: 24, color: '#ff9800' }} />,
+    icon: <GlobalOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#ff9800' }} />,
     title: 'AI-Powered Website Creation',
-    description: 'Instantly generate & optimize landing pages for conversions.',
+    description: 'Instantly generate & optimize landing pages for conversions and conversations',
     linkIcons: [<LayoutOutlined />, <GlobalOutlined />]
   },
   {
-    icon: <UserOutlined style={{ fontSize: 24, color: '#2196F3' }} />,
+    icon: <UserOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#2196F3' }} />,
     title: 'Identity & Lead Matching',
-    description: 'De-anonymize website visitors & verify user identities.',
+    description: 'De-anonymize website visitors & verify user identities. Website and visitors',
     linkIcons: [<MailOutlined />, <GlobalOutlined />]
   },
   {
-    icon: <AimOutlined style={{ fontSize: 24, color: '#673ab7' }} />,
+    icon: <AimOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#673ab7' }} />,
     title: 'Smart Customer Acquisition',
-    description: 'Target the right leads with AI-driven precision.',
+    description: 'Target the right leads with AI-driven precision. Pinpoint your ideal leads with AI-powered.',
     linkIcons: [
       <FacebookOutlined />,
       <InstagramOutlined />,
@@ -44,21 +44,21 @@ const features = [
     ]
   },
   {
-    icon: <DatabaseOutlined style={{ fontSize: 24, color: '#f44336' }} />,
+    icon: <DatabaseOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#f44336' }} />,
     title: 'Data-Driven Audience Building',
     description: 'Build hyper-targeted audiences with rich customer insights',
     linkIcons: [<DatabaseOutlined />, <BranchesOutlined />]
   },
   {
-    icon: <ShoppingOutlined style={{ fontSize: 24, color: '#4caf50' }} />,
+    icon: <ShoppingOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }} />,
     title: 'Frictionless AI Checkout',
-    description: 'Use historical data to predict campaign success.',
+    description: 'Use historical data to predict and improve marketing campaign success rates.',
     linkIcons: [<span>Privacy Shield</span>]
   },
   {
-    icon: <MonitorOutlined style={{ fontSize: 24, color: '#4caf50' }} />,
+    icon: <MonitorOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }} />,
     title: 'Real-Time Ad Optimization',
-    description: 'Adjust bids & placements based on AI-driven insights.',
+    description: 'Optimize bids and placements using AI-driven insights for better results.',
     linkIcons: [<FontColorsOutlined />, <GlobalOutlined />]
   }
 ]
@@ -106,7 +106,6 @@ const FeatureCards = () => {
                 <div className='icon'>{feature.icon}</div>
                 <div>
                   <h3>{feature.title}</h3>
-
                   <p>{feature.description}</p>
                 </div>
               </div>
