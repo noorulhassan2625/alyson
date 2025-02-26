@@ -1355,7 +1355,7 @@ p {
   }
 
   .swiper-slide .ant-card .links .icon {
-    margin: 3px;
+    margin: 0px;
   }
 
   .cards-section.AcquireCards .ant-col {
@@ -1531,7 +1531,7 @@ p {
     padding: 0px;
   }
   .link-icon-text{
-    font-size: 10px;
+    font-size: 9px;
     top: 0px !important;
   }
   .title-header .icon{
