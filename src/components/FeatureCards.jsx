@@ -2,64 +2,99 @@ import React, { useState, useEffect } from 'react'
 import { Card } from 'antd'
 import {
   GlobalOutlined,
-  LayoutOutlined,
   UserOutlined,
-  MailOutlined,
   AimOutlined,
-  FacebookOutlined,
-  InstagramOutlined,
-  RetweetOutlined,
   DatabaseOutlined,
-  BranchesOutlined,
   ShoppingOutlined,
   MonitorOutlined,
-  FontColorsOutlined
 } from '@ant-design/icons'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Autoplay } from 'swiper/modules'
+import GlobeIcon from './SVGComponents/GlobeIcon'
+import GmailIcon from './SVGComponents/GmailIcon'
+import SimpleLayoutIcon from './SVGComponents/SimpleLayoutIcon'
+import FacebookIcon from './SVGComponents/FacebookIcon'
+import InstagramIcon from './SVGComponents/InstagramIcon'
+import MetaIcon from './SVGComponents/MetaIcon'
+import PlusIcon from './SVGComponents/PlusIcon'
+import AdsenseIcon from './SVGComponents/AdsenseIcon'
+import DatabaseIcon from './SVGComponents/DatabaseIcon'
+import MultipleUsers from './SVGComponents/MultipleUsers'
+import PrivacyShieldIcon from './SVGComponents/PrivacyShieldIcon'
 
 const features = [
   {
-    icon: <GlobalOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#ff9800' }} />,
+    icon: (
+      <GlobalOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#ff9800' }}
+      />
+    ),
     title: 'AI-Powered Website Creation',
-    description: 'Instantly generate & optimize landing pages for conversions and conversations',
-    linkIcons: [<LayoutOutlined />, <GlobalOutlined />]
+    description:
+      'Instantly generate & optimize landing pages for conversions and conversations',
+    linkIcons: [<SimpleLayoutIcon />, <GlobeIcon />]
   },
   {
-    icon: <UserOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#2196F3' }} />,
+    icon: (
+      <UserOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#2196F3' }}
+      />
+    ),
     title: 'Identity & Lead Matching',
-    description: 'De-anonymize website visitors & verify user identities. Website and visitors',
-    linkIcons: [<MailOutlined />, <GlobalOutlined />]
+    description:
+      'De-anonymize website visitors & verify user identities. Website and visitors',
+    linkIcons: [<GmailIcon />, <GlobeIcon />]
   },
   {
-    icon: <AimOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#673ab7' }} />,
+    icon: (
+      <AimOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#673ab7' }}
+      />
+    ),
     title: 'Smart Customer Acquisition',
-    description: 'Target the right leads with AI-driven precision. Pinpoint your ideal leads with AI-powered.',
+    description:
+      'Target the right leads with AI-driven precision. Pinpoint your ideal leads with AI-powered.',
     linkIcons: [
-      <FacebookOutlined />,
-      <InstagramOutlined />,
-      <RetweetOutlined />
+      <FacebookIcon />,
+      <InstagramIcon/>,
+      <MetaIcon />,
+      <PlusIcon/>,
+      <span className='link-icon-text' style={{position:'relative', top:'9px', left:'-8px'}}>and many more platforms</span>
     ]
   },
   {
-    icon: <DatabaseOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#f44336' }} />,
+    icon: (
+      <DatabaseOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#f44336' }}
+      />
+    ),
     title: 'Data-Driven Audience Building',
     description: 'Build hyper-targeted audiences with rich customer insights',
-    linkIcons: [<DatabaseOutlined />, <BranchesOutlined />]
+    linkIcons: [<DatabaseIcon />, <MultipleUsers />]
   },
   {
-    icon: <ShoppingOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }} />,
+    icon: (
+      <ShoppingOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }}
+      />
+    ),
     title: 'Frictionless AI Checkout',
-    description: 'Use historical data to predict and improve marketing campaign success rates.',
-    linkIcons: [<span>Privacy Shield</span>]
+    description:
+      'Use historical data to predict and improve marketing campaign success rates.',
+    linkIcons: [<div className='privacyIdcon'><PrivacyShieldIcon/></div>]
   },
   {
-    icon: <MonitorOutlined style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }} />,
+    icon: (
+      <MonitorOutlined
+        style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }}
+      />
+    ),
     title: 'Real-Time Ad Optimization',
-    description: 'Optimize bids and placements using AI-driven insights for better results.',
-    linkIcons: [<FontColorsOutlined />, <GlobalOutlined />]
+    description:
+      'Optimize bids and placements using AI-driven insights for better results.',
+    linkIcons: [<AdsenseIcon />, <GlobeIcon />]
   }
 ]
 
@@ -86,7 +121,7 @@ const FeatureCards = () => {
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 300000,
           disableOnInteraction: false
         }}
         coverflowEffect={{
