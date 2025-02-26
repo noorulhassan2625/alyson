@@ -41,7 +41,7 @@ const Hero = () => {
       <DarkButton buttonText={'Let’s Talk'} />
 
       <div className="hero-video-box" onClick={handlePlayPause}>
-        <Col xs={24} sm={12} md={18} className="video-container">
+        <Col xs={20} sm={10} md={14} className="video-container">
           {!isVideoLoaded && (
             <img
               src="/media/images/placeholder.png"
