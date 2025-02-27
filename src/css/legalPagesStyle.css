@@ -1,0 +1,137 @@
+.legal-hero {
+  background-image: url('https://alyson.ai/views/about/hero_landscape.png');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* height: 100vh; */
+  /* position: relative;
+    top: -50px; */
+}
+.legal-hero-title {
+  margin-bottom: 15px !important;
+  padding-top: 18%;
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  color: #07074b !important;
+}
+.legal-content-title {
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  color: #07074b !important;
+  justify-content: left;
+}
+.legal-title {
+  text-align: left;
+}
+.legal-content .legal-divider {
+  color: #ffbb2a !important;
+  border-block-start: 8px solid #ffbb2a;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100px;
+  min-width: 100px !important;
+}
+
+.legal-content .legal-content-title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #07074b !important;
+  justify-content: left;
+}
+.legal-divider {
+  color: #ffbb2a !important;
+  border-block-start: 8px solid #ffbb2a;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100px;
+  min-width: 100px !important;
+  margin: 0 auto !important;
+}
+.legal-page {
+  padding: 0px 50px;
+}
+.legal-content {
+  padding: 0px 80px;
+  margin-top: 20px;
+}
+.legal-content .ant-typography {
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+.legal-links {
+  justify-content: center;
+}
+.legal-links li span {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #07074b !important;
+}
+.legal-links:hover li span {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #07074b !important;
+  border: 0px !important;
+}
+.privacy-policy-content .ant-typography {
+text-align: left !important;
+}
+.content-list{
+  text-align: left;
+}
+
+.content-list li{
+  padding: 5px 0px !important;
+  list-style: circle;
+}
+
+
+.content-list .list-item{
+  list-style-type: disc !important;
+  display: list-item !important;
+  margin-left: 15px;
+  border: 0px !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+.term-of-use-header{
+  text-align: left;
+}
+.contact-form-container .contact-form-box{
+margin:  0 auto;
+}
+.contact-form-container .contact-form-box .contact-form label{
+color: #737373;
+font-size: 16px;
+font-weight: 400;
+}
+.contact-form-container .contact-form-box .submit-button{
+color: black !important;
+width: 100% !important;
+background-color: #FFBA29 !important;
+}
+
+@media (max-width: 480px) {
+  .legal-page {
+    padding: 0px 20px !important;
+}
+.legal-content{
+  padding: 0px;
+}
+.legal-hero-title {
+  font-size: 38px !important;
+  padding-top: 50%;
+}
+.legal-hero {
+  background-image: url('https://alyson.ai/views/about/hero_mob.png') !important;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* height: 100vh; */
+  /* position: relative;
+    top: -50px; */
+}
+}

@@ -11,6 +11,7 @@ import {
   IdcardOutlined
 } from '@ant-design/icons'
 import DarkButton from './DarkButton'
+import { Link } from 'react-router-dom'
 
 const { Panel } = Collapse
 
@@ -57,7 +58,7 @@ const Navbar = () => {
           Pricing
         </Menu.Item> */}
         <Menu.Item className='nav-item' key='about'>
-          About
+        <Link to='/about'>About</Link>
         </Menu.Item>
         <Menu.Item className='nav-item' key='connect'>
           Connect
