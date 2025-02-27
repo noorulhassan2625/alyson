@@ -145,6 +145,9 @@ span,
 
 .hero {
   padding: 50px 20px 0px 20px;
+  /* position: relative;
+  z-index: 999999;
+  height: 100vh; */
 }
 
 .hero-video-box {
@@ -299,6 +302,17 @@ p {
   padding: 0px 50px;
   overflow-x: hidden;
 }
+.feature-section  {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 .swiper-slide .ant-card .links .icon div svg{
 width: 25px;
 height: 30px;
@@ -1536,5 +1550,19 @@ p {
   }
   .title-header .icon{
     margin-top: 5px;
+  }
+  .feature-section  {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in 0.8s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  .info-icon svg{
+    width: 95px;
+    height: 95px;
   }
 }
