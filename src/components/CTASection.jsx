@@ -9,11 +9,12 @@ const CTASection = () => {
         <div className='cta-content'>
           {/* Main Text */}
           <Paragraph className='cta-text'>
-            “Stop wasting money on ad platforms that{' '}
-            <span className='cta-bold'>don’t</span> deliver.
-            <br />
-            Optimize your ad spend with{' '}
-            <span className='cta-bold'>Alyson Acquire</span> now.”
+            <span className='cta-bold'>
+              Ready to transform your home services business?
+              <br />
+               Get started with
+              Alyson today.
+            </span>
           </Paragraph>
 
           {/* Buttons */}
