@@ -121,7 +121,7 @@ const FeatureCards = () => {
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 30000,
+          delay: 3000,
           disableOnInteraction: false
         }}
         coverflowEffect={{
