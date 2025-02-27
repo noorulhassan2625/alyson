@@ -310,10 +310,11 @@ p {
   margin: 25px auto;
   padding: 0px 50px;
   overflow-x: hidden;
+  margin: 50px 50px;
 }
 .feature-section {
   opacity: 0;
-  animation: fadeIn 0.8s ease-in 0.8s forwards;
+  animation: fadeIn 1.3s ease-in 1.3s forwards;
 }
 
 @keyframes fadeIn {
@@ -340,7 +341,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #FFE8B7;
   color: #243c82;
   width: 300px;
   border-radius: 20px;
@@ -439,7 +440,7 @@ p {
 }
 
 .swiper-slide .ant-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: #FFE8B7;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
@@ -893,6 +894,7 @@ p {
   text-align: left;
   transition: all 0.3s ease;
   height: 100%;
+  border: 1px solid #F6F5F0 !important;
 }
 
 .activate-card:hover {
@@ -975,6 +977,7 @@ p {
   background-color: #ffbb2a;
   border-radius: 20px;
   padding: 10px;
+  height: 70px;
 }
 
 .identity-description {
@@ -1583,5 +1586,8 @@ p {
   .section-title-header + .activate-header .ant-typography,
   .section-title-header + .audiences-header .ant-typography {
     width: 100%;
+  }
+  .feature-section{
+    margin: 50px 0px;
   }
 }
