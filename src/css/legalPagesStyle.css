@@ -63,16 +63,21 @@
 .legal-links {
   justify-content: center;
 }
-.legal-links li span {
+.legal-links li a {
   font-size: 15px !important;
   font-weight: 400 !important;
   color: #07074b !important;
+  margin: 0px 10px;
 }
-.legal-links:hover li span {
+.legal-links:hover li a {
   font-size: 15px !important;
   font-weight: 400 !important;
   color: #07074b !important;
   border: 0px !important;
+}
+.legal-links ul{
+  display: flex !important;
+  flex-wrap: wrap;
 }
 .privacy-policy-content .ant-typography {
 text-align: left !important;
@@ -113,6 +118,12 @@ width: 100% !important;
 background-color: #FFBA29 !important;
 }
 
+
+
+
+
+/* ======== Mobile Responsiveness ======= */
+
 @media (max-width: 480px) {
   .legal-page {
     padding: 0px 20px !important;
@@ -133,5 +144,9 @@ background-color: #FFBA29 !important;
   /* height: 100vh; */
   /* position: relative;
     top: -50px; */
+}
+.legal-links li{
+  justify-content: center !important;
+  border: 0px !important;
 }
 }

@@ -22,11 +22,13 @@ const Navbar = () => {
     <div className='navbar'>
       {/* Logo */}
       <div className='logo'>
+      <a href="/">
         <img
           src='/media/images/alysonlogo.svg'
           alt='Alyson Logo'
           width='100%'
         />
+        </a>
       </div>
 
       {/* Desktop Menu */}
@@ -61,7 +63,7 @@ const Navbar = () => {
         <Link to='/about'>About</Link>
         </Menu.Item>
         <Menu.Item className='nav-item' key='connect'>
-          Connect
+        <Link to='/contact'>Connect</Link>
         </Menu.Item>
         <Menu.Item className='nav-item btn-nav' key='talk'>
           {' '}

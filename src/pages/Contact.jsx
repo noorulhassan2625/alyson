@@ -27,7 +27,7 @@ function Contact () {
       <LegelHero title={'Contact Us'} />
       <div className='legal-content'>
         <div className='contact-form-container'>
-          <Col className='contact-form-box' span={12}>
+          <Col className='contact-form-box' lg={12} md={12} xs={24}>
             <Form
               layout='vertical'
               onFinish={onFinish}

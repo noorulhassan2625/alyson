@@ -1,26 +1,32 @@
-import React from 'react';
-import { Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { List } from "antd";
+import { Link } from "react-router-dom";
+
+const data = [
+  { key: "about", label: "About", path: "/about" },
+  { key: "privacy", label: "Privacy Policy", path: "/privacy-policy" },
+  { key: "terms", label: "Terms of Use", path: "/terms-of-use" },
+  { key: "cookie", label: "Cookie Policy", path: "/cookies" },
+  { key: "contact", label: "Contact", path: "/contact" },
+];
 
 const LegalLinks = () => {
   return (
-    <Menu className="legal-links" mode="horizontal" style={{ borderBottom: 'none' }}>
-      <Menu.Item key="about">
-        <Link to="/about">About</Link>
-      </Menu.Item>
-      <Menu.Item key="privacy">
-        <Link to="/privacy-policy">Privacy Policy</Link>
-      </Menu.Item>
-      <Menu.Item key="terms">
-        <Link to="/terms-of-use">Terms of Use</Link>
-      </Menu.Item>
-      <Menu.Item key="cookie">
-        <Link to="/cookies">Cookie Policy</Link>
-      </Menu.Item>
-      <Menu.Item key="contact">
-        <Link to="/contact">Contact</Link>
-      </Menu.Item>
-    </Menu>
+    <List
+      className="legal-links"
+      dataSource={data}
+      renderItem={(item) => (
+        <List.Item style={{ textAlign: "center", flex: "1 1 auto" }}>
+          <Link to={item.path}>{item.label}</Link>
+        </List.Item>
+      )}
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        padding: 0,
+      }}
+    />
   );
 };
 
