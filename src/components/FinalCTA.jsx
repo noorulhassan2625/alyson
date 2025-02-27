@@ -12,35 +12,35 @@ const FinalCTA = () => {
       <DarkButton buttonText="Let’s Talk" />
       <div className="footer-links">
         <a
-          href={`https://www.alyson.ai/about`}
+          href={`/about`}
           target="_blank"
           rel="noreferrer"
         >
           <span>About</span>
         </a>
         <a
-          href={`https://www.alyson.ai/privacy`}
+          href={`/privacy-policy`}
           target="_blank"
           rel="noreferrer"
         >
           <span>Privacy Policy</span>
         </a>
         <a
-          href={`https://www.alyson.ai/terms`}
+          href={`/terms-of-use`}
           target="_blank"
           rel="noreferrer"
         >
           <span>Terms of Use</span>
         </a>
         <a
-          href={`https://www.alyson.ai/cookies`}
+          href={`/cookies`}
           target="_blank"
           rel="noreferrer"
         >
           <span>Cookie Policy</span>
         </a>
         <a
-          href={`https://www.alyson.ai/contact`}
+          href={`/contact`}
           target="_blank"
           rel="noreferrer"
         >
