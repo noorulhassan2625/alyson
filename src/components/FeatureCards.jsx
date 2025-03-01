@@ -23,13 +23,17 @@ import AdsenseIcon from './SVGComponents/AdsenseIcon'
 import DatabaseIcon from './SVGComponents/DatabaseIcon'
 import MultipleUsers from './SVGComponents/MultipleUsers'
 import PrivacyShieldIcon from './SVGComponents/PrivacyShieldIcon'
+import EarthIcon from './SVGComponents/EarthIcon'
+import IdentityUserIcon from './SVGComponents/IdentityUserIcon'
+import CustomerChainIcon from './SVGComponents/CustomerChainIcon'
+import FilledDataBaseIcon from './SVGComponents/FilledDataBaseIcon'
+import FilledShoppingBagIcon from './SVGComponents/FilledShoppingBagIcon'
+import FilledPointerIcon from './SVGComponents/FilledPointerIcon'
 
 const features = [
   {
     icon: (
-      <GlobalOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#ff9800' }}
-      />
+    <EarthIcon/>
     ),
     title: 'AI-Powered Website Creation',
     description:
@@ -38,9 +42,7 @@ const features = [
   },
   {
     icon: (
-      <UserOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#2196F3' }}
-      />
+      <IdentityUserIcon/>
     ),
     title: 'Identity & Lead Matching',
     description:
@@ -49,9 +51,7 @@ const features = [
   },
   {
     icon: (
-      <AimOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#673ab7' }}
-      />
+      <CustomerChainIcon/>
     ),
     title: 'Smart Customer Acquisition',
     description:
@@ -66,9 +66,7 @@ const features = [
   },
   {
     icon: (
-      <DatabaseOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#f44336' }}
-      />
+      <FilledDataBaseIcon/>
     ),
     title: 'Data-Driven Audience Building',
     description: 'Build hyper-targeted audiences with rich customer insights',
@@ -76,9 +74,7 @@ const features = [
   },
   {
     icon: (
-      <ShoppingOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }}
-      />
+      <FilledShoppingBagIcon/>
     ),
     title: 'Frictionless AI Checkout',
     description:
@@ -87,9 +83,7 @@ const features = [
   },
   {
     icon: (
-      <MonitorOutlined
-        style={{ width: 20, height: 20, fontSize: 24, color: '#4caf50' }}
-      />
+      <FilledPointerIcon/>
     ),
     title: 'Real-Time Ad Optimization',
     description:
@@ -139,7 +133,7 @@ const FeatureCards = () => {
             <Card className='card-content'>
               <div className='title-header'>
                 <div className='icon'>{feature.icon}</div>
-                <div>
+                <div className='swiper-content'>
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                 </div>

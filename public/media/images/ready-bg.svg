@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="747" viewBox="0 0 1920 747">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7218" data-name="Rectangle 7218" width="1920" height="747" transform="translate(0 7246)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_12199" data-name="Group 12199" transform="translate(0 -7246)">
+    <rect id="Rectangle_6935" data-name="Rectangle 6935" width="1920" height="747" rx="40" transform="translate(0 7246)" fill="#ffbb2a"/>
+    <g id="Mask_Group_507" data-name="Mask Group 507" clip-path="url(#clip-path)">
+      <g id="Group_12366" data-name="Group 12366" transform="translate(0 -5830)">
+        <g id="Ellipse_1211" data-name="Ellipse 1211" transform="translate(54 13152)" fill="none" stroke="#fff" stroke-width="16" opacity="0.223">
+          <circle cx="145" cy="145" r="145" stroke="none"/>
+          <circle cx="145" cy="145" r="137" fill="none"/>
+        </g>
+        <g id="Ellipse_1213" data-name="Ellipse 1213" transform="translate(1499 12863)" fill="none" stroke="#fff" stroke-width="40" opacity="0.223">
+          <circle cx="301" cy="301" r="301" stroke="none"/>
+          <circle cx="301" cy="301" r="281" fill="none"/>
+        </g>
+        <g id="Ellipse_1212" data-name="Ellipse 1212" transform="translate(1292 13619)" fill="#fff" stroke="#fff" stroke-width="16" opacity="0.223">
+          <circle cx="103.5" cy="103.5" r="103.5" stroke="none"/>
+          <circle cx="103.5" cy="103.5" r="95.5" fill="none"/>
+        </g>
+        <g id="Ellipse_1214" data-name="Ellipse 1214" transform="translate(293 13494)" fill="#fff" stroke="#fff" stroke-width="16" opacity="0.223">
+          <circle cx="51" cy="51" r="51" stroke="none"/>
+          <circle cx="51" cy="51" r="43" fill="none"/>
+        </g>
+        <g id="Ellipse_1215" data-name="Ellipse 1215" transform="translate(939 13297)" fill="#fff" stroke="#fff" stroke-width="16" opacity="0.223">
+          <circle cx="51" cy="51" r="51" stroke="none"/>
+          <circle cx="51" cy="51" r="43" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -8,11 +8,17 @@ import { Divider } from 'antd'
 
 function CreateCards() {
   return (
-    <div className={'create-cards'}>
+    <div className={'create-cards'}
+    >
+      <div className='create-cards-bg'  style={{background:'url(/media/images/Create-bg.svg)'}}>
       <GenerativeAISection />
+      <Divider style={{ borderColor: '#ffffff', minWidth:'50%', width:'80%', margin:'0 auto' }} />
       <RevenueBox />
+      <Divider style={{ borderColor: '#ffffff', minWidth:'50%', width:'80%', margin:'0 auto' }} />
       <CompaignGradingBox />
+      <Divider style={{ borderColor: '#ffffff', minWidth:'50%', width:'80%', margin:'0 auto' }} />
       <FeedBackBox />
+      </div>
       <DarkButton buttonText="Try Alyson Create for Free" />
       <div className='section-divider'>
         <Divider style={{ color: '#FFBB2A' }} />

@@ -33,7 +33,7 @@ const RevenueBox = () => {
           <Col xs={24} md={12}>
             <div className='text-content'>
               <Title level={3}>50% Revenue Boost</Title>
-              <Paragraph>
+              <Paragraph className="create-box-text">
                 Alyson aims to generate a 50% overall revenue boost and will
                 compare all experiments to your previous best pages so you can
                 calculate the lift.

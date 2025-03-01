@@ -27,7 +27,7 @@ const GenerativeAISection = () => {
           <Col xs={24} md={12}>
             <div className="text-content">
               <Title level={3}>Generative AI for Creative Excellence</Title>
-              <Paragraph>
+              <Paragraph className="create-box-text">
                 Gen AI is powerful, but how do you earn profits? Alyson’s experiment tool runs experiments for you and learns how to drive more profit for you.
               </Paragraph>
             </div>
