@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="2174" viewBox="0 0 1920 2174">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7097" data-name="Rectangle 7097" width="1920" height="2174" transform="translate(0 116)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Ellipse_1216">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#fff" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_465" data-name="Mask Group 465" transform="translate(0 -116)" clip-path="url(#clip-path)">
+    <circle id="Ellipse_1189" data-name="Ellipse 1189" cx="246" cy="246" r="246" transform="translate(157 96)" fill="#ffbb2a"/>
+    <circle id="Ellipse_1108" data-name="Ellipse 1108" cx="464" cy="464" r="464" transform="translate(1407 -58)" fill="#ffbb2a"/>
+    <circle id="Ellipse_1109" data-name="Ellipse 1109" cx="246" cy="246" r="246" transform="translate(-147 752)" fill="#ffbb2a"/>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_1216-2" data-name="Ellipse 1216" cx="774" cy="774" r="774" transform="translate(186 695)" fill="#ffbb2a"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 116)" filter="url(#Ellipse_1216)">
+        <circle id="Ellipse_1216-3" data-name="Ellipse 1216" cx="774" cy="774" r="774" transform="translate(186 579)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

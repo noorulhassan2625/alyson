@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Menu, Drawer, Collapse } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
 import {
@@ -17,9 +17,24 @@ const { Panel } = Collapse
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false)
+  const [scrolling, setScrolling] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setScrolling(true)
+      } else {
+        setScrolling(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <div className='navbar'>
+    <div className={`navbar ${scrolling ? 'scrolled' : ''}`}>
       {/* Logo */}
       <div className='logo'>
       <a href="/">

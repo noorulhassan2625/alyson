@@ -29,7 +29,7 @@ const AudiencesSection = () => {
 
   return (
     <div className="audiences-container">
-      <div className="audiences-content">
+      <div className="audiences-content"  style={{background:'url(/media/images/Audiences-bg.svg)'}}>
         {/* Header Section */}
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />

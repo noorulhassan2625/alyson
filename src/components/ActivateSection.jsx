@@ -29,7 +29,7 @@ const ActivateSection = () => {
 
   return (
     <div className="activate-container">
-      <div className="activate-content">
+      <div className="activate-content"  style={{background:'url(/media/images/Activate-bg.svg)'}}>
         {/* Header Section */}
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />

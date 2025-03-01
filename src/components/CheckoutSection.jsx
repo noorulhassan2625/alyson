@@ -29,7 +29,7 @@ const CheckoutSection = () => {
 
   return (
     <div className='checkout-container'>
-      <div className='checkout-content'>
+      <div className='checkout-content'  style={{background:'url(/media/images/Checkoutbox-bg.svg)'}}>
         {/* Header Section */}
         <div className='checkout-header'>
           <div className={'section-title-header'}>

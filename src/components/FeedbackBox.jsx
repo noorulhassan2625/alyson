@@ -34,7 +34,7 @@ const FeedBackBox = () => {
           <Col xs={24} md={12}>
             <div className='text-content'>
               <Title level={3}>Better Feedback Loops</Title>
-              <Paragraph>
+              <Paragraph className="create-box-text">
                 Build world-leading feedback loops and stop relying on pixels
                 that miss up to 30% of the events you need to optimize your ads.
               </Paragraph>

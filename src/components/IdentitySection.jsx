@@ -28,7 +28,7 @@ const IdentitySection = () => {
 
   return (
     <div className="identity-container">
-      <div className="identity-content">
+      <div className="identity-content"  style={{background:'url(/media/images/Identity-bg.svg)'}}>
         {/* Header Section */}
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />

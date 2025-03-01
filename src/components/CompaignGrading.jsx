@@ -26,7 +26,7 @@ const CompaignGradingBox = () => {
           <Col xs={24} md={12}>
             <div className='text-content'>
               <Title level={3}>Proprietary Campaign Grading</Title>
-              <Paragraph>
+              <Paragraph className="create-box-text">
                 Sometimes, the competition is your other ads. Rank every
                 campaign and ad, then automatically ensure your budget goes to
                 your highest-ranked ads.

@@ -69,7 +69,7 @@ const AgentSection = () => {
 
   return (
     <div className='agent-container'>
-      <div className='agent-content'>
+      <div className='agent-content'  style={{background:'url(/media/images/Agent-bg.svg)'}}>
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />
         </div>
