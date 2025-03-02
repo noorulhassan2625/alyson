@@ -17,7 +17,8 @@ h5,
 h6,
 p,
 span,
-.ant-typography {
+.ant-typography,
+label {
   font-family: 'Lato', serif !important;
 }
 
@@ -935,11 +936,11 @@ p {
 }
 
 .audience-card:hover {
-  background: #FFD47A;
+  background: #ffd47a;
   /* Light Yellow Hover Effect */
   cursor: pointer;
   -webkit-backdrop-filter: blur(50px) !important;
-    backdrop-filter: blur(50px) !important;
+  backdrop-filter: blur(50px) !important;
 }
 
 .audiences-btn-container {
@@ -1080,7 +1081,7 @@ p {
 
 .identity-title {
   margin-bottom: 10px;
-  background-color: #FFBB2A;
+  background-color: #ffbb2a;
   border-radius: 20px;
   padding: 10px;
   height: 70px;
@@ -1699,16 +1700,16 @@ p {
   .feature-section {
     margin: 50px 0px;
   }
-  .generative-ai-content .text-content{
+  .generative-ai-content .text-content {
     width: 100% !important;
   }
-  .checkout-content{
+  .checkout-content {
     padding: 30px 0px !important;
   }
   .checkout-header .section-title-header + .ant-typography {
-  width: 100% !important;
+    width: 100% !important;
   }
-  .checkout-header{
+  .checkout-header {
     padding: 2px 30px;
   }
 }

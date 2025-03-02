@@ -75,24 +75,23 @@
   color: #07074b !important;
   border: 0px !important;
 }
-.legal-links ul{
+.legal-links ul {
   display: flex !important;
   flex-wrap: wrap;
 }
 .privacy-policy-content .ant-typography {
-text-align: left !important;
+  text-align: left !important;
 }
-.content-list{
+.content-list {
   text-align: left;
 }
 
-.content-list li{
+.content-list li {
   padding: 5px 0px !important;
   list-style: circle;
 }
 
-
-.content-list .list-item{
+.content-list .list-item {
   list-style-type: disc !important;
   display: list-item !important;
   margin-left: 15px;
@@ -101,52 +100,87 @@ text-align: left !important;
   font-weight: 400;
   color: #737373;
 }
-.term-of-use-header{
+.term-of-use-header {
   text-align: left;
 }
-.contact-form-container .contact-form-box{
-margin:  0 auto;
+.contact-form-container .contact-form-box {
+  margin: 0 auto;
 }
-.contact-form-container .contact-form-box .contact-form label{
-color: #737373;
-font-size: 16px;
-font-weight: 400;
+.contact-form-container .contact-form-box .contact-form label {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
 }
-.contact-form-container .contact-form-box .submit-button{
-color: black !important;
-width: 100% !important;
-background-color: #FFBA29 !important;
+.contact-form-container .contact-form-box .submit-button {
+  color: black !important;
+  width: 100% !important;
+  background-color: #ffba29 !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  padding: 20px 0px;
+  border-radius: 20px;
 }
 
+.contact-us-header h1 {
+  color: #000000 !important;
+  /* font-size: 40px !important; */
+}
 
+.contact-form-container .ant-typography {
+  text-align: left;
+  color: #8b8b8b !important;
+  font-size: 20px !important;
+}
+.contact-form-container  label {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+.contact-form-container input {
+  font-size: 16px !important;
+  padding: 10px 10px !important;
+}
+.ant-select-selector {
+  padding: 23px 10px !important;
+  text-align: left;
+}
+.ant-select-arrow{
+  margin-top: 3px !important;
+}
+.ant-select-dropdown,
+.ant-select-selection-placeholder {
+  text-align: left !important;
+}
 
-
+.contact-us-footer .ant-typography{
+  color: #000000 !important;
+  font-size: 16px !important;
+}
 
 /* ======== Mobile Responsiveness ======= */
 
 @media (max-width: 480px) {
   .legal-page {
     padding: 0px 20px !important;
-}
-.legal-content{
-  padding: 0px;
-}
-.legal-hero-title {
-  font-size: 38px !important;
-  padding-top: 50%;
-}
-.legal-hero {
-  background-image: url('https://alyson.ai/views/about/hero_mob.png') !important;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  /* height: 100vh; */
-  /* position: relative;
+  }
+  .legal-content {
+    padding: 0px;
+  }
+  .legal-hero-title {
+    font-size: 38px !important;
+    padding-top: 50%;
+  }
+  .legal-hero {
+    background-image: url('https://alyson.ai/views/about/hero_mob.png') !important;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* height: 100vh; */
+    /* position: relative;
     top: -50px; */
-}
-.legal-links li{
-  justify-content: center !important;
-  border: 0px !important;
-}
+  }
+  .legal-links li {
+    justify-content: center !important;
+    border: 0px !important;
+  }
 }
