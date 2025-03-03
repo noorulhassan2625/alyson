@@ -78,7 +78,7 @@ const Navbar = () => {
         <Link to='/about'>About</Link>
         </Menu.Item>
         <Menu.Item className='nav-item' key='connect'>
-        <Link to='/contact'>Connect</Link>
+        <Link to='/contact'>Contact</Link>
         </Menu.Item>
         <Menu.Item className='nav-item btn-nav' key='talk'>
           {' '}
