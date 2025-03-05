@@ -1556,7 +1556,7 @@ p {
     padding: 0px;
     font-size: 18px;
     font-weight: 600;
-    color: #1f190c;
+    color: #1f190c !important;
   }
 
   .title-header h3 {
