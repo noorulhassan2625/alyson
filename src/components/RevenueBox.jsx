@@ -20,7 +20,7 @@ const RevenueBox = () => {
   ]
 
   return (
-    <div className='generative-ai-container'>
+    <div className='generative-ai-container revenue-box'>
       <div className='generative-ai-content'>
         <Row gutter={24} align='middle'>
           <Col xs={24} md={12}>
