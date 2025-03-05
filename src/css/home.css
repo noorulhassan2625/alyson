@@ -1787,5 +1787,8 @@ p {
   .info-cards-container{
     gap: 8%;
   }
+  .revenue-box .generative-ai-content .ant-row, .feedback-box .generative-ai-content .ant-row{
+    flex-direction: column-reverse;
+  }
  
 }

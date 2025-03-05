@@ -20,7 +20,7 @@ const FeedBackBox = () => {
   ]
 
   return (
-    <div className='generative-ai-container'>
+    <div className='generative-ai-container feedback-box'>
       <div className='generative-ai-content'>
         <Row gutter={24} align='middle'>
 
