@@ -39,7 +39,7 @@ export default function Home () {
       <ActivateSection />
       <IdentitySection />
       <CTASection />
-      {/* <LinksSection /> */}
+      <LinksSection />
       <FinalCTA />
     </div>
   )
