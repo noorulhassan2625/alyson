@@ -10,6 +10,12 @@ import TermsOfUse from '../pages/TermsOfUse'
 import Cookies from '../pages/Cookies'
 import Contact from '../pages/Contact'
 import AcquirePage from '../pages/Acquire'
+import CreatePage from '../pages/Create'
+import CheckoutPage from '../pages/Checkout'
+import AgentPage from '../pages/Agent'
+import AuidiencePage from '../pages/Auidience'
+import ActivatePage from '../pages/Activate'
+import IdentityPage from '../pages/Identity'
 
 const AppRoutes = () => {
   return (
@@ -23,6 +29,12 @@ const AppRoutes = () => {
       <Route path='/cookies' element={<Cookies />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/acquire-page' element={<AcquirePage />} />
+      <Route path='/create-page' element={<CreatePage />} />
+      <Route path='/checkout-page' element={<CheckoutPage />} />
+      <Route path='/agent-page' element={<AgentPage />} />
+      <Route path='/auidience-page' element={<AuidiencePage />} />
+      <Route path='/activate-page' element={<ActivatePage />} />
+      <Route path='/identity-page' element={<IdentityPage />} />
       {/* <Route path='/connect' element={<Connect />} /> */}
     </Routes>
   )
