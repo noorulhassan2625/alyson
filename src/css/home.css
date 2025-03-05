@@ -1337,7 +1337,10 @@ p {
 }
 
 
-
+:where(.css-19lec04).ant-menu-submenu-popup.ant-menu-submenu{
+  width: 100% !important;
+  left: 0px !important;
+}
 /* .mobile-view {
   display: none;
 } */
