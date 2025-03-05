@@ -38,7 +38,11 @@ export default function Home () {
       <AudiencesSection />
       <ActivateSection />
       <IdentitySection />
-      <CTASection />
+      <CTASection
+        ctaText1='Ready to transform your home services business?'
+        ctaText2='Get started with Alyson today.'
+      />
+
       <LinksSection />
       <FinalCTA />
     </div>

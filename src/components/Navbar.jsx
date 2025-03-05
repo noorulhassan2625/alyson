@@ -20,48 +20,50 @@ const { Title, Text } = Typography
 const Navbar = () => {
   const features = [
     {
-      title: "Acquire",
+      title: 'Acquire',
       description:
-        "Let Alyon’s AI help you acquire customers from Google, Facebook, Meta, Affiliate marketing, and Direct Mail.",
-      link: "/acquire-page",
+        'Let Alyon’s AI help you acquire customers from Google, Facebook, Meta, Affiliate marketing, and Direct Mail.',
+      link: '/acquire-page'
     },
     {
-      title: "Create",
+      title: 'Create',
       description:
-        "Use generative AI to create ads, build a website or create a landing page.",
-      link: "#",
+        'Use generative AI to create ads, build a website or create a landing page.',
+      link: '/create-page'
     },
     {
-      title: "Checkout",
+      title: 'Checkout',
       description:
-        "Boost sales with Alyon’s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.",
-      link: "#",
+        'Boost sales with Alyon’s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.',
+      link: '/checkout-page'
     },
     {
-      title: "Assistant",
+      title: 'Assistant',
       description:
-        "AI assistant handles calls, emails, texts, and data to boost efficiency and grow your business.",
-      link: "#",
+        'AI assistant handles calls, emails, texts, and data to boost efficiency and grow your business.',
+      link: '/agent-page'
     },
     {
-      title: "Audience",
+      title: 'Audience',
       description:
-        "Unify CRM data with insights from 170M+ homeowners to build profiles and predict behavior.",
-      link: "#",
+        'Unify CRM data with insights from 170M+ homeowners to build profiles and predict behavior.',
+      link: '/auidience-page'
+    }
+  ]
+  const featuresbox2 = [
+    {
+      title: 'Activate',
+      description:
+        'Re-engage old leads with personalized emails, texts, and ads. Identify engagement opportunities to turn inactive leads into new ones.',
+      link: '/activate-page'
     },
     {
-      title: "Activate",
+      title: 'Identity',
       description:
-        "Re-engage old leads with personalized emails, texts, and ads. Identify engagement opportunities to turn inactive leads into new ones.",
-      link: "#",
-    },
-    {
-      title: "Identity",
-      description:
-        "Build profiles and manage identity graphs for accurate data in personalized communications and campaigns.",
-      link: "#",
-    },
-  ];
+        'Build profiles and manage identity graphs for accurate data in personalized communications and campaigns.',
+      link: '/identity-page'
+    }
+  ]
   const [visible, setVisible] = useState(false)
   const [scrolling, setScrolling] = useState(false)
 
@@ -163,14 +165,18 @@ const Navbar = () => {
                 ))}
               </Col>
               <Col span={24} md={6}>
-                {/* <Title level={4}>FEATURES</Title> */}
-                {features.map((feature, index) => (
-                  <div key={index} className='feature-item'>
-                    <div>
-                      <Title level={5}>{feature.title}</Title>
-                      <Text>{feature.description}</Text>
+                <Title level={4} style={{ visibility: 'hidden' }}>
+                  FEATURES
+                </Title>
+                {featuresbox2.map((feature, index) => (
+                  <Link to={feature.link} key={index}>
+                    <div key={index} className='feature-item'>
+                      <div>
+                        <Title level={5}>{feature.title}</Title>
+                        <Text>{feature.description}</Text>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </Col>
             </Row>
