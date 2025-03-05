@@ -47,31 +47,12 @@ function Contact () {
               className='contact-form'
             >
               <SelectField
-                label='PICK AN INDUSTRY'
+                label='WHAT IS THE BEST WAY TO CONTACT YOU?'
                 options={interestOptions}
-                placeholder='What is the primary industry of your company?'
-              />
-              <SelectField
-                label='CHOOSE NUMBER OF TECHNICIANS'
-                options={interestOptions}
-                placeholder='Select Number of Techs'
-              />
-              <SelectField
-                label='IS THERE AT LEAST ONE FULL-TIME EMPLOYEE AT YOUR OFFICE?'
-                options={interestOptions}
-                placeholder='Select Number of full-time employees'
-              />
-              <SelectField
-                label='WHAT TYPES OF JOBS DOES YOUR COMPANY SPECIALIZE IN?'
-                options={interestOptions}
-                placeholder='Select area of focus'
-              />
-              <SelectField
-                label='PICK JOB SPECIALTY'
-                options={interestOptions}
-                placeholder='Select job focus'
+                placeholder='Enter your email address'
               />
 
+    
               <Form.Item
                 name='name'
                 label='FULL NAME'
@@ -86,6 +67,33 @@ function Contact () {
               >
                 <Input placeholder='(123) 456 7890' />
               </Form.Item>
+
+              <SelectField
+                label='PICK AN INDUSTRY'
+                options={interestOptions}
+                placeholder='What is the primary industry of your company?'
+              />
+
+              <SelectField
+                label='IS THERE AT LEAST ONE FULL-TIME EMPLOYEE AT YOUR OFFICE?'
+                options={interestOptions}
+                placeholder='Select Number of full-time employees'
+              />
+              <SelectField
+                label='WHAT IS YOUR COMPANY’S ANNUAL REVENUE? (OPTIONAL)'
+                options={interestOptions}
+                placeholder='Select one'
+              />
+              <SelectField
+                label='WHAT TYPES OF JOBS DOES YOUR COMPANY SPECIALIZE IN?'
+                options={interestOptions}
+                placeholder='Select area of focus'
+              />
+              <SelectField
+                label='PICK JOB SPECIALTY'
+                options={interestOptions}
+                placeholder='Select job focus'
+              />
 
               <Form.Item>
                 <Button
@@ -115,7 +123,7 @@ function Contact () {
                 By clicking "Continue," you acknowledge you have read the
                 Homelight and Alyson{' '}
                 <Link to='/privacy-policy'>Privacy Policies</Link> and agree to
-                the <Link to='/terms-of-use'>Terms of Service</Link> for both
+                the <Link to='/terms-of-use'>Terms of Service</Link> for both companies.
               </Paragraph>
             </div>
           </Col>

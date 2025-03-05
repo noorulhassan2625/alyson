@@ -9,6 +9,7 @@ import Privacy from '../pages/Privacy'
 import TermsOfUse from '../pages/TermsOfUse'
 import Cookies from '../pages/Cookies'
 import Contact from '../pages/Contact'
+import AcquirePage from '../pages/Acquire'
 
 const AppRoutes = () => {
   return (
@@ -21,7 +22,8 @@ const AppRoutes = () => {
       <Route path='/terms-of-use' element={<TermsOfUse />} />
       <Route path='/cookies' element={<Cookies />} />
       <Route path='/contact' element={<Contact />} />
-      <Route path='/connect' element={<Connect />} />
+      <Route path='/acquire-page' element={<AcquirePage />} />
+      {/* <Route path='/connect' element={<Connect />} /> */}
     </Routes>
   )
 }
