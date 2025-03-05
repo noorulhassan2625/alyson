@@ -68,7 +68,7 @@ const LinksSection = () => {
           </Row>
           {isMobile && (
             <Button className="expand-link-btn" type="link" onClick={toggleShowAll}>
-              {showAll ? "Less" : "More"}
+              {showAll ? "less" : "more"}
             </Button>
           )}
         </Col>
