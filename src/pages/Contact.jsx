@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Form, Input, Button, Col, Typography } from 'antd'
 import LegalLinks from '../components/LegalLinks'
@@ -10,6 +10,20 @@ const { TextArea } = Input
 
 function Contact () {
   const location = useLocation()
+
+  const [phone, setPhone] = useState("");
+
+  const handleChange = (e) => {
+    const value = e.target.value.replace(/\D/g, ""); // Only keep numbers
+    setPhone(value);
+  };
+
+  const handleKeyPress = (e) => {
+    // Prevent non-numeric characters from being entered
+    if (/\D/.test(e.key)) {
+      e.preventDefault();
+    }
+  };
 
   useEffect(() => {
     if (location.pathname.includes('/contact')) {
@@ -52,7 +66,6 @@ function Contact () {
                 placeholder='Enter your email address'
               />
 
-    
               <Form.Item
                 name='name'
                 label='FULL NAME'
@@ -60,12 +73,22 @@ function Contact () {
               >
                 <Input placeholder='Enter your full name' />
               </Form.Item>
+
               <Form.Item
-                name='text'
-                label='PHONE'
-                rules={[{ required: true, message: 'Please enter your name!' }]}
+                name="phone"
+                label="PHONE"
+                rules={[
+                  { required: true, message: "Please enter your phone number!" },
+                  { pattern: /^[0-9]*$/, message: "Only numbers are allowed!" }
+                ]}
               >
-                <Input placeholder='(123) 456 7890' />
+                <Input
+                  placeholder="(123) 456 7890"
+                  value={phone}
+                  onChange={handleChange}
+                  onKeyPress={handleKeyPress} // Prevent non-numeric input
+                  maxLength={20}
+                />
               </Form.Item>
 
               <SelectField

@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col, Typography, Button } from "antd";
-
+import { Link } from 'react-router-dom'
 const { Title } = Typography;
 
 const LinksSection = () => {
   const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const industries = [
     ["HVAC", "Plumbing Software", "Electrician Software", "HVAC Software", "Plumbing Software", "Electrician Software", "Garage Door", "Chimney Sweep", "Home Warranty Services", "Services"],
@@ -24,33 +35,42 @@ const LinksSection = () => {
         <Col xs={24} sm={12} md={6} lg={6}>
           <Title level={5} className="footer-title">Product</Title>
           <ul className="footer-list">
-            <li>Acquire</li>
-            <li>Create</li>
-            <li>Checkout</li>
-            <li>Assistant</li>
-            <li>Audiences</li>
-            <li>Alyson Activate</li>
-            <li>Identity</li>
+            {["Acquire", "Create", "Checkout", "Assistant", "Audiences", "Alyson Activate", "Identity"].map((item, index) => (
+              <li key={index}>
+                <Link href="/contact">{item}</Link>
+              </li>
+            ))}
           </ul>
         </Col>
 
         {/* Industries Column */}
-        <Col className={showAll ? 'Show Less links-active' : ''} xs={24} sm={12} md={18} lg={18}>
+        <Col xs={24} sm={12} md={18} lg={18} className={isMobile && showAll ? "activated" : ""}>
           <Title level={5} className="footer-title">Industries</Title>
           <Row gutter={[20, 10]}>
             {industries.map((column, index) => (
-              <Col xs={12} sm={6} md={6} lg={6} key={index}>
+              <Col
+                xs={24}
+                sm={6}
+                md={6}
+                lg={6}
+                key={index}
+                className={isMobile && showAll ? "activated" : ""}
+              >
                 <ul className="footer-list">
-                  {column.slice(0, showAll ? column.length : 2).map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {column.slice(0, isMobile && !showAll ? 2 : column.length).map((item, i) => (
+                    <li key={i}>
+                      <Link to="/contact">{item}</Link>
+                    </li>
                   ))}
                 </ul>
               </Col>
             ))}
           </Row>
-          <Button className={'expand-link-btn'} type="link" onClick={toggleShowAll}>
-            {showAll ? 'less' : 'more'}
-          </Button>
+          {isMobile && (
+            <Button className="expand-link-btn" type="link" onClick={toggleShowAll}>
+              {showAll ? "Less" : "More"}
+            </Button>
+          )}
         </Col>
       </Row>
     </div>

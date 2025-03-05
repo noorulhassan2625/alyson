@@ -1247,8 +1247,9 @@ p {
 }
 
 .footer-container {
-  padding: 40px 60px;
+  padding: 40px 120px;
   background: white;
+  text-align: left;
 }
 
 .footer-title {
@@ -1263,13 +1264,17 @@ p {
   margin: 0;
 }
 
-.footer-list li {
+.footer-list li a{
   font-size: 14px;
   color: black;
   margin-bottom: 6px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
+.footer-list li{
+  margin: 15px 0px;
+}
+
 
 .footer-list li:hover {
   color: #ffcc4d;
@@ -1330,6 +1335,8 @@ p {
 .checkout-feature .ant-typography, .agent-feature .ant-typography{
   font-size: 16px;
 }
+
+
 
 /* .mobile-view {
   display: none;
@@ -1531,7 +1538,10 @@ p {
   }
 
   .footer-container .ant-row .ant-col:nth-child(2) {
-    max-height: 350px;
+    max-height: 450px;
+  }
+  .footer-container .ant-row .activated:nth-child(2) {
+    max-height: 105rem !important;
   }
 
   .footer-container .ant-row .links-active {
