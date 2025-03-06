@@ -205,7 +205,7 @@ const Navbar = () => {
           </div>
         </Menu.SubMenu>
         <Menu.Item className='nav-item' key='pricing'>
-          Pricing
+        <Link to='/pricing'>Pricing</Link>
         </Menu.Item>
         <Menu.Item className='nav-item' key='about'>
           <Link to='/about'>About</Link>
