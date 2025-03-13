@@ -17,7 +17,7 @@ const CTASection = ({ ctaText1, ctaText2  }) => {
 
           {/* Buttons */}
           <div className='cta-buttons'>
-            <Button className='cta-button black-btn'>Request a Demo</Button>
+            <Button className='cta-button black-btn'>Get a Demo</Button>
           </div>
         </div>
       </div>

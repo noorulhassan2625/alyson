@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Card } from 'antd'
-import {
-  GlobalOutlined,
-  UserOutlined,
-  AimOutlined,
-  DatabaseOutlined,
-  ShoppingOutlined,
-  MonitorOutlined,
-} from '@ant-design/icons'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'

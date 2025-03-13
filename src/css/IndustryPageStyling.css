@@ -1,0 +1,71 @@
+.industry-top-heading {
+  text-align: center;
+  padding: 10% 2% 5% 2% !important;
+  background: transparent !important;
+}
+.industry-top-heading h5{
+  font-size: 24px;
+}
+.industry-top-heading h2{
+  font-size: 56px;
+}
+.industry-top-heading h2{
+  font-size: 30px;
+}
+.industry-cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 100px;
+}
+.industry-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #faf7f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+}
+
+.industry-card__title {
+  font-size: 27px !important;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.industry-card__description {
+  font-size: 24px !important;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.industry-card__list {
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.industry-card__list li span{
+  font-size: 24px;
+  color: #333;
+}
+
+.industry-card__link {
+  font-size: 14px;
+  color: #0056b3 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.industry-card__link:hover {
+  text-decoration: underline;
+}
+
+
+/* ====== Mobile View ====== */
+@media (max-width: 480px) {
+  .industry-cards-section {
+    padding: 20px;
+  }
+}

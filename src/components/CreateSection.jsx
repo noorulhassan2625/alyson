@@ -9,7 +9,7 @@ const CreateSection = () => {
       </div>
       <div className='create-content'>
         <div className={'section-title-header'}>
-          <img src='/media/images/Create.svg' alt='Alyson Logo' width='10%' />
+          <img src='/media/images/Create.svg' alt='Alyson Logo' width='13%' />
           <Title level={2}>Create</Title>
         </div>
         <Paragraph>

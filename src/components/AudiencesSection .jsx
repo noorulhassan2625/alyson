@@ -36,7 +36,7 @@ const AudiencesSection = () => {
        <Divider style={{ color: '#FFBB2A' }} />
       </div>
         <div className={'section-title-header'}>
-          <img src='/media/images/Audiences.svg' alt='Alyson Logo' width='10%' />
+          <img src='/media/images/Audiences.svg' alt='Alyson Logo' width='13%' />
           <Title level={2}>Audiences</Title>
         </div>
         <div className="audiences-header">

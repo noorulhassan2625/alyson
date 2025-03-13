@@ -34,7 +34,7 @@ const IdentitySection = () => {
           <Divider style={{ color: '#FFBB2A' }} />
         </div>
         <div className={'section-title-header'}>
-          <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
+          <img src='/media/images/activate.svg' alt='Alyson Logo' width='13%' />
           <Title level={2}>Identity</Title>
         </div>
         <div className="identity-header">
@@ -63,7 +63,7 @@ const IdentitySection = () => {
 
         {/* Call to Action Button */}
         <div className="identity-button">
-          <DarkButton buttonText="Unlock Accurate Targeting!" />
+          <DarkButton buttonText="Get a Demo" />
         </div>
       </div>
     </div>
