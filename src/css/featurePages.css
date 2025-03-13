@@ -1,6 +1,10 @@
 .feature-page-hero {
   padding: 10% 80px 5% 80px;
 }
+.feature-page-hero .dark-btn, .feature-page-content-box .dark-btn {
+  width: 70%;
+}
+
 .feature-page-content-box {
   padding: 8% 80px 0% 80px;
   background: #fff;
@@ -13,7 +17,7 @@
 .feature-page-hero .textual-content span,
 .feature-page-content-box .textual-content span,
 .feature-page-content-box .textual-content ul li {
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .feature-page-content-box .textual-content ul {
@@ -26,8 +30,11 @@
 }
 .center-heading {
   text-align: center;
-  padding: 10% 5% !important;
+  padding: 10% 2% !important;
   background: linear-gradient(180deg, #f7f7f705 15%, #fff 50%) !important;
+}
+.center-heading h2 {
+  font-size: 48px;
 }
 .acquire-feature .feature-page-content-box:nth-child(1) {
   padding: 5% 80px 0% 80px !important;
@@ -38,6 +45,13 @@
 }
 .acquire-feature .feature-page-content-box:nth-child(4) {
   padding-bottom: 8% !important;
+}
+.feature-page-hero .dark-btn span, .feature-page-content-box .dark-btn span{
+  font-size: 20px !important;
+}
+.feature-page-hero .dark-btn:hover span, .feature-page-content-box .dark-btn:hover span{
+  font-size: 16px !important;
+  transition: .5s;
 }
 @media (max-width: 480px) {
   .feature-page-hero {

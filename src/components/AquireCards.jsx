@@ -81,7 +81,7 @@ const AcquireCards = () => {
         ))}
       </Row>
       <div className={'aquire-btn'}>
-        <DarkButton buttonText='Optimize Your Ad Spend Now' />
+        <DarkButton buttonText='Get a Demo' />
       </div>
     </div>
   )

@@ -33,7 +33,7 @@ const CheckoutSection = () => {
         {/* Header Section */}
         <div className='checkout-header'>
           <div className={'section-title-header'}>
-            <img src='/media/images/checkout.svg' alt='Alyson Logo' width='10%' />
+            <img src='/media/images/checkout.svg' alt='Alyson Logo' width='13%' />
             <Title level={2}>Checkout</Title>
           </div>
           <Paragraph>
@@ -57,7 +57,7 @@ const CheckoutSection = () => {
 
         {/* CTA Button */}
         <div >
-          <DarkButton buttonText="Optimize Your Ad Spend Now" />
+          <DarkButton buttonText="Get a Demo" />
         </div>
       </div>
     </div>

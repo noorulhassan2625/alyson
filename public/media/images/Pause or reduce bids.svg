@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="92.824" viewBox="0 0 91 92.824">
+  <defs>
+    <filter id="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24" x="0" y="0" width="91" height="92.824" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24)">
+    <path id="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24-2" data-name="account_balance_24dp_000000_FILL1_wght300_GRAD0_opsz24" d="M122.556-836.691v-29.626h5.931v29.626Zm21.748,0v-29.626h5.931v29.626ZM110.77-822.865v-5.925h73v5.925Zm55.282-13.826v-29.626h5.931v29.626ZM110.77-874.217v-5.621l36.5-17.852,36.5,17.852v5.621Z" transform="translate(-101.77 906.69)"/>
+  </g>
+</svg>

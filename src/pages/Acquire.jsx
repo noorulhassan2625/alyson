@@ -22,7 +22,7 @@ export default function AcquirePage () {
           title2='Stop Wasting Money on Ad Platforms Like Google, Meta, and TikTok'
           text='Turn every ad dollar into a measurable win with Alyson Acquire’s data-driven targeting and optimization platform.'
           buttonText='Optimize Your Ad Spend Now'
-          imageSrc='https://picsum.photos/seed/picsum/200/300'
+          imageSrc='./media/images/AcquireHeroImg.svg'
         />
         <div className='center-heading' style={{ padding: '0px 20px' }}>
           <Row gutter={[24]} align='middle'>
@@ -39,7 +39,7 @@ export default function AcquirePage () {
             title2='Maximize Ad Efficiency with Comprehensive Data Profiles'
             text='With Alyson Acquire, you gain access to detailed data profiles and a robust identity graph that refines your ad targeting. Every dollar spent connects you with customers who perfectly match your Ideal Customer Profile (ICP)'
             buttonText='Get Started with Smarter Targeting'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/170M profiles.svg'
             listItems={[
               'Identify high-value prospects.',
               'Minimize wasted spend on low-quality leads.',
@@ -50,7 +50,7 @@ export default function AcquirePage () {
             title2='Real-Time Traffic Grading for Instant Insights'
             text='Stop guessing about ad performance. Alyson Acquire evaluates the quality of traffic from all major platforms in real time, giving you actionable insights to optimize campaigns on the fly.'
             buttonText='See Real-Time Grading in Action'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/realtime trafficking.svg'
             listItems={[
               'Grade traffic quality instantly.',
               'Adapt campaigns for better outcomes.',
@@ -61,7 +61,7 @@ export default function AcquirePage () {
             title2='Smarter Algorithms, Smarter Results'
             text='Close the loop with advanced feedback systems that provide ad platforms like Google, Meta, and TikTok the data they need to refine performance. Alyson Acquire ensures every campaign gets smarter over time, boosting ROI and driving sustained success'
             buttonText='Boost ROI with Feedback Loops'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/smarter algorithms.svg'
             listItems={[
               'Feed critical performance data back to ad algorithms',
               'Enable smarter targeting based on real results.',
@@ -72,7 +72,7 @@ export default function AcquirePage () {
             title2='Scale with Confidence'
             text='Alyson Acquire’s identity graph technology ensures that your campaigns consistently reach your ideal audience, making it easier to scale your advertising efforts without overspending.'
             buttonText='Boost ROI with Feedback Loops'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/scale with confidence.svg'
             listItems={[
               'Reach the right audience at scale.',
               'Stay within budget while growing your reach.',

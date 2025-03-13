@@ -35,7 +35,7 @@ const ActivateSection = () => {
           <Divider style={{ color: '#FFBB2A' }} />
         </div>
         <div className={'section-title-header'}>
-          <img src='/media/images/activate.svg' alt='Alyson Logo' width='10%' />
+          <img src='/media/images/activate.svg' alt='Alyson Logo' width='13%' />
           <Title level={2}>Activate</Title>
         </div>
         <div className="activate-header">
@@ -64,7 +64,7 @@ const ActivateSection = () => {
 
         {/* Call to Action Button */}
         <div className="activate-button">
-          <DarkButton buttonText="Reconnect & Convert Fast!" />
+          <DarkButton buttonText="Get a Demo" />
         </div>
       </div>
     </div>

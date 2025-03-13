@@ -27,7 +27,7 @@ export default function Home () {
       >
         <Hero />
         <FeatureCards />
-        <StatusBox />
+      <StatusBox />
         <Acquire />
         <AquireCards />
       </div>

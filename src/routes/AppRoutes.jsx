@@ -16,6 +16,7 @@ import AgentPage from '../pages/Agent'
 import AuidiencePage from '../pages/Auidience'
 import ActivatePage from '../pages/Activate'
 import IdentityPage from '../pages/Identity'
+import IndustriesPage from '../pages/IndustriesPage'
 
 const AppRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const AppRoutes = () => {
       <Route path='/auidience-page' element={<AuidiencePage />} />
       <Route path='/activate-page' element={<ActivatePage />} />
       <Route path='/identity-page' element={<IdentityPage />} />
+      <Route path='/industries' element={<IndustriesPage />} />
       {/* <Route path='/connect' element={<Connect />} /> */}
     </Routes>
   )

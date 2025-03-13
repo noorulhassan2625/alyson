@@ -9,7 +9,7 @@ const FinalCTA = () => {
       <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
       </Title>
-      <DarkButton buttonText="Let’s Talk" />
+      <DarkButton buttonText="Get a Demo" />
       <div className="footer-links">
         <a
           href={`/about`}

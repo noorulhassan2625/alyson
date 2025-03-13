@@ -19,7 +19,7 @@ function CreateCards() {
       <Divider style={{ borderColor: '#ffffff', minWidth:'50%', width:'80%', margin:'0 auto' }} />
       <FeedBackBox />
       </div>
-      <DarkButton buttonText="Try Alyson Create for Free" />
+      <DarkButton buttonText="Get a Demo" />
       <div className='section-divider'>
         <Divider style={{ color: '#FFBB2A' }} />
       </div>

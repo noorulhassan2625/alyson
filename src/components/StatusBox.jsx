@@ -13,7 +13,7 @@ const StatsBox = () => {
         The AI Engine Behind 5 Million Homeowner Journeys –  
         Making decisions smarter, experiences smoother, and driving revenue.
       </p>
-      <DarkButton buttonText="Get Started Today" />
+      <DarkButton buttonText="Get a Demo" />
     </div>
   );
 };

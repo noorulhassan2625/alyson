@@ -76,7 +76,7 @@ const AgentSection = () => {
         {/* Header Section */}
         <div className='agent-header'>
           <div className={'section-title-header'}>
-            <img src='/media/images/Agent.svg' alt='Alyson Logo' width='10%' />
+            <img src='/media/images/Agent.svg' alt='Alyson Logo' width='13%' />
             <Title level={2}>Agent</Title>
           </div>
           <Paragraph>
@@ -103,7 +103,7 @@ const AgentSection = () => {
         {/* CTA Button */}
         <div className='agent-btn-container'>
         </div>
-        <DarkButton buttonText="Try Alyson Agent for Free" />
+        <DarkButton buttonText="Get a Demo" />
       </div>
     </div>
   )
