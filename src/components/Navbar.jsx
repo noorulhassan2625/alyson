@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import {
   Menu,
   Drawer,
@@ -8,8 +8,7 @@ import {
   Typography,
   Image,
   Button,
-  Modal
-} from 'antd'
+} from 'antd';
 import {
   AppstoreOutlined,
   EditOutlined,
@@ -17,15 +16,14 @@ import {
   UserOutlined,
   TeamOutlined,
   MailOutlined,
-  IdcardOutlined
-} from '@ant-design/icons'
-import DarkButton from './DarkButton'
-import { Link } from 'react-router-dom'
-import ContactUsModalContent from './ContactUsModalContent'
+  IdcardOutlined,
+} from '@ant-design/icons';
+import DarkButton from './DarkButton';
+import { Link } from 'react-router-dom';
+import ContactUsModal from './ContactUsModal';
 
-const { Panel } = Collapse
-
-const { Title } = Typography
+const { Panel } = Collapse;
+const { Title } = Typography;
 
 const Navbar = () => {
   const features = [
@@ -125,23 +123,31 @@ const Navbar = () => {
       link: '#'
     }
   ]
+  const [visible, setVisible] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 
-  const [visible, setVisible] = useState(false)
-  const [scrolling, setScrolling] = useState(false)
-  const [open, setOpen] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
-        setScrolling(true)
+        setScrolling(true);
       } else {
-        setScrolling(false)
+        setScrolling(false);
       }
-    }
-    window.addEventListener('scroll', handleScroll)
+    };
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={`navbar ${scrolling ? 'scrolled' : ''}`}>
@@ -176,35 +182,12 @@ const Navbar = () => {
                       </div>
                       <div>
                         <Title level={5}>{feature.title}</Title>
-                        {/* <Text>{feature.description}</Text> */}
                       </div>
                     </div>
                   </Link>
                 ))}
               </Col>
             </Row>
-            <style jsx>{`
-              .custom-card {
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              }
-              .card-image {
-                width: 100%;
-                margin-bottom: 10px;
-              }
-              .feature-item {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                padding: 10px 0;
-              }
-              .feature-icon {
-                font-size: 20px;
-                color: #f4a261;
-              }
-            `}</style>
           </div>
         </Menu.SubMenu>
         <Menu.SubMenu className='nav-item' key='Industries' title='Industries'>
@@ -225,35 +208,12 @@ const Navbar = () => {
                       </div>
                       <div>
                         <Title level={5}>{feature.title}</Title>
-                        {/* <Text>{feature.description}</Text> */}
                       </div>
                     </div>
                   </Link>
                 ))}
               </Col>
             </Row>
-            <style jsx>{`
-              .custom-card {
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              }
-              .card-image {
-                width: 100%;
-                margin-bottom: 10px;
-              }
-              .feature-item {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                padding: 10px 0;
-              }
-              .feature-icon {
-                font-size: 20px;
-                color: #f4a261;
-              }
-            `}</style>
           </div>
         </Menu.SubMenu>
         <Menu.SubMenu className='nav-item' key='Resources' title='Resources'>
@@ -274,72 +234,29 @@ const Navbar = () => {
                       </div>
                       <div>
                         <Title level={5}>{feature.title}</Title>
-                        {/* <Text>{feature.description}</Text> */}
                       </div>
                     </div>
                   </Link>
                 ))}
               </Col>
             </Row>
-            <style jsx>{`
-              .custom-card {
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              }
-              .card-image {
-                width: 100%;
-                margin-bottom: 10px;
-              }
-              .feature-item {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                padding: 10px 0;
-              }
-              .feature-icon {
-                font-size: 20px;
-                color: #f4a261;
-              }
-            `}</style>
           </div>
         </Menu.SubMenu>
-        {/* <Menu.Item className='nav-item' key='pricing'>
-        <Link to='/pricing'>Pricing</Link>
-        </Menu.Item> */}
         <Menu.Item className='nav-item' key='about'>
           <Link to='/about'>About</Link>
         </Menu.Item>
-        {/* <Menu.Item className='nav-item' key='connect'>
-          <Link to='/contact'>Contact</Link>
-        </Menu.Item> */}
         <Menu.Item className='nav-item' key='connect'>
-          <Button
-            className='contact-us-modal-btn'
-            onClick={() => setOpen(true)}
-          >
+          <Button className='contact-us-modal-btn' onClick={handleOpenModal}>
             Contact Us
           </Button>
-          <Modal
-            open={open}
-            onOk={() => setOpen(false)}
-            onCancel={() => setOpen(false)}
-            cancelButtonProps={{ style: { display: 'none' } }}
-            okButtonProps={{ style: { display: 'none' } }}
-            width={'100%'}
-          >
-            <ContactUsModalContent/>
-          </Modal>
         </Menu.Item>
         <Menu.Item className='nav-item btn-nav' key='talk'>
-          {' '}
-          <DarkButton buttonText='Get a Demo' />
+          <DarkButton
+            buttonText='Get a Demo'
+            onClick={handleOpenModal} // Pass the onClick handler
+          />
         </Menu.Item>
       </Menu>
-
-      {/* Mobile Menu Icon */}
-      {/* <MenuOutlined className='menu-icon' onClick={() => setVisible(false)} /> */}
 
       {/* Mobile Drawer */}
       <Drawer
@@ -460,10 +377,13 @@ const Navbar = () => {
             </div>
           </Panel>
         </Collapse>
-        <DarkButton buttonText='Let’s Talk' />
+        <DarkButton buttonText='Let’s Talk' onClick={handleOpenModal} />
       </Drawer>
-    </div>
-  )
-}
 
-export default Navbar
+      {/* Render the ContactUsModal component */}
+      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
+    </div>
+  );
+};
+
+export default Navbar;

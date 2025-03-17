@@ -1,8 +1,19 @@
 import { Button, Typography } from 'antd'
+import ContactUsModal from './ContactUsModal'
+import { useState } from 'react';
 
 const { Paragraph } = Typography
 
 const CTASection = ({ ctaText1, ctaText2  }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
   return (
     <div className='cta-section'>
       <div className='cta-container' style={{ background: 'url(/media/images/ready-bg.svg)' }}>
@@ -17,7 +28,8 @@ const CTASection = ({ ctaText1, ctaText2  }) => {
 
           {/* Buttons */}
           <div className='cta-buttons'>
-            <Button className='cta-button black-btn'>Get a Demo</Button>
+            <Button onClick={handleOpenModal} className='cta-button black-btn'>Get a Demo</Button>
+            <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
           </div>
         </div>
       </div>

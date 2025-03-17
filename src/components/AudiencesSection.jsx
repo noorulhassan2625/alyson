@@ -1,9 +1,20 @@
-import { Row, Col, Typography, Button, Divider } from "antd";
+import { Row, Col, Typography, Divider } from "antd";
 import DarkButton from "./DarkButton";
+import ContactUsModal from "./ContactUsModal";
+import { useState } from "react";
 
 const { Title, Paragraph } = Typography;
 
 const AudiencesSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
   const features = [
     {
       title: "Identify Your Best Prospects",
@@ -58,7 +69,8 @@ const AudiencesSection = () => {
 
         {/* CTA Button */}
         <div className="audiences-btn-container">
-          <DarkButton buttonText="Get a Demo" />
+        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+        <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { Row, Col, Typography } from 'antd'
 import DarkButton from './DarkButton'
+import ContactUsModal from './ContactUsModal'
+import { useState } from 'react'
 
 const { Title, Paragraph } = Typography
 
@@ -26,6 +28,16 @@ const CheckoutSection = () => {
         'Alyson knows your ideal customer and often who is on your website and can tell you how well you are doing converting your best prospects.'
     }
   ]
+
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
 
   return (
     <div className='checkout-container'>
@@ -57,7 +69,8 @@ const CheckoutSection = () => {
 
         {/* CTA Button */}
         <div >
-          <DarkButton buttonText="Get a Demo" />
+        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+        <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
       </div>
     </div>

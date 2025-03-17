@@ -3,6 +3,7 @@ import { Col, Typography } from 'antd'
 import { PlayCircleOutlined } from '@ant-design/icons'
 import DarkButton from './DarkButton'
 import PlayButton from './SVGComponents/PlayButton'
+import ContactUsModal from './ContactUsModal'
 
 const { Title, Paragraph } = Typography
 
@@ -31,6 +32,16 @@ const Hero = () => {
     }
   }
 
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
+
   return (
     <div className='hero'>
       <Title className='hero-heading' level={1}>
@@ -39,7 +50,8 @@ const Hero = () => {
       <Paragraph className='text'>
         “I’m designed to grow your home services business by 25% or more.”
       </Paragraph>
-      <DarkButton buttonText={'Get a Demo'} />
+      <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
 
       <div className='hero-video-box' onClick={handlePlayPause}>
         <Col xs={20} sm={10} md={14} className='video-container'>

@@ -1,15 +1,27 @@
 import { Typography } from "antd";
 import DarkButton from "./DarkButton";
+import ContactUsModal from "./ContactUsModal";
+import { useState } from "react";
 
 const { Title } = Typography;
 
 const FinalCTA = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
   return (
     <div className="final-cta-container">
       <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
       </Title>
-      <DarkButton buttonText="Get a Demo" />
+      <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <div className="footer-links">
         <a
           href={`/about`}
