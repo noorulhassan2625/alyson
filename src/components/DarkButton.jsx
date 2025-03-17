@@ -1,12 +1,14 @@
-import { Button } from 'antd'
-import React from 'react'
+import { Button } from 'antd';
+import React from 'react';
 
-function DarkButton({ buttonText }) {
+function DarkButton({ buttonText, onClick }) {
   return (
     <div>
-      <Button className="dark-btn">{buttonText}</Button>
+      <Button onClick={onClick} className='dark-btn'>
+        {buttonText}
+      </Button>
     </div>
-  )
+  );
 }
 
-export default DarkButton
+export default DarkButton;

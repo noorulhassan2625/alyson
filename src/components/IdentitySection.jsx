@@ -1,4 +1,6 @@
 import { Row, Col, Typography, Button, Divider } from "antd"; import DarkButton from "./DarkButton";
+import ContactUsModal from "./ContactUsModal";
+import { useState } from "react";
 
 const { Title, Paragraph } = Typography;
 
@@ -25,6 +27,16 @@ const IdentitySection = () => {
         "Alyson data scientists score and segment your data automatically. Just connect your data and get real-time dashboards comparing your performance to other companies in your industry.",
     },
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
 
   return (
     <div className="identity-container">
@@ -63,7 +75,8 @@ const IdentitySection = () => {
 
         {/* Call to Action Button */}
         <div className="identity-button">
-          <DarkButton buttonText="Get a Demo" />
+        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+        <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
       </div>
     </div>

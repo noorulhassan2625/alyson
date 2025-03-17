@@ -1,5 +1,7 @@
 import { Card, Row, Col } from 'antd'
 import DarkButton from './DarkButton'
+import ContactUsModal from './ContactUsModal'
+import { useState } from 'react'
 
 const cardData = [
   {
@@ -64,7 +66,17 @@ const cardData = [
   }
 ]
 
+
 const AcquireCards = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+  setIsModalOpen(false);
+};
+
   return (
     <div className='cards-section AcquireCards'>
       <Row gutter={[24, 24]} justify='center'>
@@ -81,7 +93,8 @@ const AcquireCards = () => {
         ))}
       </Row>
       <div className={'aquire-btn'}>
-        <DarkButton buttonText='Get a Demo' />
+      <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
     </div>
   )

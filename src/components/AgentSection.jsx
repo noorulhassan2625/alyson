@@ -1,5 +1,7 @@
-import { Row, Col, Typography, Button, Divider } from 'antd'
+import { Row, Col, Typography, Divider } from 'antd'
 import DarkButton from './DarkButton'
+import ContactUsModal from './ContactUsModal'
+import { useState } from 'react'
 
 const { Title, Paragraph } = Typography
 
@@ -66,6 +68,14 @@ const AgentSection = () => {
       )
     }
   ]
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className='agent-container'>
@@ -103,7 +113,8 @@ const AgentSection = () => {
         {/* CTA Button */}
         <div className='agent-btn-container'>
         </div>
-        <DarkButton buttonText="Get a Demo" />
+        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+          <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
     </div>
   )
