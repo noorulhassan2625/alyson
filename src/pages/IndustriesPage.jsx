@@ -5,6 +5,7 @@ import LinksSection from '../components/LinksSection'
 import FinalCTA from '../components/FinalCTA'
 import IndustryCard from '../components/IndustryCard'
 import '../css/IndustryPageStyling.css'
+import DarkButton from '../components/DarkButton'
 
 const { Title } = Typography
 
@@ -57,7 +58,7 @@ const industryData = [
       'Smart Home Services'
     ],
     link: '#',
-    image:'/media/images/Utility & tech mini.svg'
+    image: '/media/images/Emerging mini.svg'
   }
 ]
 
@@ -68,7 +69,8 @@ export default function IndustriesPage () {
         className='hero-bg'
         style={{
           background:
-            'linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)'
+            'linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)',
+            paddingBottom:"60px"
         }}
       >
         <div className='industry-top-heading' style={{ padding: '0px 20px' }}>
@@ -91,20 +93,57 @@ export default function IndustriesPage () {
         <div className='industry-cards-section'>
           <Row gutter={[24, 24]}>
             {industryData.map((industry, index) => (
-              <Col span={8} lg={8} md={8} sm={24} xs={24} key={index}>
+              <Col span={6} lg={6} md={8} sm={24} xs={24} key={index}>
                 <IndustryCard {...industry} />
               </Col>
             ))}
           </Row>
         </div>
+        <DarkButton buttonText='Get Started with Alyson.ai' />
       </div>
 
-      <CTASection
+      {/* <CTASection
         ctaText1='“Stop wasting money on ad platforms that don’t deliver.”'
         ctaText2='Optimize your ad spend with Alyson Acquire now.'
-      />
-      <LinksSection />
-      <FinalCTA />
+      /> */}
+      {/* <LinksSection /> */}
+      {/* <FinalCTA /> */}
+
+      {/* <hr style={{ borderColor: '#FCEAC7', opacity: '0.5' }}></hr> */}
+      <Row
+        gutter={[40]}
+        className='contact-info-box'
+        justify='center'
+        style={{
+          background: '#FFF8E5',
+          padding: '0px 30px 50px 30px',
+          margin: '0px'
+        }}
+      >
+        {/* Company Column */}
+        <Col xs={24} sm={12} md={6} lg={6} style={{justifyContent:'right'}}>
+          <div style={{ display: 'flex', justifyContent:'end' }}>
+            <div>
+              <img src='/media/images/support alyson email.svg' alt='' />
+            </div>
+            <Title level={5} className='cotact-info'>
+              support@alyson.ai
+            </Title>
+          </div>
+        </Col>
+
+        {/* Contact Column */}
+        <Col xs={24} sm={12} md={18} lg={6}>
+          <div style={{ display: 'flex' }}>
+            <div>
+              <img src='/media/images/helpline call.svg' alt='' />
+            </div>
+            <Title level={5} className='cotact-info'>
+              (123) 456-7890
+            </Title>
+          </div>
+        </Col>
+      </Row>
     </div>
   )
 }

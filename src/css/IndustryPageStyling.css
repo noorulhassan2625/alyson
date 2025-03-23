@@ -9,8 +9,11 @@
 .industry-top-heading h2{
   font-size: 56px;
 }
-.industry-top-heading h2{
+.industry-top-heading h4{
   font-size: 30px;
+}
+.industry-top-heading .industry-cards-section h4{
+  font-size: 27px;
 }
 .industry-cards-section {
   display: flex;
@@ -40,22 +43,43 @@
   color: #444;
   margin-bottom: 8px;
 }
+.industry-card__image{
+  background-color: #EBE8DD;
+  border-radius: 12px;
+  padding: 15px;
+}
 
 .industry-card__list {
   padding-left: 18px;
   margin-bottom: 10px;
+  list-style: none;
+}
+.industry-card__list li{
+display: flex;
 }
 
 .industry-card__list li span{
   font-size: 24px;
   color: #333;
 }
-
+.industry-card__list li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 10px;
+  flex: 1 1;
+  max-width: 5px;
+  min-width: 10px;
+  margin-top: 14px;
+}
 .industry-card__link {
-  font-size: 14px;
-  color: #0056b3 !important;
+  font-size: 24px;
+  color: #000000 !important;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline !important;
 }
 
 .industry-card__link:hover {
