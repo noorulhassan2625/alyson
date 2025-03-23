@@ -25,7 +25,7 @@ import FilledPointerIcon from './SVGComponents/FilledPointerIcon'
 const features = [
   {
     icon: (
-    <EarthIcon/>
+      <EarthIcon />
     ),
     title: 'AI-Powered Website Creation',
     description:
@@ -34,7 +34,7 @@ const features = [
   },
   {
     icon: (
-      <IdentityUserIcon/>
+      <IdentityUserIcon />
     ),
     title: 'Identity & Lead Matching',
     description:
@@ -43,39 +43,39 @@ const features = [
   },
   {
     icon: (
-      <CustomerChainIcon/>
+      <CustomerChainIcon />
     ),
     title: 'Smart Customer Acquisition',
     description:
       'Target the right leads with AI-driven precision. Pinpoint your ideal leads with AI-powered.',
     linkIcons: [
       <FacebookIcon />,
-      <InstagramIcon/>,
+      <InstagramIcon />,
       <MetaIcon />,
-      <PlusIcon/>,
-      <span className='link-icon-text' style={{position:'relative', top:'9px', left:'-8px'}}>and many more platforms</span>
+      <PlusIcon />,
+      <span className='link-icon-text' style={{ position: 'relative', top: '9px', left: '-8px' }}>and many more platforms</span>
     ]
   },
   {
     icon: (
-      <FilledDataBaseIcon/>
+      <FilledDataBaseIcon />
     ),
     title: 'Data-Driven Audience Building',
     description: 'Build hyper-targeted audiences with rich customer insights',
     linkIcons: [<DatabaseIcon />, <MultipleUsers />]
   },
+  // {
+  //   icon: (
+  //     <FilledShoppingBagIcon/>
+  //   ),
+  //   title: 'Frictionless AI Checkout',
+  //   description:
+  //     'Use historical data to predict and improve marketing campaign success rates.',
+  //   linkIcons: [<div className='privacyIdcon'><PrivacyShieldIcon/></div>]
+  // },
   {
     icon: (
-      <FilledShoppingBagIcon/>
-    ),
-    title: 'Frictionless AI Checkout',
-    description:
-      'Use historical data to predict and improve marketing campaign success rates.',
-    linkIcons: [<div className='privacyIdcon'><PrivacyShieldIcon/></div>]
-  },
-  {
-    icon: (
-      <FilledPointerIcon/>
+      <FilledPointerIcon />
     ),
     title: 'Real-Time Ad Optimization',
     description:
