@@ -25,16 +25,51 @@
   display: none !important;
 }
 .about .conversation-container .title {
+  text-align: left;
+}
+.about .conversation-container .curve {
+  margin-right: 70px;
+}
+.about .dark-btn,
+.lets-connect .dark-btn {
+  width: 45% !important;
+}
+
+.about .bottom-btn .dark-btn,
+.lets-connect .bottom-btn .dark-btn {
+  width: 25% !important;
+}
+@media (max-width: 480px) {
+  .about .dark-btn,
+  .lets-connect .dark-btn,
+  .about .bottom-btn .dark-btn, .lets-connect .bottom-btn .dark-btn
+  {
+    width: 100% !important;
+  }
+  .about .industry-top-heading h2 {
     text-align: left;
+    margin: 0px 20px;
+  }
+  .conversation-container .curve{
+    display: none;
+  }
+  .conversation-container{
+    margin: 0px 0px;
+  }
+  .bottom-btn{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .conversation-container .feature::after {
+  display: none;
 }
-.about .conversation-container .curve{
-    margin-right: 70px;
+.lets-connect .industry-cards-section{
+    padding: 20px !important;
 }
-.about .dark-btn, .lets-connect .dark-btn{
-    width: 45% !important;
+.conversation-container .title {
+    font-size: 46px;
 }
-
-.about .bottom-btn .dark-btn, .lets-connect .bottom-btn .dark-btn{
-    width: 25% !important;
+.contact-box-2{
+    justify-content: center;
 }
-
+}

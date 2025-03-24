@@ -94,7 +94,7 @@ export default function LetsConnect () {
 
         <div className='industry-top-heading' style={{ padding: '0px' }}>
           <Row gutter={[24]} align='middle'>
-            <Col span={16} style={{ margin: '0 auto' }}>
+            <Col span={16}lg={16} md={16} sm={24} xs={24} style={{ margin: '0 auto' }}>
               <Title level={2}>Ways to Connect with Alyson.ai</Title>
             </Col>
           </Row>
@@ -138,7 +138,7 @@ export default function LetsConnect () {
       >
         {/* Company Column */}
         <Col xs={24} sm={12} md={6} lg={6} style={{ justifyContent: 'right' }}>
-          <div style={{ display: 'flex', justifyContent: 'end' }}>
+          <div className='contact-box-1' style={{ display: 'flex', justifyContent: 'end' }}>
             <div>
               <img src='/media/images/support alyson email.svg' alt='' />
             </div>
@@ -150,7 +150,7 @@ export default function LetsConnect () {
 
         {/* Contact Column */}
         <Col xs={24} sm={12} md={18} lg={6}>
-          <div style={{ display: 'flex' }}>
+          <div className='contact-box-2' style={{ display: 'flex' }}>
             <div>
               <img src='/media/images/helpline call.svg' alt='' />
             </div>
