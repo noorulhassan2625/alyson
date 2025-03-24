@@ -4,7 +4,7 @@ import { FileTextOutlined } from "@ant-design/icons";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
-const IndustryCard = ({ title, description, services, link, image }) => {
+const IndustryCard = ({ title, description, services, link, image, linkText }) => {
   return (
     <Card className="industry-card">
       <div className="industry-card__icon">
@@ -19,15 +19,15 @@ const IndustryCard = ({ title, description, services, link, image }) => {
       </Title>
       <Paragraph className="industry-card__description">{description}</Paragraph>
       <ul className="industry-card__list">
-        {services.map((service, index) => (
+        {services?.map((service, index) => (
           <li key={index}>
             <Text>{service}</Text>
           </li>
         ))}
       </ul>
       <Link href={link} className="industry-card__link">
-        View all
-      </Link>
+      {linkText || 'View All'}
+            </Link>
     </Card>
   );
 };

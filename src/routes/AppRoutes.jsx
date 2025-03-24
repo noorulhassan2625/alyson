@@ -17,6 +17,7 @@ import AuidiencePage from '../pages/Auidience'
 import ActivatePage from '../pages/Activate'
 import IdentityPage from '../pages/Identity'
 import IndustriesPage from '../pages/IndustriesPage'
+import LetsConnect from '../pages/LetsConnect'
 
 const AppRoutes = () => {
   return (
@@ -37,6 +38,7 @@ const AppRoutes = () => {
       <Route path='/activate-page' element={<ActivatePage />} />
       <Route path='/identity-page' element={<IdentityPage />} />
       <Route path='/industries' element={<IndustriesPage />} />
+      <Route path='/lets-connect' element={<LetsConnect />} />
       {/* <Route path='/connect' element={<Connect />} /> */}
     </Routes>
   )

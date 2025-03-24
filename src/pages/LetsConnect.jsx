@@ -7,41 +7,40 @@ import DarkButton from '../components/DarkButton'
 import FeaturePageHero from '../components/FeaturePageHero'
 import { ArrowRightOutlined } from '@ant-design/icons'
 import ConversationBox from '../components/ConversationBox'
-import { span } from 'framer-motion/client'
 const { Title } = Typography
 
 const industryData = [
   {
-    title: 'Automate Your Business',
-    description: 'Alyson handles bookings, follow-ups, and operations so you don’t have to.',
+    title: 'Talk to Our Team',
+    description: 'Have questions? Our team is here to help.',
 
     link: '#',
     image: '/media/images/home service mini.svg',
-    // linkText: (
-    //   <div>
-    //     <span>
-    //       Contact Us <ArrowRightOutlined />
-    //     </span>
-    //   </div>
-    // )
+    linkText: (
+      <div>
+        <span>
+          Contact Us <ArrowRightOutlined />
+        </span>
+      </div>
+    )
   },
   {
-    title: 'Engage Customers Effortlessly',
-    description: 'AI-driven interactions build stronger relationships and boost retention.',
-    // link: '#',
+    title: 'Partner with Alyson.ai',
+    description: 'Interested in collaborations or integrations? Let’s chat.',
+    link: '#',
     image: '/media/images/real estate mini.svg',
-    // linkText: (
-    //   <div>
-    //     <span>
-    //       Explore Partnerships <ArrowRightOutlined />
-    //     </span>
-    //   </div>
-    // )
+    linkText: (
+      <div>
+        <span>
+          Explore Partnerships <ArrowRightOutlined />
+        </span>
+      </div>
+    )
   },
   {
-    title: 'Drive Measurable Growth',
+    title: 'Follow Us on Social Media',
     description:
-      'Designed to help home service businesses grow revenue by 25% or more.',
+      'Stay updated with insights, product updates, and success stories.',
 
     link: '#',
     image: '/media/images/Utility & tech mini.svg',
@@ -53,33 +52,32 @@ const industryData = [
       </div>
     )
   },
-  // {
-  //   title: 'Join Our Learning Hub',
-  //   description:
-  //     'Get the latest AI insights, industry tips, and best practices.',
+  {
+    title: 'Join Our Learning Hub',
+    description:
+      'Get the latest AI insights, industry tips, and best practices.',
 
-  //   link: '#',
-  //   image: '/media/images/Emerging mini.svg',
-  //   linkText: 'Test text'
-  // }
+    link: '#',
+    image: '/media/images/Emerging mini.svg',
+    linkText: 'Test text'
+  }
 ]
 
 // Define ConversationBox Content
 const conversationContent = {
-  title: 'How Alyson.ai Helps Your Business',
-  features: [
-    <span><b>Smart Scheduling: </b>Automates bookings & reminders.</span>,
-    <span><b>AI-Powered Customer Engagement: </b>Responds to inquiries 24/7.</span>,
-    <span><b>Performance Insights: </b>Tracks revenue growth & efficiency.</span>,
-    <span><b>Marketing & Follow-Ups: </b>Helps retain customers effortlessly.</span>,
-  ]
-}
+    title: "Be Part of the Conversation",
+    features: [
+      "Get early access to new features",
+      "Connect with other business owners in home services",
+      "Exclusive webinars, AMAs, and AI insights",
+    ],
+  };
 
-export default function About () {
+export default function LetsConnect () {
   return (
     <div className='container'>
       <div
-        className='hero-bg about'
+        className='hero-bg lets-connect'
         style={{
           background:
             'linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)',
@@ -87,17 +85,17 @@ export default function About () {
         }}
       >
         <FeaturePageHero
-          title1='About Alyson.ai'
-          title2='Why We Created Alyson.ai'
-          text='At Alyson.ai, we wanted our platform to feel approachable, friendly, and reliable—just like a trusted colleague who’s always there to help you grow. The name Alyson represents everything we stand for: smart solutions, intuitive support, and a personal touch. She’s the AI designed to make running your business easier, more efficient, and, most importantly, successful.'
-          buttonText='Activate Your Leads Now'
+          title1='Connect'
+          title2='Let’s Stay Connected'
+          text='Whether you have questions, need support, or want to be part of the Alyson.ai community, you’re in the right place'
+          buttonText='Join Our Community'
           imageSrc='./media/images/AcquireHeroImg.svg'
         />
 
-        <div className='industry-top-heading' style={{ padding: '0px 100px' }}>
-          <Row gutter={[24]}>
-            <Col span={16} >
-              <Title level={2}>Why Choose Alyson.ai?</Title>
+        <div className='industry-top-heading' style={{ padding: '0px' }}>
+          <Row gutter={[24]} align='middle'>
+            <Col span={16} style={{ margin: '0 auto' }}>
+              <Title level={2}>Ways to Connect with Alyson.ai</Title>
             </Col>
           </Row>
         </div>
@@ -106,20 +104,17 @@ export default function About () {
         <div className='industry-cards-section'>
           <Row gutter={[24, 24]}>
             {industryData.map((industry, index) => (
-              <Col span={8} lg={8} md={8} sm={24} xs={24} key={index}>
+              <Col span={6} lg={6} md={8} sm={24} xs={24} key={index}>
                 <IndustryCard {...industry} />
               </Col>
             ))}
           </Row>
         </div>
-        {/* Pass Dynamic Data to ConversationBox */}
-        <ConversationBox
-          title={conversationContent.title}
-          features={conversationContent.features}
-        />
+         {/* Pass Dynamic Data to ConversationBox */}
+         <ConversationBox title={conversationContent.title} features={conversationContent.features} />
 
-        <div className='bottom-btn' style={{ textAlign: 'left', paddingLeft: '150px' }}>
-          <DarkButton buttonText='Activate Your Leads Now' />
+        <div className='bottom-btn' style={{textAlign:'left', paddingLeft:'150px'}}>
+        <DarkButton buttonText='Join Our Community' />
         </div>
       </div>
 
