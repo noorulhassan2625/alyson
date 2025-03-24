@@ -115,7 +115,7 @@ const Navbar = () => {
     {
       logo: '/media/images/connect mini.svg',
       title: 'Connect',
-      link: '#'
+      link: '/lets-connect'
     },
     {
       logo: '/media/images/Faqs reviews mini.svg',
