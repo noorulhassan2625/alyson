@@ -96,7 +96,7 @@ export default function About () {
 
         <div className='industry-top-heading' style={{ padding: '0px 100px' }}>
           <Row gutter={[24]}>
-            <Col span={16} >
+            <Col xs={24} sm={24} lg={16} md={16} >
               <Title level={2}>Why Choose Alyson.ai?</Title>
             </Col>
           </Row>
@@ -143,7 +143,7 @@ export default function About () {
       >
         {/* Company Column */}
         <Col xs={24} sm={12} md={6} lg={6} style={{ justifyContent: 'right' }}>
-          <div style={{ display: 'flex', justifyContent: 'end' }}>
+          <div className='contact-box-1' style={{ display: 'flex', justifyContent: 'end' }}>
             <div>
               <img src='/media/images/support alyson email.svg' alt='' />
             </div>
@@ -155,7 +155,7 @@ export default function About () {
 
         {/* Contact Column */}
         <Col xs={24} sm={12} md={18} lg={6}>
-          <div style={{ display: 'flex' }}>
+          <div className='contact-box-2' style={{ display: 'flex' }}>
             <div>
               <img src='/media/images/helpline call.svg' alt='' />
             </div>
