@@ -16,7 +16,7 @@ const industryData = [
     description: 'Alyson handles bookings, follow-ups, and operations so you don’t have to.',
 
     link: '#',
-    image: '/media/images/home service mini.svg',
+    image: '/media/images/Automate icon.svg',
     // linkText: (
     //   <div>
     //     <span>
@@ -29,7 +29,7 @@ const industryData = [
     title: 'Engage Customers Effortlessly',
     description: 'AI-driven interactions build stronger relationships and boost retention.',
     // link: '#',
-    image: '/media/images/real estate mini.svg',
+    image: '/media/images/engage Icon.svg',
     // linkText: (
     //   <div>
     //     <span>
@@ -44,7 +44,7 @@ const industryData = [
       'Designed to help home service businesses grow revenue by 25% or more.',
 
     link: '#',
-    image: '/media/images/Utility & tech mini.svg',
+    image: '/media/images/Growth Icon.svg',
     linkText: (
       <div>
         <span>
