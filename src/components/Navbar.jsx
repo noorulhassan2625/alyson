@@ -42,28 +42,28 @@ const Navbar = () => {
       link: '/create-page'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Checkout mini icon.svg',
       title: 'Checkout',
       description:
         'Boost sales with Alyon’s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.',
       link: '/checkout-page'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/real state mini icon.svg',
       title: 'Assistant',
       description:
         'AI assistant handles calls, emails, texts, and data to boost efficiency and grow your business.',
       link: '/agent-page'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Audiences mini icon.svg',
       title: 'Audience',
       description:
         'Unify CRM data with insights from 170M+ homeowners to build profiles and predict behavior.',
       link: '/auidience-page'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Activate mini icon.svg',
       title: 'Activate',
       description:
         'Re-engage old leads with personalized emails, texts, and ads. Identify engagement opportunities to turn inactive leads into new ones.',
@@ -85,17 +85,17 @@ const Navbar = () => {
       link: '/industries'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Create mini.svg',
       title: 'Real Estate',
       link: '/industries'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Checkout mini icon.svg',
       title: 'Utility & Tech Services',
       link: '/industries'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/emerging mini icon.svg',
       title: 'Emerging & Specialized Services',
       link: '/industries'
     }
