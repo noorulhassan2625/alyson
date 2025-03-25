@@ -15,7 +15,7 @@ const industryData = [
     description: 'Have questions? Our team is here to help.',
 
     link: '#',
-    image: '/media/images/home service mini.svg',
+    image: '/media/images/Telephone Talking Icon.svg',
     linkText: (
       <div>
         <span>
@@ -28,7 +28,7 @@ const industryData = [
     title: 'Partner with Alyson.ai',
     description: 'Interested in collaborations or integrations? Let’s chat.',
     link: '#',
-    image: '/media/images/real estate mini.svg',
+    image: '/media/images/HandShake Deal Icon.svg',
     linkText: (
       <div>
         <span>
@@ -43,11 +43,17 @@ const industryData = [
       'Stay updated with insights, product updates, and success stories.',
 
     link: '#',
-    image: '/media/images/Utility & tech mini.svg',
+    image: '/media/images/Speaker Loud Icon.svg',
     linkText: (
       <div>
-        <span>
-          Social Platforms <ArrowRightOutlined />
+        <span style={{margin:'0px 5px'}}>
+        <img src='/media/images/Social LinkedIn Icon.svg' alt='Alyson' />
+        </span>
+        <span style={{margin:'0px 5px'}}>
+        <img src='/media/images/Social Facebook Icon.svg' alt='Alyson' />
+        </span>
+        <span style={{margin:'0px 5px'}}>
+        <img src='/media/images/Social X Icon.svg' alt='Alyson' />
         </span>
       </div>
     )
@@ -58,8 +64,14 @@ const industryData = [
       'Get the latest AI insights, industry tips, and best practices.',
 
     link: '#',
-    image: '/media/images/Emerging mini.svg',
-    linkText: 'Test text'
+    image: '/media/images/Book Page Icon.svg',
+    linkText: (
+      <div>
+        <span>
+          Contact Us <ArrowRightOutlined />
+        </span>
+      </div>
+    )
   }
 ]
 
