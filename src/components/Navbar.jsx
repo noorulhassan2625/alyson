@@ -42,7 +42,7 @@ const Navbar = () => {
       link: '/create-page'
     },
     {
-      logo: '/media/images/Checkout mini icon.svg',
+      logo: '/media/images/shopping bag mini icon.svg',
       title: 'Checkout',
       description:
         'Boost sales with Alyon’s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.',
@@ -70,7 +70,7 @@ const Navbar = () => {
       link: '/activate-page'
     },
     {
-      logo: '/media/images/acquire mini.svg',
+      logo: '/media/images/Mini Person Identity Icon.svg',
       title: 'Identity',
       description:
         'Build profiles and manage identity graphs for accurate data in personalized communications and campaigns.',
@@ -90,7 +90,7 @@ const Navbar = () => {
       link: '/industries'
     },
     {
-      logo: '/media/images/Checkout mini icon.svg',
+      logo: '/media/images/shopping bag mini icon.svg',
       title: 'Utility & Tech Services',
       link: '/industries'
     },
