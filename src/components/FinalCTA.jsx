@@ -1,4 +1,4 @@
-import { Typography, Col, Row } from "antd";
+import { Typography, Col, Row, Divider } from "antd";
 import DarkButton from "./DarkButton";
 import ContactUsModal from "./ContactUsModal";
 import { useState } from "react";
@@ -17,6 +17,10 @@ const handleCloseModal = () => {
 
   return (
     <div className="final-cta-container">
+
+<div className='section-divider'>
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
       <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
       </Title>

@@ -1467,6 +1467,31 @@ margin-top: 80px;
   background-color: white;
 }
 
+
+.solar-content-box h3{
+font-size: 36px;
+font-weight: 700;
+}
+
+.solar-content-box h4{
+font-size: 28px;
+font-weight: 700;
+}
+
+.solar-content-box h4{
+font-size: 28px;
+font-weight: 700;
+}
+.solar-content-box span{
+font-size: 20px;
+font-weight: 400;
+}
+
+.solar-content-box .dark-btn{
+  width: 30%;
+  margin-top: 20px;
+}
+
 .cta-container {
   display: flex;
   justify-content: center;
@@ -1474,7 +1499,7 @@ margin-top: 80px;
   /* background: #ffbb2a; */
   /* Yellow Background */
   padding: 150px 20px;
-  border-radius: 24px;
+  /* border-radius: 24px; */
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1498,17 +1523,25 @@ margin-top: 80px;
 }
 
 .cta-buttons {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 20px;
+  margin: 40px 0px;
 }
-
+.helping-list-button{
+  font-size: 20px;
+  text-decoration: underline;
+  color: #000000 !important;
+}
 .cta-button {
   font-size: 16px;
   padding: 12px 24px;
   border-radius: 24px;
   font-weight: 500;
   transition: all 0.3s ease;
+}
+.cta-buttons .dark-btn{
+  width: 18% !important;
 }
 
 /* White Button */
