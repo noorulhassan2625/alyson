@@ -1,10 +1,19 @@
-import React from "react";
-import { Row, Col, Typography } from "antd";
-import { CheckCircleOutlined } from "@ant-design/icons";
+import React, { useState } from "react";
+import { Row, Col, Typography, Button } from "antd";
+import { CheckCircleOutlined, DownOutlined, UpOutlined } from "@ant-design/icons";
 
 const { Title, Paragraph } = Typography;
 
 const ServicesList = () => {
+  const [expandedCategories, setExpandedCategories] = useState({});
+
+  const toggleCategory = (index) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   const ServicesData = [
     {
       title: "Home Services & Trades",
@@ -75,16 +84,13 @@ const ServicesList = () => {
 
   return (
     <div className="footer-container footer-services services-list-container">
-           {/* Header Section */}
-
-           <div className={"section-title-header"}>
+      {/* Header Section */}
+      <div className={"section-title-header"}>
         <Title level={2}>Helping Your Industry Grow with Smarter AI Solutions</Title>
       </div>
       <div className="identity-header">
-        {/* <IdcardOutlined className="identity-icon" />
-          <Title level={2}>Identity</Title> */}
         <Paragraph>
-          Build tailored profiles and leverage Alyson’s 172M identity graph
+          Build tailored profiles and leverage Alyson's 172M identity graph
           members to ensure accurate data for personalized communications and
           targeted campaigns.
         </Paragraph>
@@ -99,12 +105,21 @@ const ServicesList = () => {
               </div>
               <Paragraph className="service-description">{category.description}</Paragraph>
               <ul className="service-list">
-                {category.services.map((service, idx) => (
+                {category.services.slice(0, expandedCategories[index] ? category.services.length : 5).map((service, idx) => (
                   <li key={idx}>
                     {service}
                   </li>
                 ))}
               </ul>
+              {category.services.length > 5 && (
+                <Button 
+                  type="link" 
+                  onClick={() => toggleCategory(index)}
+                  className="helping-list-button"
+                >
+                  {expandedCategories[index] ? 'Show Less' : 'View All'}
+                </Button>
+              )}
             </div>
           </Col>
         ))}

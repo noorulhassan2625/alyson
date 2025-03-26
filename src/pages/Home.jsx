@@ -45,10 +45,7 @@ export default function Home() {
       />
 
       <ServicesList/>
-      {/*
-  <LinksSection />
-  */}
-
+  
       <FinalCTA />
     </div>
   );

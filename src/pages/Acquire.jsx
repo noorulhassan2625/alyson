@@ -3,8 +3,10 @@ import CTASection from '../components/CTASection'
 import LinksSection from '../components/LinksSection'
 import FinalCTA from '../components/FinalCTA'
 import '../css/featurePages.css'
-import { Col, Row, Typography } from 'antd'
+import { Col, Divider, Row, Typography } from 'antd'
 import FeatureContentBox from '../components/FeatureContentBox'
+import SolarContentBox from '../components/SolarContentBox'
+import ServicesList from '../components/ServicesList'
 
 const { Title } = Typography
 export default function AcquirePage () {
@@ -82,12 +84,57 @@ export default function AcquirePage () {
         </div>
       </div>
 
+      <SolarContentBox/>
+
       <CTASection
         ctaText1='“Stop wasting money on ad platforms that don’t deliver.”'
         ctaText2='Optimize your ad spend with Alyson Acquire now.'
       />
-      <LinksSection />
-      <FinalCTA />
+      <ServicesList/>
+      <div  style={{background:'white', padding:'5px 0px'}}>
+      <div style={{background:'white', padding:'5px 0px'}}>
+      <div className='section-divider' >
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
+      </div>
+      </div>
+    
+         <Row
+              gutter={[40]}
+              className='contact-info-box'
+              justify='center'
+              style={{
+                background: '#FFF8E5',
+                padding: '0px 30px 50px 30px',
+                margin: '0px'
+              }}
+            >
+              {/* Company Column */}
+              <Col xs={24} sm={12} md={6} lg={6} style={{ justifyContent: 'right' }}>
+                <div className='contact-box-1' style={{ display: 'flex', justifyContent: 'end' }}>
+                  <div>
+                    <img src='/media/images/support alyson email.svg' alt='' />
+                  </div>
+                  <Title level={5} className='cotact-info'>
+                    support@alyson.ai
+                  </Title>
+                </div>
+              </Col>
+      
+              {/* Contact Column */}
+              <Col xs={24} sm={12} md={18} lg={6}>
+                <div className='contact-box-2' style={{ display: 'flex' }}>
+                  <div>
+                    <img src='/media/images/helpline call.svg' alt='' />
+                  </div>
+                  <Title level={5} className='cotact-info'>
+                    (123) 456-7890
+                  </Title>
+                </div>
+              </Col>
+            </Row>
+      {/* <LinksSection />
+      <FinalCTA /> */}
     </div>
   )
 }

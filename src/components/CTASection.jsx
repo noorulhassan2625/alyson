@@ -1,6 +1,7 @@
 import { Button, Typography } from 'antd'
 import ContactUsModal from './ContactUsModal'
 import { useState } from 'react';
+import DarkButton from './DarkButton';
 
 const { Paragraph } = Typography
 
@@ -28,7 +29,8 @@ const handleCloseModal = () => {
 
           {/* Buttons */}
           <div className='cta-buttons'>
-            <Button onClick={handleOpenModal} className='cta-button black-btn'>Get a Demo</Button>
+            <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+            {/* <Button onClick={handleOpenModal} className='cta-button black-btn'>Get a Demo</Button> */}
             <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
           </div>
         </div>
