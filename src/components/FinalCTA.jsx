@@ -1,4 +1,4 @@
-import { Typography } from "antd";
+import { Typography, Col, Row } from "antd";
 import DarkButton from "./DarkButton";
 import ContactUsModal from "./ContactUsModal";
 import { useState } from "react";
@@ -60,7 +60,39 @@ const handleCloseModal = () => {
         </a>
       </div>
 
-      <p className="footer-text">2025 Alyson.ai</p>
+      <Row
+        gutter={[40]}
+        className='contact-info-box'
+        justify='center'
+        style={{
+          padding: '30px 30px 30px 30px',
+          margin: '0px'
+        }}
+      >
+        {/* Company Column */}
+        <Col xs={24} sm={12} md={6} lg={6} style={{ justifyContent: 'right' }}>
+          <div className='contact-box-1' style={{ display: 'flex', justifyContent: 'end' }}>
+            <div>
+              <img src='/media/images/support alyson email.svg' alt='' />
+            </div>
+            <Title level={5} className='cotact-info'>
+              support@alyson.ai
+            </Title>
+          </div>
+        </Col>
+
+        {/* Contact Column */}
+        <Col xs={24} sm={12} md={18} lg={6}>
+          <div className='contact-box-2' style={{ display: 'flex' }}>
+            <div>
+              <img src='/media/images/helpline call.svg' alt='' />
+            </div>
+            <Title level={5} className='cotact-info'>
+              (123) 456-7890
+            </Title>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };

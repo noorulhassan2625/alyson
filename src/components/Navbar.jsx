@@ -19,19 +19,20 @@ import {
   IdcardOutlined,
 } from '@ant-design/icons';
 import DarkButton from './DarkButton';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ContactUsModal from './ContactUsModal';
 
 const { Panel } = Collapse;
 const { Title } = Typography;
 
 const Navbar = () => {
+  const location = useLocation();
   const features = [
     {
       logo: '/media/images/acquire mini.svg',
       title: 'Acquire',
       description:
-        'Let Alyon’s AI help you acquire customers from Google, Facebook, Meta, Affiliate marketing, and Direct Mail.',
+        'Let Alyon`s AI help you acquire customers from Google, Facebook, Meta, Affiliate marketing, and Direct Mail.',
       link: '/acquire-page'
     },
     {
@@ -45,7 +46,7 @@ const Navbar = () => {
       logo: '/media/images/shopping bag mini icon.svg',
       title: 'Checkout',
       description:
-        'Boost sales with Alyon’s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.',
+        'Boost sales with Alyon`s Accelerated checkout boosting conversions by 50% with seamless one-tap payments.',
       link: '/checkout-page'
     },
     {
@@ -105,12 +106,12 @@ const Navbar = () => {
     {
       logo: '/media/images/about Alyson mini.svg',
       title: 'About Alyson.ai',
-      link: '#'
+      link: '/about'
     },
     {
       logo: '/media/images/blog mini.svg',
       title: 'Blog',
-      link: '#'
+      link: '/blog'
     },
     {
       logo: '/media/images/connect mini.svg',
@@ -120,12 +121,13 @@ const Navbar = () => {
     {
       logo: '/media/images/Faqs reviews mini.svg',
       title: 'FAQs + Reviews',
-      link: '#'
+      link: '/faqs'
     }
   ]
   const [visible, setVisible] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedKeys, setSelectedKeys] = useState([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,6 +142,31 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Set selected keys based on current path
+    const path = location.pathname;
+    const keys = [];
+    
+    // Check if current path matches any feature link
+    if (features.some(f => path.startsWith(f.link))) {
+      keys.push('product');
+    }
+    // Check if current path matches any industries link
+    else if (IndustriesItems.some(i => path.startsWith(i.link))) {
+      keys.push('Industries');
+    }
+    // Check if current path matches any resources link
+    else if (ResourcesItems.some(r => path.startsWith(r.link))) {
+      keys.push('Resources');
+    }
+    // Check if current path is about page
+    else if (path === '/about') {
+      keys.push('about');
+    }
+    
+    setSelectedKeys(keys);
+  }, [location.pathname]);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -163,7 +190,12 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <Menu mode='horizontal' className='menu'>
+      <Menu 
+        mode='horizontal' 
+        className='menu'
+        selectedKeys={selectedKeys}
+        onSelect={({ key }) => setSelectedKeys([key])}
+      >
         <Menu.SubMenu className='nav-item' key='product' title='Product'>
           <div className='container mega-menu'>
             <Row gutter={[24, 24]}>
@@ -242,18 +274,18 @@ const Navbar = () => {
             </Row>
           </div>
         </Menu.SubMenu>
-        <Menu.Item className='nav-item' key='about'>
-          <Link to='/about'>About</Link>
+        <Menu.Item className='nav-item' key='ContactUs'>
+        Contact Us
         </Menu.Item>
-        <Menu.Item className='nav-item' key='connect'>
+        {/* <Menu.Item className='nav-item' key='connect'>
           <Button className='contact-us-modal-btn' onClick={handleOpenModal}>
             Contact Us
           </Button>
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item className='nav-item btn-nav' key='talk'>
           <DarkButton
             buttonText='Get a Demo'
-            onClick={handleOpenModal} // Pass the onClick handler
+            onClick={handleOpenModal}
           />
         </Menu.Item>
       </Menu>
@@ -281,7 +313,7 @@ const Navbar = () => {
                 <AppstoreOutlined /> Acquire
               </p>
               <p>
-                Let Alyson’s AI help you acquire customers from Google,
+                Let Alyson's AI help you acquire customers from Google,
                 Facebook, Meta, Affiliate marketing and Direct Mail
               </p>
             </div>
@@ -377,7 +409,7 @@ const Navbar = () => {
             </div>
           </Panel>
         </Collapse>
-        <DarkButton buttonText='Let’s Talk' onClick={handleOpenModal} />
+        <DarkButton buttonText='Let`s Talk' onClick={handleOpenModal} />
       </Drawer>
 
       {/* Render the ContactUsModal component */}

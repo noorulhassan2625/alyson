@@ -323,7 +323,7 @@ label {
 }
 
 .hero .dark-btn {
-  margin-top: 50px;
+  margin: 32px 0px;
 }
 
 .navbar ul li::after {
@@ -336,6 +336,7 @@ label {
 
 .section-title-header {
   text-align: center !important;
+  margin-bottom: 32px;
 }
 
 .section-title-header + .ant-typography,
@@ -353,7 +354,7 @@ label {
 .checkout-header .section-title-header + .ant-typography {
   font-size: 20px !important;
   font-weight: 400 !important;
-  width: 80% !important;
+  width: 60% !important;
 }
 
 .section-title-header img {
@@ -406,10 +407,9 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,8 +423,9 @@ label {
 
 .aquire-btn {
   padding-top: 20px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
+
 
 .Aquire-cards {
   height: 100%;
@@ -473,6 +474,7 @@ label {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 32px;
 }
 
 .text {
@@ -532,14 +534,14 @@ p {
 }
 
 .acquire-section {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   padding: 0px !important;
 }
 
 .AcquireCards {
   padding: 0px 70px;
   background-color: #fff4df;
-
+padding-bottom: 0px !important;
   /* background: linear-gradient(180deg,
       rgba(255, 252, 240, 0.377) 100%,
       rgba(255, 252, 240, 0.377) 100%) !important; */
@@ -801,6 +803,7 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 32px;
 }
 
 .stats-section p {
@@ -814,7 +817,7 @@ p {
 }
 
 .stats-section .dark-btn {
-  margin-top: 70px;
+ margin: 32px 0px;
 }
 
 .card-content {
@@ -898,6 +901,7 @@ p {
 .create-section .ant-typography {
   text-align: center;
   padding: 0px 20px;
+  margin-top: 0px;
 }
 
 .text-content .create-box-text {
@@ -919,11 +923,10 @@ p {
   line-height: normal;
 }
 
-/* 
+
 .create-content {
-  max-width: 600px;
-  margin: 0 auto;
-} */
+margin-top: 80px;
+}
 
 .create-icon {
   display: inline-block;
@@ -967,7 +970,7 @@ p {
 
 .generative-ai-content .text-content {
   padding: 0px 30px;
-  width: 70%;
+  /* width: 70%; */
 }
 
 .info-icon:hover svg {
@@ -1009,7 +1012,7 @@ p {
 
 .create-cards {
   background: #fffaf0 !important;
-  padding: 60px 90px 2px 90px;
+  padding: 40px 90px 2px 90px;
 }
 
 .create-cards .info-cards-container .ant-card,
@@ -1024,6 +1027,7 @@ p {
 
 .create-cards .dark-btn {
   margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .create-cards .generative-ai-container:nth-child(1) {
@@ -1065,7 +1069,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px 60px 20px;
+  padding: 0px 70px 60px 70px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1074,14 +1078,15 @@ p {
 .checkout-content {
   /* background: rgba(255, 204, 77, 0.2);  */
   /* background-color: white; */
-  padding: 30px 30px 60px 30px;
-  border-radius: 20px;
+  padding: 30px 50px 60px 50px;
+  /* border-radius: 20px;
   max-width: 1200px;
-  width: 100%;
+  width: 100%; */
   text-align: center;
   background-size: cover !important;
   background-position: top !important;
   background-repeat: no-repeat !important;
+  margin-top: 30px;
 }
 
 .checkout-header {
@@ -1128,7 +1133,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
+  padding: 40px 80px 80px 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1141,8 +1146,6 @@ p {
   /* Light Transparent Background */
   padding: 20px;
   border-radius: 20px;
-  max-width: 1200px;
-  width: 100%;
   text-align: center;
   background-size: contain !important;
   background-position: center !important;
@@ -1150,7 +1153,10 @@ p {
 }
 
 .agent-header {
-  margin-bottom: 30px;
+  margin: 30px 0px;
+}
+.audiences-content .section-divider{
+  margin-bottom: 80px;
 }
 
 .agent-icon {
@@ -1359,7 +1365,8 @@ p {
 /* Button Section */
 .activate-button {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 
 .activate-button .ant-btn-primary {
@@ -1379,19 +1386,22 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
-  background: white;
+  padding: 20px 100px;
+  /* background: white; */
   padding-top: 0px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   /* Temporary White Background */
 }
 
-.identity-content {
+/* .identity-content {
   max-width: 1200px;
   width: 100%;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-}
+} */
 
 .identity-header {
   text-align: center;
@@ -1430,13 +1440,14 @@ p {
 
 .identity-description {
   font-size: 14px;
-  color: #555;
+  color: #000000;
 }
 
 /* Button Section */
 .identity-button {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .identity-button .ant-btn-primary {
@@ -1524,7 +1535,7 @@ p {
 }
 
 .footer-container {
-  padding: 40px 120px;
+  padding: 60px 120px 0px 120px;
   background: white;
   text-align: left;
 }
@@ -1594,8 +1605,11 @@ p {
 
 .final-cta-container {
   text-align: center;
-  padding: 40px 20px;
+  padding: 10px 20px 40px 20px;
   background: white;
+}
+.final-cta-container .dark-btn {
+ margin: 30px 0px 40px 0px;
 }
 
 .cta-heading {
@@ -1646,6 +1660,9 @@ p {
 .agent-feature h5 {
   font-size: 24px !important;
   font-weight: 700 !important;
+}
+.agent-feature h5, .checkout-feature .ant-typography{
+  margin-top: 0px;
 }
 
 .checkout-feature .ant-typography,
@@ -1947,7 +1964,7 @@ p {
   /* .footer-container .ant-row .activated:nth-child(2) {
     max-height: 105rem !important;
   } */
-/* 
+  /* 
   .footer-container .ant-row .links-active {
     max-height: 75rem !important;
   } */
@@ -2237,19 +2254,19 @@ p {
   .section-title-header h2 {
     font-size: 40px !important;
   }
-  
-.contact-us-container {
-  display: block;
-}
-.contact-us-container .contact-form {
-  width: auto;
-}
 
-.contact-us-container .contact-info {
-  width: auto;
-}
-.hero-video{
-  transform: scale(1.2);
-  margin-top: 70px;
-}
+  .contact-us-container {
+    display: block;
+  }
+  .contact-us-container .contact-form {
+    width: auto;
+  }
+
+  .contact-us-container .contact-info {
+    width: auto;
+  }
+  .hero-video {
+    transform: scale(1.2);
+    margin-top: 70px;
+  }
 }
