@@ -14,6 +14,7 @@ const Hero = () => {
   const videoRef = useRef(null)
 
   const handlePlayPause = () => {
+    setIsPlaying(true)
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause()

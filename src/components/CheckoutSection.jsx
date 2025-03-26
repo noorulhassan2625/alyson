@@ -68,7 +68,7 @@ const handleCloseModal = () => {
         </Row>
 
         {/* CTA Button */}
-        <div >
+        <div style={{margin:'20px 0px 20px 0px'}} >
         <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
         <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>

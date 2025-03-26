@@ -39,8 +39,8 @@ const handleCloseModal = () => {
 
 
   return (
-    <div className="identity-container">
-      <div className="identity-content"  style={{background:'url(/media/images/Identity-bg.svg)'}}>
+    <div className="identity-container" style={{background:'url(/media/images/Identity-bg.svg)'}}>
+      <div className="identity-content">
         {/* Header Section */}
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />
