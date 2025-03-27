@@ -2177,6 +2177,14 @@ font-weight: 400;
   .mobile-nav .ant-collapse-content-box .product-item {
     margin-bottom: 10px;
   }
+  .mobile-nav  .menu-item{
+    display: flex;
+    padding: 5px 0px;
+  }
+  .mobile-nav  .menu-item h5{
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 
   .section-title-header {
     justify-self: left;
@@ -2279,7 +2287,14 @@ font-weight: 400;
   }
 
   .dark-btn {
-    width: 90%;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  .cta-buttons .dark-btn {
+    width: 100% !important;
+}
+  .dark-btn span{
+   font-size: 16px !important;
   }
   .section-title-header h2 {
     font-size: 40px !important;
@@ -2298,5 +2313,8 @@ font-weight: 400;
   .hero-video {
     transform: scale(1.2);
     margin-top: 70px;
+  }
+  .menu-item{
+    display: flex;
   }
 }

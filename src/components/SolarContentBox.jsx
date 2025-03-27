@@ -23,7 +23,7 @@ const SolarContentBox = ({
       }}
       className='solar-content-box'
     >
-      <Col span='22'>
+      <Col xs={24} sm={24} lg={22} md={22}>
         <Card style={cardStyle} bordered={false}>
           <div>
             <img src={iconSrc} alt='Icon' />
