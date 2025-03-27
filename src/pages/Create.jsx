@@ -1,7 +1,5 @@
 import FeaturePageHero from '../components/FeaturePageHero'
 import CTASection from '../components/CTASection'
-import LinksSection from '../components/LinksSection'
-import FinalCTA from '../components/FinalCTA'
 import '../css/featurePages.css'
 import { Col, Divider, Row, Typography } from 'antd'
 import FeatureContentBox from '../components/FeatureContentBox'
@@ -10,6 +8,17 @@ import ServicesList from '../components/ServicesList'
 
 const { Title } = Typography
 export default function CreatePage () {
+
+  const solarContentProps = {
+    iconSrc: '/media/images/Solar Box Icon.svg',
+    mainTitle: 'Boosting Solar Company Revenue with Alyson Acquire',
+    subTitle: 'Achieving a 35% Revenue Increase through AI-Driven Marketing',
+    contentText: 'A prominent solar energy company with annual revenues exceeding $100 million integrated Alyson Acquire into their marketing operations. Leveraging AI-driven customer acquisition and intelligent campaign management, the company experienced a 19% revenue increase within the first quarter, demonstrating the platform\'s effectiveness in enhancing marketing strategies and driving substantial business growth.',
+    buttonText: 'Hear from Our Satisfied Users',
+    backgroundColor: '#FFBB2A',
+    cardStyle: { borderRadius: 12, padding: '24px', textAlign: 'left' }
+  };
+
   return (
     <div className='container'>
       <div
@@ -85,7 +94,18 @@ export default function CreatePage () {
       </div>
 
      
-      <SolarContentBox/>
+     
+
+      <SolarContentBox 
+        iconSrc={solarContentProps.iconSrc}
+        mainTitle={solarContentProps.mainTitle}
+        subTitle={solarContentProps.subTitle}
+        contentText={solarContentProps.contentText}
+        buttonText={solarContentProps.buttonText}
+        backgroundColor={solarContentProps.backgroundColor}
+        cardStyle={solarContentProps.cardStyle}
+      />
+
 
       <CTASection
         ctaText1='“Stop wasting money on ad platforms that don’t deliver.”'

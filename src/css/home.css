@@ -440,10 +440,7 @@ label {
   background-color: #ffbb2a !important;
 }
 
-.Aquire-cards:hover .card-content img {
-  /* transition: 0.4s;
-  transform: scaleX(-1); */
-}
+
 
 .Aquire-cards .card-content img {
   height: 50px;
