@@ -17,6 +17,7 @@ import {
   TeamOutlined,
   MailOutlined,
   IdcardOutlined,
+  MenuOutlined,
 } from '@ant-design/icons';
 import DarkButton from './DarkButton';
 import { Link, useLocation } from 'react-router-dom';
@@ -124,6 +125,44 @@ const Navbar = () => {
       link: '/faqs'
     }
   ]
+
+  const menuItems = [
+    {
+      key: 'product',
+      title: 'Product',
+      items: [
+        { logo: '/media/images/acquire mini.svg', title: 'Acquire', link: '/acquire-page' },
+        { logo: '/media/images/Create mini.svg', title: 'Create', link: '/create-page' },
+        { logo: '/media/images/shopping bag mini icon.svg', title: 'Checkout', link: '/checkout-page' },
+        { logo: '/media/images/real state mini icon.svg', title: 'Assistant', link: '/agent-page' },
+        { logo: '/media/images/Audiences mini icon.svg', title: 'Audience', link: '/auidience-page' },
+        { logo: '/media/images/Activate mini icon.svg', title: 'Activate', link: '/activate-page' },
+        { logo: '/media/images/Mini Person Identity Icon.svg', title: 'Identity', link: '/identity-page' }
+      ]
+    },
+    {
+      key: 'industries',
+      title: 'Industries',
+      items: [
+        { logo: '/media/images/acquire mini.svg', title: 'Home Services & Trades', link: '/industries' },
+        { logo: '/media/images/Create mini.svg', title: 'Real Estate', link: '/industries' },
+        { logo: '/media/images/shopping bag mini icon.svg', title: 'Utility & Tech Services', link: '/industries' },
+        { logo: '/media/images/emerging mini icon.svg', title: 'Emerging & Specialized Services', link: '/industries' }
+      ]
+    },
+    {
+      key: 'resources',
+      title: 'Resources',
+      items: [
+        { logo: '/media/images/about Alyson mini.svg', title: 'About Alyson.ai', link: '/about' },
+        { logo: '/media/images/blog mini.svg', title: 'Blog', link: '/blog' },
+        { logo: '/media/images/connect mini.svg', title: 'Connect', link: '/lets-connect' },
+        { logo: '/media/images/Faqs reviews mini.svg', title: 'FAQs + Reviews', link: '/faqs' }
+      ]
+    }
+  ];
+
+
   const [visible, setVisible] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -274,9 +313,9 @@ const Navbar = () => {
             </Row>
           </div>
         </Menu.SubMenu>
-        <Menu.Item className='nav-item' key='ContactUs'>
+        {/* <Menu.Item className='nav-item' key='ContactUs'>
         Contact Us
-        </Menu.Item>
+        </Menu.Item> */}
         {/* <Menu.Item className='nav-item' key='connect'>
           <Button className='contact-us-modal-btn' onClick={handleOpenModal}>
             Contact Us
@@ -291,125 +330,33 @@ const Navbar = () => {
       </Menu>
 
       {/* Mobile Drawer */}
-      <Drawer
-        title={
-          <>
-            <img
-              src='/media/images/alysonlogo.svg'
-              alt='Alyson Logo'
-              width='30%'
-            />
-          </>
-        }
+
+        {/* Mobile Menu Icon */}
+        <MenuOutlined className='menu-icon' onClick={() => setVisible(true)} />
+         {/* Mobile Drawer */}
+         <Drawer
+        title={<Image src='/media/images/alysonlogo.svg' alt='Alyson Logo' width='30%' preview={false} />}
         placement='left'
         onClose={() => setVisible(false)}
         open={visible}
-        className={'mobile-nav'}
+        className='mobile-nav'
       >
-        <Collapse accordion className={'collapse-menu'}>
-          <Panel header='Product' key='1'>
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <AppstoreOutlined /> Acquire
-              </p>
-              <p>
-                Let Alyson's AI help you acquire customers from Google,
-                Facebook, Meta, Affiliate marketing and Direct Mail
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <EditOutlined /> Create
-              </p>
-              <p>
-                Use generative AI to create ads, build a website or create a
-                landing page
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <ShoppingCartOutlined /> Checkout
-              </p>
-              <p>
-                Boost sales with Alyson: Accelerated checkout boosting
-                conversions by 50% with seamless one-tap payments.
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <UserOutlined /> Agent
-              </p>
-              <p>
-                AI assistant handles calls, emails, texts, and data to boost
-                efficiency and grow your business.
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <TeamOutlined /> Audience
-              </p>
-              <p>
-                Unify CRM data with insights from 170M+ homeowners to build
-                profiles and predict behavior.
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <MailOutlined /> Activate
-              </p>
-              <p>
-                Re-engage old leads with personalized emails, texts, and ads.
-                Identify engagement opportunities to turn inactive leads into
-                new ones.
-              </p>
-            </div>
-
-            <div className='product-item'>
-              <p className={'item-title'}>
-                <IdcardOutlined /> Identity
-              </p>
-              <p>
-                Build identity and manage identity graphs for accurate insights.
-              </p>
-            </div>
-          </Panel>
-          <Panel header='Pricing' key='2'>
-            <div className='product-item'>
-              <p className={'item-title'}>Basic</p>
-              <p>Details about the Basic plan.</p>
-            </div>
-            <div className='product-item'>
-              <p className={'item-title'}>Premium</p>
-              <p>Details about the Premium plan.</p>
-            </div>
-          </Panel>
-          <Panel header='About' key='3'>
-            <div className='product-item'>
-              <p className={'item-title'}>Company</p>
-              <p>Information about the company.</p>
-            </div>
-            <div className='product-item'>
-              <p className={'item-title'}>Team</p>
-              <p>Information about the team.</p>
-            </div>
-          </Panel>
-          <Panel header='Connect' key='4'>
-            <div className='product-item'>
-              <p className={'item-title'}>Contact Us</p>
-              <p>Details on how to contact us.</p>
-            </div>
-            <div className='product-item'>
-              <p className={'item-title'}>Support</p>
-              <p>Details on how to get support.</p>
-            </div>
-          </Panel>
+        <Collapse accordion className='collapse-menu'>
+          {menuItems.map(({ key, title, items }) => (
+            <Panel header={title} key={key}>
+              {items.map(({ logo, title, link }, index) => (
+                <Link className='accordion-item' to={link} key={index} onClick={() => setVisible(false)}>
+                  <div className='menu-item'>
+                    <Image src={logo} alt={title} width={20} height={20} preview={false} />
+                    <Title level={5}>{title}</Title>
+                  </div>
+                </Link>
+              ))}
+            </Panel>
+          ))}
         </Collapse>
-        <DarkButton buttonText='Let`s Talk' onClick={handleOpenModal} />
+        
+        <DarkButton buttonText='Get a Demo' onClick={() => setIsModalOpen(true)} />
       </Drawer>
 
       {/* Render the ContactUsModal component */}

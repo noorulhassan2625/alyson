@@ -1,8 +1,5 @@
 import React from 'react'
 import { Row, Col, Typography } from 'antd'
-import CTASection from '../components/CTASection'
-import LinksSection from '../components/LinksSection'
-import FinalCTA from '../components/FinalCTA'
 import IndustryCard from '../components/IndustryCard'
 import '../css/IndustryPageStyling.css'
 import DarkButton from '../components/DarkButton'
@@ -99,7 +96,9 @@ export default function IndustriesPage () {
             ))}
           </Row>
         </div>
+        <div className='industries-btn'>
         <DarkButton buttonText='Get Started with Alyson.ai' />
+        </div>
       </div>
 
       {/* <CTASection

@@ -90,8 +90,9 @@ display: flex;
 .industry-cards-section .ant-col-6:nth-child(4) .industry-card__link  {
   display: none;
 }
-
-
+.industries-btn .dark-btn{
+  width: 25%;
+}
 /* ====== Mobile View ====== */
 @media (max-width: 480px) {
   .industry-cards-section {
