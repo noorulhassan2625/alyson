@@ -99,23 +99,14 @@ export default function IndustriesPage () {
         <div className='industries-btn'>
         <DarkButton buttonText='Get Started with Alyson.ai' />
         </div>
-      </div>
 
-      {/* <CTASection
-        ctaText1='“Stop wasting money on ad platforms that don’t deliver.”'
-        ctaText2='Optimize your ad spend with Alyson Acquire now.'
-      /> */}
-      {/* <LinksSection /> */}
-      {/* <FinalCTA /> */}
 
-      {/* <hr style={{ borderColor: '#FCEAC7', opacity: '0.5' }}></hr> */}
-      <Row
+        <Row
         gutter={[40]}
         className='contact-info-box'
         justify='center'
         style={{
-          background: '#FFF8E5',
-          padding: '0px 30px 50px 30px',
+          padding: '50px 30px 10px 30px',
           margin: '0px'
         }}
       >
@@ -143,6 +134,17 @@ export default function IndustriesPage () {
           </div>
         </Col>
       </Row>
+      </div>
+
+      {/* <CTASection
+        ctaText1='“Stop wasting money on ad platforms that don’t deliver.”'
+        ctaText2='Optimize your ad spend with Alyson Acquire now.'
+      /> */}
+      {/* <LinksSection /> */}
+      {/* <FinalCTA /> */}
+
+      {/* <hr style={{ borderColor: '#FCEAC7', opacity: '0.5' }}></hr> */}
+
     </div>
   )
 }

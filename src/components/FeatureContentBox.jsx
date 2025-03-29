@@ -10,7 +10,7 @@ function FeatureContentBox({ title2, text, buttonText, imageSrc, listItems }) {
         <Row gutter={[24, 24]} align="middle">
           {/* Left Side Content */}
           <Col span={12}  xs={24} lg={12} className='textual-content'>
-            <Title level={1} style={{fontSize:'48px'}}>{title2}</Title>
+            <Title level={1} style={{fontSize:'36px'}}>{title2}</Title>
             <Text>{text}</Text>
             <ul>
               {listItems.map((item, index) => (

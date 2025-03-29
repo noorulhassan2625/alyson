@@ -7,7 +7,7 @@
   font-size: 24px;
 }
 .industry-top-heading h2{
-  font-size: 56px;
+  font-size: 42px;
 }
 .industry-top-heading h4{
   font-size: 30px;
@@ -25,7 +25,7 @@
 .industry-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 16px;
+  padding-bottom: 20px;
   background-color: #faf7f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -33,13 +33,13 @@
 }
 
 .industry-card__title {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .industry-card__description {
-  font-size: 18px !important;
+  font-size: 20px !important;
   color: #444;
   margin-bottom: 8px;
 }
@@ -80,11 +80,14 @@ display: flex;
   color: #000000 !important;
   font-weight: bold;
   text-decoration: underline !important;
+  position: absolute;
+  bottom: 20px;
 }
 
 .industry-card__link:hover {
   text-decoration: underline;
 }
+
 
 .industry-cards-section .ant-col-6:nth-child(3) .industry-card__link, 
 .industry-cards-section .ant-col-6:nth-child(4) .industry-card__link  {
