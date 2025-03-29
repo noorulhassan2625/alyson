@@ -109,21 +109,21 @@ const Navbar = () => {
       title: 'About Alyson.ai',
       link: '/about'
     },
-    {
-      logo: '/media/images/blog mini.svg',
-      title: 'Blog',
-      link: '/blog'
-    },
+    // {
+    //   logo: '/media/images/blog mini.svg',
+    //   title: 'Blog',
+    //   link: '/blog'
+    // },
     {
       logo: '/media/images/connect mini.svg',
       title: 'Connect',
       link: '/lets-connect'
     },
-    {
-      logo: '/media/images/Faqs reviews mini.svg',
-      title: 'FAQs + Reviews',
-      link: '/faqs'
-    }
+    // {
+    //   logo: '/media/images/Faqs reviews mini.svg',
+    //   title: 'FAQs + Reviews',
+    //   link: '/faqs'
+    // }
   ]
 
   const menuItems = [
@@ -155,9 +155,9 @@ const Navbar = () => {
       title: 'Resources',
       items: [
         { logo: '/media/images/about Alyson mini.svg', title: 'About Alyson.ai', link: '/about' },
-        { logo: '/media/images/blog mini.svg', title: 'Blog', link: '/blog' },
+        // { logo: '/media/images/blog mini.svg', title: 'Blog', link: '/blog' },
         { logo: '/media/images/connect mini.svg', title: 'Connect', link: '/lets-connect' },
-        { logo: '/media/images/Faqs reviews mini.svg', title: 'FAQs + Reviews', link: '/faqs' }
+        // { logo: '/media/images/Faqs reviews mini.svg', title: 'FAQs + Reviews', link: '/faqs' }
       ]
     }
   ];

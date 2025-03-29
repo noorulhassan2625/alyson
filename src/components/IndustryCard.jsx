@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Typography } from "antd";
 import { FileTextOutlined } from "@ant-design/icons";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
 const IndustryCard = ({ title, description, services, link, image, linkText }) => {
+  const [showAllServices, setShowAllServices] = useState(false);
+  
+  // Determine which services to display
+  const displayedServices = showAllServices ? services : services?.slice(0, 3);
+
   return (
     <Card className="industry-card">
       <div className="industry-card__icon">
@@ -19,15 +24,24 @@ const IndustryCard = ({ title, description, services, link, image, linkText }) =
       </Title>
       <Paragraph className="industry-card__description">{description}</Paragraph>
       <ul className="industry-card__list">
-        {services?.map((service, index) => (
+        {displayedServices?.map((service, index) => (
           <li key={index}>
             <Text>{service}</Text>
           </li>
         ))}
       </ul>
-      <Link href={link} className="industry-card__link">
-      {linkText || 'View All'}
-            </Link>
+      {services?.length > 3 && (
+        <Link 
+          href="#" 
+          className="industry-card__link"
+          onClick={(e) => {
+            e.preventDefault();
+            setShowAllServices(!showAllServices);
+          }}
+        >
+          {showAllServices ? 'Show Less' : (linkText || 'View All')}
+        </Link>
+      )}
     </Card>
   );
 };

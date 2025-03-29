@@ -91,7 +91,7 @@ export default function About () {
           title2='Why We Created Alyson.ai'
           text='At Alyson.ai, we wanted our platform to feel approachable, friendly, and reliable—just like a trusted colleague who’s always there to help you grow. The name Alyson represents everything we stand for: smart solutions, intuitive support, and a personal touch. She’s the AI designed to make running your business easier, more efficient, and, most importantly, successful.'
           buttonText='Activate Your Leads Now'
-          imageSrc='./media/images/AcquireHeroImg.svg'
+          imageSrc='./media/images/about side image.svg'
         />
 
         <div className='industry-top-heading' style={{ padding: '0px 100px' }}>
