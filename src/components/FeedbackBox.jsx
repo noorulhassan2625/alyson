@@ -9,14 +9,32 @@ const { Title, Paragraph } = Typography
 const FeedBackBox = () => {
   const cardsData = [
     {
-      icon: <UserCallingIcon />
+      icon: (
+        <img
+          src='/media/images/icon_create_10.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
     },
     {
-      icon: <LoopIcon />
+      icon: (
+        <img
+          src='/media/images/icon_create_11.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
     },
     {
-      icon: <SpeakerIcon />
-    }
+      icon: (
+        <img
+          src='/media/images/icon_create_12.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
+    },
   ]
 
   return (

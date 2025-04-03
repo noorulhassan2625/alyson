@@ -9,7 +9,7 @@ const cardData = [
       <>
         {' '}
         <img
-          src='/media/images/AI-Driven_icon.svg'
+          src='/media/images/Acquire_icon_1.svg'
           alt={'iconImage'}
           width={'70%'}
         />
@@ -17,14 +17,14 @@ const cardData = [
     ),
     title: 'AI-Driven Customer Acquisition',
     description:
-      'Alyson uses her broad identity graph to deanonymize site traffic, grade homeowner quality, and adjust bids accordingly.'
+      'Alyson deanonymizes site traffic, grades homeowner quality based on your ICP, and adjusts bids accordingly.'
   },
   {
     icon: (
       <>
         {' '}
         <img
-          src='/media/images/propertycompaign_icon.svg'
+          src='/media/images/Acquire_icon_2.svg'
           alt={'iconImage'}
           width={'70%'}
         />
@@ -32,14 +32,14 @@ const cardData = [
     ),
     title: 'Proprietary Campaign Grading',
     description:
-      'Rank every campaign and ad, then ensure your budget goes to your highest-ranked ads.'
+      'Sometimes, the competition is your other ads. Rank every campaign and ad, then automatically ensure your budget goes to your highest-ranked ads.'
   },
   {
     icon: (
       <>
         {' '}
         <img
-          src='/media/images/PauseBidsIcon.svg'
+          src='/media/images/Acquire_icon_3.svg'
           alt={'iconImage'}
           width={'70%'}
         />
@@ -47,14 +47,14 @@ const cardData = [
     ),
     title: 'Pause or Reduce Bids',
     description:
-      'Alyson’s AI assists in identifying ads that aren’t likely to succeed, helping you pause or reduce bids.'
+      'Pause bad ads quickly and save a lot of money. Let Alyson’s AI assist you in identifying ads that aren’t likely to succeed and pause or reduce bids.'
   },
   {
     icon: (
       <>
         {' '}
         <img
-          src='/media/images/betterFeedbackIcon.svg'
+          src='/media/images/Acquire_icon_4.svg'
           alt={'iconImage'}
           width={'70%'}
         />
@@ -62,7 +62,7 @@ const cardData = [
     ),
     title: 'Better Feedback Loops',
     description:
-      'Build world-class feedback loops and stop relying on pixels that miss up to 30% of events.'
+      'Build world-leading feedback loops and stop relying on pixels that miss up to 30% of the events you need to optimize your ads.'
   }
 ]
 

@@ -1,17 +1,14 @@
 import CountUp from "react-countup";
-import DarkButton from "./DarkButton";
-import ContactUsModal from "./ContactUsModal";
-import { useState } from "react";
 
 const StatsBox = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-const handleOpenModal = () => {
-  setIsModalOpen(true);
-};
+//   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+// const handleOpenModal = () => {
+//   setIsModalOpen(true);
+// };
 
-const handleCloseModal = () => {
-  setIsModalOpen(false);
-};
+// const handleCloseModal = () => {
+//   setIsModalOpen(false);
+// };
 
   return (
     <div className="stats-section">
@@ -24,8 +21,8 @@ const handleCloseModal = () => {
         The AI Engine Behind 5 Million Homeowner Journeys –  
         Making decisions smarter, experiences smoother, and driving revenue.
       </p>
-      <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
-      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      {/* <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+      <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} /> */}
     </div>
   );
 };

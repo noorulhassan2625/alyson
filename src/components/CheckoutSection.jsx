@@ -1,51 +1,81 @@
 import { Row, Col, Typography } from 'antd'
-import DarkButton from './DarkButton'
-import ContactUsModal from './ContactUsModal'
-import { useState } from 'react'
-
 const { Title, Paragraph } = Typography
 
 const CheckoutSection = () => {
   const features = [
     {
+      icon: (
+        <img
+          src='/media/images/checkout_icon_1.svg'
+          alt={'iconImage'}
+          width={'20%'}
+        />
+      ),
       title: 'Accelerated Checkout Experience',
       description:
         'Streamline the buying process with a fast, one-click lead generation process.'
     },
     {
+      icon: (
+        <img
+          src='/media/images/checkout_icon_2.svg'
+          alt={'iconImage'}
+          width={'20%'}
+        />
+      ),
       title: 'Privacy Shield Boosts Conversion',
       description:
-        'Alyson creates a custom private email address for consumers so they are more comfortable signing up, resulting in more leads for your business and valuable information about your win rates.'
+        'Alyson creates private emails for consumers, boosting sign-ups, leads, and insights on win rates'
     },
     {
+      icon: (
+        <img
+          src='/media/images/checkout_icon_3.svg'
+          alt={'iconImage'}
+          width={'20%'}
+        />
+      ),
       title: 'Automated Form Creation',
       description:
-        'What if your forms could learn? They ask the best question first and never ask questions they know the answer to. Alyson forms are like a self-driving car, helping boost revenue.'
+        'What if your forms learned? Like a self-driving car, Alyson asks the best questions first, never repeats, and boosts revenue.'
     },
     {
+      icon: (
+        <img
+          src='/media/images/checkout_icon_4.svg'
+          alt={'iconImage'}
+          width={'20%'}
+        />
+      ),
       title: 'Gain Valuable Insights',
       description:
         'Alyson knows your ideal customer and often who is on your website and can tell you how well you are doing converting your best prospects.'
     }
   ]
 
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-const handleOpenModal = () => {
-  setIsModalOpen(true);
-};
+  // const [isModalOpen, setIsModalOpen] = useState(false) // State for modal visibility
+  // const handleOpenModal = () => {
+  //   setIsModalOpen(true)
+  // }
 
-const handleCloseModal = () => {
-  setIsModalOpen(false);
-};
-
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false)
+  // }
 
   return (
     <div className='checkout-container'>
-      <div className='checkout-content'  style={{background:'url(/media/images/Checkoutbox-bg.svg)'}}>
+      <div
+        className='checkout-content'
+        style={{ background: 'url(/media/images/Checkoutbox-bg.svg)' }}
+      >
         {/* Header Section */}
         <div className='checkout-header'>
           <div className={'section-title-header'}>
-            <img src='/media/images/checkout.svg' alt='Alyson Logo' width='13%' />
+            <img
+              src='/media/images/checkout.svg'
+              alt='Alyson Logo'
+              width='13%'
+            />
             <Title level={2}>Checkout</Title>
           </div>
           <Paragraph>
@@ -60,6 +90,7 @@ const handleCloseModal = () => {
           {features.map((feature, index) => (
             <Col key={index} xs={24} sm={6}>
               <div className='checkout-feature'>
+                <div className='feature-icon'>{feature.icon}</div>
                 <Title level={5}>{feature.title}</Title>
                 <Paragraph>{feature.description}</Paragraph>
               </div>
@@ -68,10 +99,10 @@ const handleCloseModal = () => {
         </Row>
 
         {/* CTA Button */}
-        <div style={{margin:'20px 0px 20px 0px'}} >
-        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
-        <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
-        </div>
+        {/* <div style={{ margin: '20px 0px 20px 0px' }}>
+          <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+          <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
+        </div> */}
       </div>
     </div>
   )

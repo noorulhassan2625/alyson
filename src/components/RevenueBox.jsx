@@ -9,14 +9,33 @@ const { Title, Paragraph } = Typography
 const RevenueBox = () => {
   const cardsData = [
     {
-      icon: <BarsIcon />
+      icon: (
+        <img
+          src='/media/images/icon_create_4.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
     },
     {
-      icon: <ChartUpIcon />
+      icon: (
+        <img
+          src='/media/images/icon_create_5.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
     },
     {
-      icon: <DollarIcon />
-    }
+      icon: (
+        <img
+          src='/media/images/icon_create_6.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
+    },
+
   ]
 
   return (
