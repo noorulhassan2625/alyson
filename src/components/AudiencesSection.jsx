@@ -1,37 +1,66 @@
 import { Row, Col, Typography, Divider } from "antd";
-import DarkButton from "./DarkButton";
-import ContactUsModal from "./ContactUsModal";
-import { useState } from "react";
-
 const { Title, Paragraph } = Typography;
 
 const AudiencesSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-const handleOpenModal = () => {
-  setIsModalOpen(true);
-};
 
-const handleCloseModal = () => {
-  setIsModalOpen(false);
-};
 
   const features = [
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Audience_icon_1.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: "Identify Your Best Prospects",
       description:
         "Access data from over 170 million homeowners to build powerful models that help you identify your best prospects.",
     },
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Audience_icon_2.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: "Customer Data Platform",
       description:
-        "Leverage Alyson’s powerful customer data platform to save all your customer data in a low-cost AWS S3 bucket and migrate data from any source to any destination.",
+        "Use Alyson’s customer data platform to store data in a low-cost AWS S3 bucket and migrate it from any source to any destination.",
     },
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Audience_icon_3.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: "CRM Data Cleanup & Enhancement",
       description:
-        "Identify and clean bad data, append missing details, and add new records and participants to your database.",
+        "Identify and clean bad data, append missing details, and add new records and properties to your database.",
     },
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Audience_icon_4.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: "Unified Customer Profiles",
       description:
         "Join your CRM data, email, phone, direct mail, and website visits into one 360-degree view of your prospects.",
@@ -60,6 +89,9 @@ const handleCloseModal = () => {
           {features.map((feature, index) => (
             <Col key={index} xs={24} sm={12} md={6}>
               <div className="audience-card">
+                <div className="audience-icon">
+                  {feature.icon}
+                </div>
                 <Title level={5}>{feature.title}</Title>
                 <Paragraph>{feature.description}</Paragraph>
               </div>
@@ -68,10 +100,10 @@ const handleCloseModal = () => {
         </Row>
 
         {/* CTA Button */}
-        <div className="audiences-btn-container">
+        {/* <div className="audiences-btn-container">
         <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
         <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

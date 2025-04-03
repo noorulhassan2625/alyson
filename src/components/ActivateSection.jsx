@@ -1,41 +1,70 @@
 import { Row, Col, Typography, Divider } from 'antd'
-import DarkButton from './DarkButton'
-import ContactUsModal from './ContactUsModal'
-import { useState } from 'react'
-
 const { Title, Paragraph } = Typography
 
 const ActivateSection = () => {
   const features = [
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Activate_icon_1.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: 'Revitalize Old Leads',
       description:
         'Transform inactive leads into new opportunities with Alyson Activate’s re-engagement tools.'
     },
-    {
+    { 
+      icon: (
+      <>
+        {' '}
+        <img
+          src='/media/images/Activate_icon_2.svg'
+          alt={'iconImage'}
+          width={'20%'}
+        />
+      </>
+    ),
       title: 'Automated Outreach',
       description:
         'Send targeted emails, text messages, and display ads to re-engage leads effortlessly.'
     },
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Activate_icon_3.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: 'Access Network Intelligence',
       description:
         'Identify when leads are engaging across the entire Alyson network and act at the right moment to maximize conversions based on network intent signals.'
     },
     {
+      icon: (
+        <>
+          {' '}
+          <img
+            src='/media/images/Activate_icon_4.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: 'Engage with Content',
       description:
-        'Creating content is expensive, and finding content that is relevant requires expensive marketing analysts. Let Alyson find engaging content that translates into more revenue for your business.'
+        'Creating content is costly, and finding relevant content needs pricey analysts. Let Alyson find engaging content that boosts your revenue.'
     }
   ]
-  const [isModalOpen, setIsModalOpen] = useState(false) // State for modal visibility
-  const handleOpenModal = () => {
-    setIsModalOpen(true)
-  }
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false)
-  }
+  
 
   return (
     <div className='activate-container'>
@@ -66,6 +95,7 @@ const ActivateSection = () => {
           {features.map((feature, index) => (
             <Col key={index} xs={24} sm={12} md={6}>
               <div className='activate-card'>
+                <div className='activate-icon'>{feature.icon}</div>
                 <Title level={5} className='activate-title'>
                   {feature.title}
                 </Title>
@@ -78,10 +108,10 @@ const ActivateSection = () => {
         </Row>
 
         {/* Call to Action Button */}
-        <div className='activate-button'>
+        {/* <div className='activate-button'>
           <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
           <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
-        </div>
+        </div> */}
       </div>
     </div>
   )

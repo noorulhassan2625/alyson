@@ -1,8 +1,4 @@
 import { Row, Col, Typography, Divider } from 'antd'
-import DarkButton from './DarkButton'
-import ContactUsModal from './ContactUsModal'
-import { useState } from 'react'
-
 const { Title, Paragraph } = Typography
 
 const AgentSection = () => {
@@ -15,7 +11,7 @@ const AgentSection = () => {
         <>
           {' '}
           <img
-            src='/media/images/ai_powered.svg'
+            src='/media/images/Assistant_icon_1.svg'
             alt={'iconImage'}
             width={'40px'}
           />
@@ -25,12 +21,12 @@ const AgentSection = () => {
     {
       title: 'Data Science Models',
       description:
-        'Alyson models predict the likelihood of all users taking important actions, from opening an email to answering a call to converting to revenue.',
+        'Alyson predicts user actions—opening emails, answering calls, converting—so you can run experiments and boost appointments with quality homeowners.',
       icon: (
         <>
           {' '}
           <img
-            src='/media/images/data_science_model.svg'
+            src='/media/images/Assistant_icon_2.svg'
             alt={'iconImage'}
             width={'40px'}
           />
@@ -40,12 +36,12 @@ const AgentSection = () => {
     {
       title: '1% of the Cost of a Human',
       description:
-        'Alyson can make phone calls at as low as 1% of the cost of a human, allowing your sales team to focus on high-value activities.',
+        'Alyson can make phone calls at as low as 1% of the cost of a human, allowing your sales team to focus on high-value activities instead of boring, repetitive tasks.',
       icon: (
         <>
           {' '}
           <img
-            src='/media/images/one_of_the_cost.svg'
+            src='/media/images/Assistant_icon_3.svg'
             alt={'iconImage'}
             width={'40px'}
           />
@@ -55,12 +51,12 @@ const AgentSection = () => {
     {
       title: 'Stop Losing Deals',
       description:
-        'Stop losing deals to your competition because you’re too busy to manage the follow-up.',
+        'Stop losing deals to your competition because you’re just too busy to manage the follow-up.',
       icon: (
         <>
           {' '}
           <img
-            src='/media/images/stop_losing_deals.svg'
+            src='/media/images/Assistant_icon_4.svg'
             alt={'iconImage'}
             width={'40px'}
           />
@@ -68,14 +64,14 @@ const AgentSection = () => {
       )
     }
   ]
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
+  // const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  // const handleOpenModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   return (
     <div className='agent-container'>
@@ -113,8 +109,8 @@ const AgentSection = () => {
         {/* CTA Button */}
         <div className='agent-btn-container'>
         </div>
-        <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
-          <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
+        {/* <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
+          <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} /> */}
       </div>
     </div>
   )

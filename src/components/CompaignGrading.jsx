@@ -9,14 +9,32 @@ const { Title, Paragraph } = Typography
 const CompaignGradingBox = () => {
   const cardsData = [
     {
-      icon: <PagesIcon />
+      icon: (
+        <img
+          src='/media/images/icon_create_7.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
     },
     {
-      icon: <MirrorImageIcon />
-    },
+      icon: (
+        <img
+          src='/media/images/icon_create_8.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
+    },  
     {
-      icon: <StarIcon />
-    }
+      icon: (
+        <img
+          src='/media/images/icon_create_9.svg'
+          alt={'iconImage'}
+          width={'100%'}
+        />
+      )
+    },
   ]
 
   return (
