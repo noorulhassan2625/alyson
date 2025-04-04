@@ -18,9 +18,9 @@ const handleCloseModal = () => {
   return (
     <div className="final-cta-container">
 
-<div className='section-divider'>
+{/* <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />
-        </div>
+        </div> */}
       <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
       </Title>
@@ -92,7 +92,7 @@ const handleCloseModal = () => {
               <img src='/media/images/helpline call.svg' alt='' />
             </div>
             <Title level={5} className='cotact-info'>
-              (123) 456-7890
+            +1 307-381-1637
             </Title>
           </div>
         </Col>

@@ -50,9 +50,8 @@ const industryData = [
     description:
       'Supporting cutting-edge businesses and local service professionals with AI-driven growth strategies.',
     services: [
-      'PropTech (Property Technology)',
-      'AI-Driven Marketing',
-      'Smart Home Services'
+      'PropTech (Property Technology) Products',
+      'Local Service Professionals (Handyman, General Contractors, etc.)',
     ],
     link: '#',
     image: '/media/images/Emerging mini.svg'
@@ -129,7 +128,7 @@ export default function IndustriesPage () {
               <img src='/media/images/helpline call.svg' alt='' />
             </div>
             <Title level={5} className='cotact-info'>
-              (123) 456-7890
+              +1 307-381-1637
             </Title>
           </div>
         </Col>
