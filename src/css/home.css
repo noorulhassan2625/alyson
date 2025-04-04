@@ -1803,6 +1803,18 @@ font-weight: 400;
 /* .mobile-view {
   display: none;
 } */
+
+:where(.css-dev-only-do-not-override-19lec04).ant-menu-light .ant-menu-submenu-selected{
+margin-top: 15px !important;
+}
+:where(.css-dev-only-do-not-override-19lec04).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title{
+  color: #000000;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 20px;
+}
+
+
 /* ======== Responsiveness ======== */
 
 /* ===== Mobile responsive ===== */

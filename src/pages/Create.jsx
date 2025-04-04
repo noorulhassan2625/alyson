@@ -33,7 +33,7 @@ export default function CreatePage () {
           title2='AI-Powered Landing Pages & Ads That Maximize Your Revenue'
           text='Alyson Create uses Generative AI & Reinforcement Learning to build and test thousands of landing pages, ads, and websites—automatically finding the best version to maximize revenue per visitor.'
           buttonText='Optimize Your Ad Spend Now'
-          imageSrc='https://picsum.photos/seed/picsum/200/300'
+          imageSrc='./media/images/create_main_side_img.svg'
         />
         <div className='center-heading' style={{ padding: '0px 20px' }}>
           <Row gutter={[24]} align='middle'>
@@ -50,7 +50,7 @@ export default function CreatePage () {
             title2='Maximize Ad Efficiency with Comprehensive Data Profiles'
             text='AI That Builds & Tests for You. Alyson’s AI generates thousands of versions, tests them, and finds the highest-converting page.'
             buttonText='Create Your First AI-Optimized Page'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/create_list_img_1.svg'
             listItems={[
               'AI-generated landing pages in minutes',
               'Automatic A/B testing without manual setup',
@@ -61,7 +61,7 @@ export default function CreatePage () {
             title2='50% Revenue Boost: Higher Conversions, More Sales'
             text='Our AI-driven system finds the best-performing page, increasing revenue by up to 50%.'
             buttonText='Start Growing Your Revenue'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/create_list_img_2.svg'
             listItems={[
               'AI optimizes layouts, copy, and CTAs for impact.',
               'Seamless integration with ad platforms.',
@@ -72,7 +72,7 @@ export default function CreatePage () {
             title2='High-Converting Templates. Build & Launch Instantly'
             text='Get dozens of proven, high-converting templates designed for maximum performance.'
             buttonText='Explore AI-Powered Templates'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/create_list_img_3.svg'
             listItems={[
               'Pre-optimized designs for any industry',
               'No coding required—just plug & play',
@@ -83,7 +83,7 @@ export default function CreatePage () {
             title2='Route Traffic Intelligently'
             text='Alyson intelligently directs traffic to winning variants, ensuring the best results.'
             buttonText='Let AI Optimize Your Campaigns'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
+            imageSrc='./media/images/create_list_img_4.svg'
             listItems={[
               'AI-powered traffic split testing',
               'Dynamic landing pages based on visitor type',
@@ -149,7 +149,7 @@ export default function CreatePage () {
                     <img src='/media/images/helpline call.svg' alt='' />
                   </div>
                   <Title level={5} className='cotact-info'>
-                    (123) 456-7890
+                    +1 307-381-1637
                   </Title>
                 </div>
               </Col>

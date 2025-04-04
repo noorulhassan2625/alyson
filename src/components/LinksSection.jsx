@@ -162,7 +162,7 @@ const LinksSection = () => {
               <img src='/media/images/helpline call.svg' alt='' />
             </div>
             <Title level={5} className='cotact-info'>
-            (123) 456-7890
+            +1 307-381-1637
             </Title>
           </div>
         </Col>
