@@ -83,11 +83,11 @@ const AudiencesSection = () => {
             De-anonymize your traffic and clean, enhance, and unify your CRM data with insights from 170M+ homeowner profiles.
           </Paragraph>
         </div>
-
+    <div style={{margin:'0 120px'}}>
         {/* Features Section */}
         <Row gutter={[24, 24]} justify="center">
           {features.map((feature, index) => (
-            <Col key={index} xs={24} sm={12} md={6}>
+            <Col key={index} xs={24} sm={12} md={12} style={{textAlign: 'center' ,justifyContent: 'center'}}>
               <div className="audience-card">
                 <div className="audience-icon">
                   {feature.icon}
@@ -98,6 +98,8 @@ const AudiencesSection = () => {
             </Col>
           ))}
         </Row>
+    </div>
+
 
         {/* CTA Button */}
         {/* <div className="audiences-btn-container">

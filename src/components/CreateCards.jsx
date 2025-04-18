@@ -20,7 +20,8 @@ function CreateCards() {
   return (
     <div className={'create-cards'}
     >
-      <div className='create-cards-bg'  style={{background:'url(/media/images/Create-bg.svg)'}}>
+      {/* <div className='create-cards-bg'  style={{background:'url(/media/images/Create-bg.svg)'}}> */}
+      <div className='create-cards-bg'>
       <GenerativeAISection />
       <Divider style={{ borderColor: '#ffffff', minWidth:'50%', width:'80%', margin:'0 auto' }} />
       <RevenueBox />

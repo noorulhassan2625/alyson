@@ -15,6 +15,8 @@ import LinksSection from "../components/LinksSection";
 import FinalCTA from "../components/FinalCTA";
 import "../css/home.css";
 import ServicesList from "../components/ServicesList";
+import CheckoutAccordions from "../components/CheckoutAccordions";
+import IdentityAccordions from "../components/IdentityAccordions";
 
 export default function Home() {
   return (
@@ -23,22 +25,26 @@ export default function Home() {
         className="hero-bg"
         style={{
           background:
-            "linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)",
+            "linear-gradient(rgba(255, 204, 77, 0) 28%, rgb(255 252 240 / 94%) 40%), url(/media/images/hero-section.svg)",
         }}
       >
         <Hero />
         <FeatureCards />
+        <div className="dotted-bg">
         <StatusBox />
+        </div>
         <Acquire />
         <AquireCards />
       </div>
       <CreateSection />
       <CreateCards />
       <CheckoutSection />
+      <CheckoutAccordions />
       <AgentSection />
       <AudiencesSection />
       <ActivateSection />
-      <IdentitySection />
+      {/* <IdentitySection /> */}
+      <IdentityAccordions/>
       <CTASection
         ctaText1="Ready to transform your home services business?"
         ctaText2="Get started with Alyson today."
