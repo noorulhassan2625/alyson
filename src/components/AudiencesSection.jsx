@@ -87,7 +87,7 @@ const AudiencesSection = () => {
         {/* Features Section */}
         <Row gutter={[24, 24]} justify="center">
           {features.map((feature, index) => (
-            <Col key={index} xs={24} sm={12} md={12} style={{textAlign: 'center' ,justifyContent: 'center'}}>
+            <Col  className="audience-col" key={index} xs={24} sm={12} md={12} style={{textAlign: 'center' ,justifyContent: 'center'}}>
               <div className="audience-card">
                 <div className="audience-icon">
                   {feature.icon}

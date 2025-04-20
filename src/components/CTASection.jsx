@@ -17,7 +17,7 @@ const handleCloseModal = () => {
 
   return (
     <div className='cta-section'>
-      <div className='cta-container' style={{ background: 'url(/media/images/ready-bg.svg)' }}>
+      <div className='cta-container'>
         <div className='cta-content'>
           {/* Main Text */}
           <Paragraph className='cta-text'>
