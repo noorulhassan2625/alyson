@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <CreateSection />
       <CreateCards />
-      <CheckoutSection />
+      {/* <CheckoutSection /> */}
       <CheckoutAccordions />
       <AgentSection />
       <AudiencesSection />

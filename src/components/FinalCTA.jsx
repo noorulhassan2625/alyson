@@ -21,9 +21,9 @@ const handleCloseModal = () => {
 {/* <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />
         </div> */}
-      <Title level={2} className="cta-heading">
+      {/* <Title level={2} className="cta-heading">
         Be the first to experience our app upon launch.
-      </Title>
+      </Title> */}
       <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
       <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <div className="footer-links">
