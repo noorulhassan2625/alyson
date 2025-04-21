@@ -17,6 +17,7 @@ import "../css/home.css";
 import ServicesList from "../components/ServicesList";
 import CheckoutAccordions from "../components/CheckoutAccordions";
 import IdentityAccordions from "../components/IdentityAccordions";
+import ServicesCards from "../components/ServicesCards";
 
 export default function Home() {
   return (
@@ -50,8 +51,10 @@ export default function Home() {
         ctaText2="Get started with Alyson today."
       />
 
-      <ServicesList/>
+      {/* <ServicesList/> */}
   
+<ServicesCards/>
+
       <FinalCTA />
     </div>
   );

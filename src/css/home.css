@@ -1782,6 +1782,28 @@ margin: 0 auto;
   margin: 0px auto !important;
 }
 
+.services-cards{
+  background-color: white !important;
+  padding: 100px 0px 20px 0px;
+}
+
+.services-cards .services-cards-container {
+  padding: 0px 100px;
+}
+.services-card{
+  box-shadow: 0px 8px 12px 0px #00000040;
+padding: 20px;
+border-radius: 24px;
+height: 340px;
+margin: 20px;
+}
+.services-card h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+.services-card img{
+  width: 100% !important;
+}
 .conversation-container {
   position: relative;
   margin: 0px 100px;
