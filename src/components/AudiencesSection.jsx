@@ -83,7 +83,7 @@ const AudiencesSection = () => {
             De-anonymize your traffic and clean, enhance, and unify your CRM data with insights from 170M+ homeowner profiles.
           </Paragraph>
         </div>
-    <div style={{margin:'0 120px'}}>
+    <div className="audiences-contaniner-box" style={{margin:'0 120px'}}>
         {/* Features Section */}
         <Row gutter={[24, 24]} justify="center">
           {features.map((feature, index) => (

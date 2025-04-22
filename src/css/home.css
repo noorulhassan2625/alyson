@@ -2322,8 +2322,28 @@ margin: 20px;
 
   .audiences-header .ant-typography {
     text-align: left;
+    padding-left: 0px !important;
   }
 
+  .audiences-contaniner-box{
+    margin: 0px 0px !important;
+  }
+  .audiences-contaniner-box .audience-card{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .audiences-contaniner-box .audience-col:nth-child(2){
+    margin-top: 70px;
+  }
+  .services-cards .services-cards-container{
+    padding: 0px 0px !important;
+  }
+  .services-card{
+    height: 380px !important;
+  }
+  .cta-content{
+    padding: 80px 20px !important;
+  }
   .info-icon {
     padding: 0px;
   }
@@ -2375,10 +2395,14 @@ margin: 20px;
 
   .checkout-header .section-title-header + .ant-typography {
     width: 100% !important;
+    padding-left: 0px;
   }
+  .accordion-container {
+    padding: 30px 0px !important;
+}
 
   .checkout-header {
-    padding: 2px 30px;
+    padding: 2px 0px;
   }
 
   .info-cards-container {
