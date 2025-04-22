@@ -21,7 +21,7 @@ function ServicesCards () {
       </div>
       <div className='services-cards-container'>
         <Row>
-          <Col lg={6} xl={6} md={6} sm={24} xs={24} className='section-title-header'>
+          <Col lg={6} xl={6} md={6} sm={24} xs={24}>
             <div className='services-card'>
               <img
                 src='/media/images/servicebox-icon-1.svg'
