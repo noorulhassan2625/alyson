@@ -1,3 +1,5 @@
+import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 import Acquire from "../components/Aquire";
 import AquireCards from "../components/AquireCards";
 import CreateCards from "../components/CreateCards";
@@ -19,6 +21,35 @@ import CheckoutAccordions from "../components/CheckoutAccordions";
 import IdentityAccordions from "../components/IdentityAccordions";
 import ServicesCards from "../components/ServicesCards";
 
+// Animation variants for fade-in and slide-up effect
+const animationVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+// Component wrapper to handle animation
+const AnimatedSection = ({ children }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 }); // Trigger once when 30% of component is visible
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Ensure animation only runs once
+  if (isInView && !hasAnimated) {
+    setHasAnimated(true);
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={hasAnimated ? "visible" : "hidden"}
+      variants={animationVariants}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 export default function Home() {
   return (
     <div className="container">
@@ -29,33 +60,57 @@ export default function Home() {
             "linear-gradient(rgba(255, 204, 77, 0) 28%, rgb(255 252 240 / 94%) 40%), url(/media/images/hero-section.svg)",
         }}
       >
-        <Hero />
-        <FeatureCards />
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
+        <AnimatedSection>
+          <FeatureCards />
+        </AnimatedSection>
         <div className="dotted-bg">
-        <StatusBox />
+          <AnimatedSection>
+            <StatusBox />
+          </AnimatedSection>
         </div>
-        <Acquire />
-        <AquireCards />
+        <AnimatedSection>
+          <Acquire />
+        </AnimatedSection>
+        <AnimatedSection>
+          <AquireCards />
+        </AnimatedSection>
       </div>
-      <CreateSection />
-      <CreateCards />
-      {/* <CheckoutSection /> */}
-      <CheckoutAccordions />
-      <AgentSection />
-      <AudiencesSection />
-      <ActivateSection />
-      {/* <IdentitySection /> */}
-      <IdentityAccordions/>
-      <CTASection
-        ctaText1="Ready to transform your home services business?"
-        ctaText2="Get started with Alyson today."
-      />
-
-      {/* <ServicesList/> */}
-  
-<ServicesCards/>
-
-      <FinalCTA />
+      <AnimatedSection>
+        <CreateSection />
+      </AnimatedSection>
+      <AnimatedSection>
+        <CreateCards />
+      </AnimatedSection>
+      <AnimatedSection>
+        <CheckoutAccordions />
+      </AnimatedSection>
+      <AnimatedSection>
+        <AgentSection />
+      </AnimatedSection>
+      <AnimatedSection>
+        <AudiencesSection />
+      </AnimatedSection>
+      <AnimatedSection>
+        <ActivateSection />
+      </AnimatedSection>
+      <AnimatedSection>
+        <IdentityAccordions />
+      </AnimatedSection>
+      <AnimatedSection>
+        <CTASection
+          ctaText1="Ready to transform your home services business?"
+          ctaText2="Get started with Alyson today."
+        />
+      </AnimatedSection>
+      <AnimatedSection>
+        <ServicesCards />
+      </AnimatedSection>
+      <AnimatedSection>
+        <FinalCTA />
+      </AnimatedSection>
     </div>
   );
 }
