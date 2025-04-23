@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-  /* background: linear-gradient(to bottom, #fbbc04, #fabc25); */
+  background: linear-gradient(to bottom, #ffe1a3 5%, #ffffff 30%);
   /* background-color: #FFBB2A; */
-  background-color: #ffe1a3;
+  /* background-color: #ffe1a3; */
   font-family: 'Lato', serif !important;
   text-align: center;
   margin: 0;
