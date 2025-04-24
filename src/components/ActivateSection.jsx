@@ -1,12 +1,13 @@
-import { Row, Col, Typography, Divider } from 'antd'
-const { Title, Paragraph } = Typography
+import { Row, Col, Typography, Divider } from 'antd';
+import { motion, useInView } from 'framer-motion'; // Import framer-motion and useInView
+import { useRef } from 'react'; // Import useRef for the ref
+const { Title, Paragraph } = Typography;
 
 const ActivateSection = () => {
   const features = [
     {
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Activate_icon_1.svg'
             alt={'iconImage'}
@@ -18,17 +19,16 @@ const ActivateSection = () => {
       description:
         'Transform inactive leads into new opportunities with Alyson Activate’s re-engagement tools.'
     },
-    { 
+    {
       icon: (
-      <>
-        {' '}
-        <img
-          src='/media/images/Activate_icon_2.svg'
-          alt={'iconImage'}
-          width={'20%'}
-        />
-      </>
-    ),
+        <>
+          <img
+            src='/media/images/Activate_icon_2.svg'
+            alt={'iconImage'}
+            width={'20%'}
+          />
+        </>
+      ),
       title: 'Automated Outreach',
       description:
         'Send targeted emails, text messages, and display ads to re-engage leads effortlessly.'
@@ -36,7 +36,6 @@ const ActivateSection = () => {
     {
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Activate_icon_3.svg'
             alt={'iconImage'}
@@ -51,7 +50,6 @@ const ActivateSection = () => {
     {
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Activate_icon_4.svg'
             alt={'iconImage'}
@@ -63,8 +61,19 @@ const ActivateSection = () => {
       description:
         'Creating content is costly, and finding relevant content needs pricey analysts. Let Alyson find engaging content that boosts your revenue.'
     }
-  ]
-  
+  ];
+
+  const ref = useRef(null); // Create a ref for the motion.div
+  const isInView = useInView(ref, {
+    once: true, // Animation triggers only once
+    amount: 0.3 // Trigger when 30% of the component is visible
+  });
+
+  // Define the animation variants
+  const rowVariants = {
+    hidden: { opacity: 0, x: 100 }, // Start off-screen to the right
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } // Fade in and slide to position
+  };
 
   return (
     <div className='activate-container'>
@@ -81,8 +90,6 @@ const ActivateSection = () => {
           <Title level={2}>Activate</Title>
         </div>
         <div className='activate-header'>
-          {/* <BulbOutlined className="activate-icon" />
-          <Title level={2}>Activate</Title> */}
           <Paragraph>
             Re-engage old leads with personalized emails, texts, and ads.
             Identify engagement opportunities to turn inactive leads into fresh
@@ -91,21 +98,28 @@ const ActivateSection = () => {
         </div>
 
         {/* Features Section */}
-        <Row gutter={[24, 24]} justify='center'>
-          {features.map((feature, index) => (
-            <Col key={index} xs={24} sm={12} md={6}>
-              <div className='activate-card'>
-                <div className='activate-icon'>{feature.icon}</div>
-                <Title level={5} className='activate-title'>
-                  {feature.title}
-                </Title>
-                <Paragraph className='activate-description'>
-                  {feature.description}
-                </Paragraph>
-              </div>
-            </Col>
-          ))}
-        </Row>
+        <motion.div
+          ref={ref} // Attach the ref to observe visibility
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'} // Animate only when in view
+          variants={rowVariants}
+        >
+          <Row gutter={[24, 24]} justify='center'>
+            {features.map((feature, index) => (
+              <Col key={index} xs={24} sm={12} md={6}>
+                <div className='activate-card'>
+                  <div className='activate-icon'>{feature.icon}</div>
+                  <Title level={5} className='activate-title'>
+                    {feature.title}
+                  </Title>
+                  <Paragraph className='activate-description'>
+                    {feature.description}
+                  </Paragraph>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </motion.div>
 
         {/* Call to Action Button */}
         {/* <div className='activate-button'>
@@ -114,7 +128,7 @@ const ActivateSection = () => {
         </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ActivateSection
+export default ActivateSection;
