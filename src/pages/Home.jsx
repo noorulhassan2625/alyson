@@ -74,9 +74,7 @@ export default function Home() {
         <AnimatedSection>
           <Acquire />
         </AnimatedSection>
-        <AnimatedSection>
           <AquireCards />
-        </AnimatedSection>
       </div>
       <AnimatedSection>
         <CreateSection />

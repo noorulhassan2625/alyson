@@ -1,5 +1,7 @@
-import { Row, Col, Typography, Divider } from 'antd'
-const { Title, Paragraph } = Typography
+import { Row, Col, Typography, Divider } from 'antd';
+import { motion, useInView } from 'framer-motion'; // Import framer-motion and useInView
+import { useRef } from 'react'; // Import useRef for the ref
+const { Title, Paragraph } = Typography;
 
 const AgentSection = () => {
   const features = [
@@ -9,7 +11,6 @@ const AgentSection = () => {
         'Let Alyson Assistant handle calls, emails, and texts to help your home services business book more appointments.',
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Assistant_icon_1.svg'
             alt={'iconImage'}
@@ -24,7 +25,6 @@ const AgentSection = () => {
         'Alyson predicts user actions—opening emails, answering calls, converting—so you can run experiments and boost appointments with quality homeowners.',
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Assistant_icon_2.svg'
             alt={'iconImage'}
@@ -39,7 +39,6 @@ const AgentSection = () => {
         'Alyson can make phone calls at as low as 1% of the cost of a human, allowing your sales team to focus on high-value activities instead of boring, repetitive tasks.',
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Assistant_icon_3.svg'
             alt={'iconImage'}
@@ -54,7 +53,6 @@ const AgentSection = () => {
         'Stop losing deals to your competition because you’re just too busy to manage the follow-up.',
       icon: (
         <>
-          {' '}
           <img
             src='/media/images/Assistant_icon_4.svg'
             alt={'iconImage'}
@@ -63,19 +61,23 @@ const AgentSection = () => {
         </>
       )
     }
-  ]
-  // const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  // const handleOpenModal = () => {
-  //   setIsModalOpen(true);
-  // };
+  ];
 
-  // const handleCloseModal = () => {
-  //   setIsModalOpen(false);
-  // };
+  const ref = useRef(null); // Create a ref for the motion.div
+  const isInView = useInView(ref, {
+    once: true, // Animation triggers only once
+    amount: 0.3 // Trigger when 30% of the component is visible
+  });
+
+  // Define the animation variants
+  const rowVariants = {
+    hidden: { opacity: 0, x: -100 }, // Start off-screen to the left
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } // Fade in and slide to position
+  };
 
   return (
     <div className='agent-container'>
-      <div className='agent-content'  style={{background:'url(/media/images/Agent-bg.svg)'}}>
+      <div className='agent-content' style={{ background: 'url(/media/images/Agent-bg.svg)' }}>
         <div className='section-divider'>
           <Divider style={{ color: '#FFBB2A' }} />
         </div>
@@ -94,26 +96,31 @@ const AgentSection = () => {
         </div>
 
         {/* Features Section */}
-        <Row gutter={[24, 24]}>
-          {features.map((feature, index) => (
-            <Col key={index} xs={24} sm={12} md={6}>
-              <div className='agent-feature'>
-                <div className='feature-icon'>{feature.icon}</div>
-                <Title level={5}>{feature.title}</Title>
-                <Paragraph>{feature.description}</Paragraph>
-              </div>
-            </Col>
-          ))}
-        </Row>
+        <motion.div
+          ref={ref} // Attach the ref to observe visibility
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'} // Animate only when in view
+          variants={rowVariants}
+        >
+          <Row gutter={[24, 24]}>
+            {features.map((feature, index) => (
+              <Col key={index} xs={24} sm={12} md={6}>
+                <div className='agent-feature'>
+                  <div className='feature-icon'>{feature.icon}</div>
+                  <Title level={5}>{feature.title}</Title>
+                  <Paragraph>{feature.description}</Paragraph>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </motion.div>
 
         {/* CTA Button */}
         <div className='agent-btn-container'>
         </div>
-        {/* <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
-          <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} /> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AgentSection
+export default AgentSection;
