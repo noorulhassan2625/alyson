@@ -1,0 +1,71 @@
+.test-page{
+    background-color: white !important;
+    padding: 300px 0 !important;
+}
+.Select-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Select-form-wrapper h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .Select-form-wrapper p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .Select-form-wrapper .ant-space {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .Select-form-wrapper .ant-space-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Select-form-wrapper .ant-select-selector,
+  .Select-form-wrapper .ant-picker {
+    border-radius: 20px !important;
+    height: 36px !important;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9 !important;
+  }
+  
+  .Select-form-wrapper .ant-btn-primary {
+    border-radius: 20px;
+    height: 36px;
+    margin-left: 8px;
+  }
+  
+  .Select-form-wrapper .ant-space-vertical {
+    gap: 16px;
+  }
+  .select-filter-wrapper .ant-select-selector{
+    padding: 18px !important;
+  }
+  .button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+ .button-wrapper button{
+    margin: 10px ;
+  }
+  .button-wrapper .clear-btn{
+    background-color: white !important;
+    border: none !important;
+    color: #1890ff !important;
+}
