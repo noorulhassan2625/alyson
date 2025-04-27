@@ -18,6 +18,7 @@ import ActivatePage from '../pages/Activate'
 import IdentityPage from '../pages/Identity'
 import IndustriesPage from '../pages/IndustriesPage'
 import LetsConnect from '../pages/LetsConnect'
+import TestPage from '../pages/TestPage'
 
 const AppRoutes = () => {
   return (
@@ -39,6 +40,7 @@ const AppRoutes = () => {
       <Route path='/identity-page' element={<IdentityPage />} />
       <Route path='/industries' element={<IndustriesPage />} />
       <Route path='/lets-connect' element={<LetsConnect />} />
+      <Route path='/test-page' element={<TestPage />} />
       {/* <Route path='/connect' element={<Connect />} /> */}
     </Routes>
   )
