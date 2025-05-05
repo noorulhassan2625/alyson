@@ -12,7 +12,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_1.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'15%'}
           />
         </>
       ),
@@ -27,7 +27,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_2.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'15%'}
           />
         </>
       ),
@@ -42,7 +42,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_3.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'15%'}
           />
         </>
       ),
@@ -57,7 +57,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_4.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'15%'}
           />
         </>
       ),
