@@ -1297,9 +1297,18 @@ p {
 
 .section-divider .ant-divider {
   border-color: #ffbb2a !important;
-  min-width: 50% !important;
+  min-width: 100% !important;
   margin: 0 auto !important;
   width: 50%;
+}
+.audiences-container .section-divider .ant-divider {
+  min-width: 85% !important;
+}
+.create-section .section-divider .ant-divider , .create-cards .section-divider .ant-divider {
+  min-width: 90% !important;
+}
+.accordion-container .ant-collapse-header{
+  padding: 25px 16px !important;
 }
 
 .create-cards .section-divider {
@@ -1405,7 +1414,7 @@ p {
 }
 
 .activate-card:hover {
-  background: #ffbb2a;
+  background: rgba(255, 204, 77, 0.3);
   cursor: pointer;
 }
 .agent-feature:hover {
@@ -1416,6 +1425,8 @@ p {
 
 .activate-title {
   margin-bottom: 10px;
+  margin-top: 0px !important;
+  margin-left: 10px;
 }
 
 .activate-description {
@@ -2339,7 +2350,7 @@ margin: 20px;
     padding: 0px 0px !important;
   }
   .services-card{
-    height: 380px !important;
+    height: 410px !important;
   }
   .cta-content{
     padding: 80px 20px !important;
@@ -2451,8 +2462,8 @@ margin: 20px;
   .agent-container {
     padding: 40px 10px 80px 10px !important;
   }
-  .swiper-slide {
-    transform: scale(0.8) !important;
+  .swiper-slide-active.feature-card {
+    transform: scale(0.9) !important;
   }
   .checkout-container {
     padding: 0px 10px 60px 10px;

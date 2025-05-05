@@ -11,7 +11,7 @@ const ActivateSection = () => {
           <img
             src='/media/images/Activate_icon_1.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'100%'}
           />
         </>
       ),
@@ -25,7 +25,7 @@ const ActivateSection = () => {
           <img
             src='/media/images/Activate_icon_2.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'100%'}
           />
         </>
       ),
@@ -39,7 +39,7 @@ const ActivateSection = () => {
           <img
             src='/media/images/Activate_icon_3.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'100%'}
           />
         </>
       ),
@@ -53,7 +53,7 @@ const ActivateSection = () => {
           <img
             src='/media/images/Activate_icon_4.svg'
             alt={'iconImage'}
-            width={'20%'}
+            width={'100%'}
           />
         </>
       ),
@@ -108,10 +108,12 @@ const ActivateSection = () => {
             {features.map((feature, index) => (
               <Col key={index} xs={24} sm={12} md={6}>
                 <div className='activate-card'>
+                  <div style={{ display: 'flex' }}>
                   <div className='activate-icon'>{feature.icon}</div>
                   <Title level={5} className='activate-title'>
                     {feature.title}
                   </Title>
+                  </div>
                   <Paragraph className='activate-description'>
                     {feature.description}
                   </Paragraph>
@@ -126,6 +128,9 @@ const ActivateSection = () => {
           <DarkButton buttonText='Get a Demo' onClick={handleOpenModal} />
           <ContactUsModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div> */}
+          <div className='section-divider'>
+          <Divider style={{ color: '#FFBB2A' }} />
+        </div>
       </div>
     </div>
   );

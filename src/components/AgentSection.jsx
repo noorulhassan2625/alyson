@@ -85,7 +85,7 @@ const AgentSection = () => {
         <div className='agent-header'>
           <div className={'section-title-header'}>
             <img src='/media/images/Agent.svg' alt='Alyson Logo' width='13%' />
-            <Title level={2}>Assistant</Title>
+            <Title level={2}>Agent</Title>
           </div>
           <Paragraph>
             Alyson acts as an agent to help you get more appointments. She can
