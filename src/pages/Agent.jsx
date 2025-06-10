@@ -5,6 +5,8 @@ import FinalCTA from '../components/FinalCTA'
 import '../css/featurePages.css'
 import { Col, Row, Typography } from 'antd'
 import FeatureContentBox from '../components/FeatureContentBox'
+import Hero from '../components/Hero'
+import AgentContentBox from '../components/AgentContentBox'
 
 const { Title } = Typography
 export default function AgentPage () {
@@ -13,72 +15,50 @@ export default function AgentPage () {
       <div
         className='hero-bg'
         style={{
-          background:
-            'linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)'
+          background: 'white'
         }}
+        // style={{
+        //   background:
+        //     'linear-gradient(rgba(255, 204, 77, 0) 38%, rgb(255 252 240 / 94%) 60%), url(/media/images/hero-section.svg)'
+        // }}
       >
-        <FeaturePageHero
-          title1='Agent'
-          title2='Alyson Agent - AI That Grows Your Business 25% Faster'
-          text='Alyson Agent automates emails, SMS, calls, and chats —while learning and optimizing to maximize leads and revenue.'
-          buttonText='Try Alyson Agent for Free'
-          imageSrc='https://picsum.photos/seed/picsum/200/300'
+        <Hero
+          title1=' Hi, I’m Alyson'
+          title2='I’m looking forward to helping you manage your next home project.'
         />
+         <div className='feature-page-content acquire-feature agent-menu'>
+        
+        <AgentContentBox
+          title2='Planning & Research'
+          text='Share your renovation vision, Alyson will research and plan every detail for you. '
+          imageSrc='./media/images/small-illustrations-01.png'
+        />
+        <AgentContentBox
+          title2='Bids and review profiles'
+          text="Request bids and assess contractors' profiles, ensuring alignment with your vision to bring your renovation plans to life"
+          imageSrc='./media/images/small-illustrations-02.png'
+        />
+        <AgentContentBox
+          title2='Evaluate proposals'
+          text='With Alyson receive and compare proposals from contractors based on your budget, simplifying the decision-making process.'
+          imageSrc='./media/images/small-illustrations-03.png'
+        />
+        <AgentContentBox
+          title2='Save time and money'
+          text='Efficiently scouring for the best prices and negotiating on your behalf, Alyson will handle it all.'
+          imageSrc='./media/images/small-illustrations-04.png'
+        />
+          </div>
         <div className='center-heading' style={{ padding: '0px 20px' }}>
           <Row gutter={[24]} align='middle'>
             <Col span={16} style={{ margin: '0 auto' }}>
               <Title level={2}>
-                Alyson’s AI models are trusted by top home services companies to
-                automate and optimize their marketing campaigns with precision.
+                Alyson partners have helped over 500,000 homeowners in the US
+                manage their home projects, saving hundreds of hours and
+                delivering a 4.5 average rating.
               </Title>
             </Col>
           </Row>
-        </div>
-        <div className='feature-page-content acquire-feature'>
-          <FeatureContentBox
-            title2='Alyson Agent Handles Tasks, So You Don’t Have To.'
-            text='Alyson writes, sends, and optimizes outreach—without human intervention.'
-            buttonText='Let AI Handle Customer Outreach'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
-            listItems={[
-              'AI drafts and personalizes customer emails',
-              'Sends SMS reminders and follow-ups automatically',
-              'Places smart phone calls to engage leads'
-            ]}
-          />
-          <FeatureContentBox
-            title2='AI-Powered Website Chatbot to Convert More Visitors'
-            text='Capture leads and answer questions 24/7 with an AI chatbot trained for home services.'
-            buttonText='Get an AI Chatbot That Converts'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
-            listItems={[
-              'AI engages visitors in real time',
-              'Answers FAQs and books appointments',
-              'Connects leads with your team when needed'
-            ]}
-          />
-          <FeatureContentBox
-            title2='Smart Personalization from Your CDP.'
-            text='AI That Knows Your Customers. Alyson reads user history to send highly personalized messages that convert.'
-            buttonText='Start Sending AI-Personalized Messages'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
-            listItems={[
-              'AI adapts offers based on past interactions',
-              'Messages are tailored to customer preferences',
-              'Higher engagement with personalized outreach'
-            ]}
-          />
-          <FeatureContentBox
-            title2='Self-Driving AI for Business Optimization'
-            text='Alyson runs experiments to increase revenue & leads—all on autopilot.'
-            buttonText='Let AI Optimize Your Growth'
-            imageSrc='https://picsum.photos/seed/picsum/200/300'
-            listItems={[
-              'AI A/B tests messaging for best performance',
-              'Adjusts outreach based on lead behavior',
-              'Aligns with your business goals (more revenue & leads)'
-            ]}
-          />
         </div>
       </div>
 

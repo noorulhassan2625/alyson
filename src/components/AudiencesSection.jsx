@@ -12,7 +12,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_1.svg'
             alt={'iconImage'}
-            width={'15%'}
+            width={'20%'}
           />
         </>
       ),
@@ -27,7 +27,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_2.svg'
             alt={'iconImage'}
-            width={'15%'}
+            width={'20%'}
           />
         </>
       ),
@@ -42,7 +42,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_3.svg'
             alt={'iconImage'}
-            width={'15%'}
+            width={'20%'}
           />
         </>
       ),
@@ -57,7 +57,7 @@ const AudiencesSection = () => {
           <img
             src='/media/images/Audience_icon_4.svg'
             alt={'iconImage'}
-            width={'15%'}
+            width={'20%'}
           />
         </>
       ),
@@ -83,11 +83,11 @@ const AudiencesSection = () => {
             De-anonymize your traffic and clean, enhance, and unify your CRM data with insights from 170M+ homeowner profiles.
           </Paragraph>
         </div>
-    <div className="audiences-contaniner-box" style={{margin:'0 120px'}}>
+
         {/* Features Section */}
         <Row gutter={[24, 24]} justify="center">
           {features.map((feature, index) => (
-            <Col  className="audience-col" key={index} xs={24} sm={12} md={12} style={{textAlign: 'center' ,justifyContent: 'center'}}>
+            <Col key={index} xs={24} sm={12} md={6}>
               <div className="audience-card">
                 <div className="audience-icon">
                   {feature.icon}
@@ -98,8 +98,6 @@ const AudiencesSection = () => {
             </Col>
           ))}
         </Row>
-    </div>
-
 
         {/* CTA Button */}
         {/* <div className="audiences-btn-container">

@@ -1,7 +1,8 @@
 .feature-page-hero {
   padding: 10% 80px 5% 80px;
 }
-.feature-page-hero .dark-btn, .feature-page-content-box .dark-btn {
+.feature-page-hero .dark-btn,
+.feature-page-content-box .dark-btn {
   width: 70%;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .feature-page-content-box .textual-content ul {
-  background: #FFE8B7;
+  background: #ffe8b7;
   padding: 15px;
   border-radius: 15px;
 }
@@ -46,13 +47,33 @@
 .acquire-feature .feature-page-content-box:nth-child(4) {
   padding-bottom: 8% !important;
 }
-.feature-page-hero .dark-btn span, .feature-page-content-box .dark-btn span{
+.feature-page-hero .dark-btn span,
+.feature-page-content-box .dark-btn span {
   font-size: 20px !important;
 }
-.feature-page-hero .dark-btn:hover span, .feature-page-content-box .dark-btn:hover span{
+.feature-page-hero .dark-btn:hover span,
+.feature-page-content-box .dark-btn:hover span {
   font-size: 16px !important;
-  transition: .5s;
+  transition: 0.5s;
 }
+
+/* ====== Agent Feature Page CSS ====== */
+.separator.yellow {
+  background: rgb(255, 187, 42);
+  width: 150px;
+  margin-left: 0px;
+  padding: 3px;
+  border: 0px;
+  border-radius: 5px; 
+}
+.agent-menu .feature-page-content-box {
+  padding-top: 0px !important;
+}
+.acquire-feature .feature-page-content-box:nth-child(2) .ant-row,
+.acquire-feature .feature-page-content-box:nth-child(4) .ant-row {
+  flex-direction: row-reverse;
+}
+
 @media (max-width: 480px) {
   .feature-page-hero {
     padding: 10% 20px 5% 20px;
