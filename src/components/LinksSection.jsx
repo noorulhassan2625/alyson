@@ -85,7 +85,7 @@ const LinksSection = () => {
               'Acquire',
               'Create',
               'Checkout',
-              'Assistant',
+              'Agent',
               'Audiences',
               'Alyson Activate',
               'Identity'

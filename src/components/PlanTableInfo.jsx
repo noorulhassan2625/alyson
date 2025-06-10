@@ -90,7 +90,7 @@ const PlanTableInfo = () => {
     },
     {
       key: '5',
-      feature: 'Assistant: AI Scheduling',
+      feature: 'Agent: AI Scheduling',
       free: <CheckOutlined />,
       business: <CheckOutlined />
     },
